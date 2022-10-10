@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="massi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-10 12:13:04 "/>
+        <attribute name="created" value="bWFzc2k7RE9DRU5URTAxOzIwMjItMTAtMTA7IjA4OjI2OjE3ICI7MjMzOQ=="/>
+        <attribute name="edited" value="bWFzc2k7RE9DRU5URTAxOzIwMjItMTAtMTA7IjEyOjEzOjA0ICI7MzsyNDM2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="p" type="Real" array="False" size=""/>
+            <assign variable="p" expression="quadratoTest()"/>
+            <assign variable="p" expression="p + perimetroRettangoloTest()"/>
+            <assign variable="p" expression="p + perimetroTrapezioTest()"/>
+            <output expression="&quot;Punteggio grezzo: &quot; &amp; p" newline="True"/>
+        </body>
+    </function>
+    <function name="perimentroRettangolo" type="Real" variable="P">
+        <parameters>
+            <parameter name="b" type="Real" array="False"/>
+            <parameter name="A" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="P, h" type="Real" array="False" size=""/>
+            <assign variable="h" expression="A/b"/>
+            <assign variable="P" expression="2*(b+h)"/>
+        </body>
+    </function>
+    <function name="perimetroRettangoloTest" type="Real" variable="p">
+        <parameters/>
+        <body>
+            <declare name="p" type="Real" array="False" size=""/>
+            <if expression="perimentroRettangolo(1, 2) = 6 AND perimentroRettangolo(10, 20) = 24 AND perimentroRettangolo(25, 625) = 100">
+                <then>
+                    <assign variable="p" expression="1"/>
+                </then>
+                <else>
+                    <assign variable="p" expression="0"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="quadrato" type="Real" variable="q">
+        <parameters>
+            <parameter name="l" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="q" type="Real" array="False" size=""/>
+            <assign variable="q" expression="l*l"/>
+        </body>
+    </function>
+    <function name="quadratoTest" type="Real" variable="punteggio">
+        <parameters/>
+        <body>
+            <declare name="punteggio" type="Real" array="False" size=""/>
+            <if expression="quadrato(0) = 0 AND quadrato(1) = 1 AND quadrato(10) = 100">
+                <then>
+                    <assign variable="punteggio" expression="1"/>
+                </then>
+                <else>
+                    <assign variable="punteggio" expression="0"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="perimetroTrapezio" type="Real" variable="P">
+        <parameters>
+            <parameter name="BB" type="Real" array="False"/>
+            <parameter name="h" type="Real" array="False"/>
+            <parameter name="A" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="P, b, c" type="Real" array="False" size=""/>
+            <assign variable="b" expression="BB-2*A/h"/>
+            <assign variable="c" expression="sqrt((BB-b)^2 + h^2)"/>
+            <assign variable="P" expression="BB+b+h+c"/>
+        </body>
+    </function>
+    <!-- da qui -->
+    <function name="perimetroTrapezioTest" type="Real" variable="punteggio">
+        <parameters/>
+        <body>
+            <declare name="punteggio" type="Real" array="False" size=""/>
+            <if expression="perimetroTrapezio(7, 3, 15) = 18 AND perimetroTrapezio(17, 5, 55) = 40 AND perimetroTrapezio(31, 7, 133) = 70">
+                <then>
+                    <assign variable="punteggio" expression="1"/>
+                </then>
+                <else>
+                    <assign variable="punteggio" expression="0"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
