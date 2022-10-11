@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="MASSI"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-11 12:55:38 "/>
+        <attribute name="created" value="TUFTU0k7RE9DRU5URTAxOzIwMjItMTAtMTE7IjEyOjMyOjI5ICI7MjE3NQ=="/>
+        <attribute name="edited" value="TUFTU0k7RE9DRU5URTAxOzIwMjItMTAtMTE7IjEyOjU1OjM4ICI7MTsyMjg4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="P" type="Real" array="False" size=""/>
+            <assign variable="P" expression="perimetroTrapezioRettangolo(15, 10, 12)"/>
+        </body>
+    </function>
+    <function name="perimetroTrapezioRettangolo" type="Real" variable="P">
+        <parameters>
+            <parameter name="Bma" type="Real" array="False"/>
+            <parameter name="Bmi" type="Real" array="False"/>
+            <parameter name="h" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="P, d, c" type="Real" array="False" size=""/>
+            <assign variable="d" expression="Bma - Bmi"/>
+            <assign variable="c" expression="sqrt(d^2 + h^2)"/>
+            <assign variable="P" expression="Bma + Bmi + h + c"/>
+        </body>
+    </function>
+</flowgorithm>

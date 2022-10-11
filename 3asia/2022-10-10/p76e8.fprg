@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="massi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-04 01:15:59 "/>
+        <attribute name="created" value="bWFzc2k7RE9DRU5URTAxOzIwMjItMTAtMDQ7IjEyOjM0OjE2ICI7MjMzNQ=="/>
+        <attribute name="edited" value="bWFzc2k7RE9DRU5URTAxOzIwMjItMTAtMDQ7IjAxOjE1OjU5ICI7MTsyNDQ3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x1, y1, x2, y2, m, q" type="Real" array="False" size=""/>
+            <assign variable="x1" expression="leggiNumeroReale(&quot;Immetti x1&quot;)"/>
+            <assign variable="y1" expression="leggiNumeroReale(&quot;Immetti y1&quot;)"/>
+            <assign variable="x2" expression="leggiNumeroReale(&quot;Immetti x2&quot;)"/>
+            <assign variable="y2" expression="leggiNumeroReale(&quot;Immetti y2&quot;)"/>
+            <if expression="x1 = x2">
+                <then>
+                    <output expression="&quot;Retta verticale di equazione x = &quot; &amp; x1" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="m" expression="(y2-y1)/(x2-x1)"/>
+                    <assign variable="q" expression="y1 - m * x1"/>
+                    <if expression="y1 = y2">
+                        <then>
+                            <output expression="&quot;Retta orizzontale di equazione y = &quot; &amp; y1" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Retta di equazione y = &quot; &amp; m &amp; &quot; x + &quot; &amp; q" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="leggiNumeroReale" type="Real" variable="numero">
+        <parameters>
+            <parameter name="testo" type="String" array="False"/>
+        </parameters>
+        <body>
+            <declare name="numero" type="Real" array="False" size=""/>
+            <output expression="testo" newline="True"/>
+            <input variable="numero"/>
+        </body>
+    </function>
+</flowgorithm>

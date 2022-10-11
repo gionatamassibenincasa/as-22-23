@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="massi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-29 11:52:39 "/>
+        <attribute name="created" value="bWFzc2k7RE9DRU5URTAxOzIwMjItMDktMjk7IjEwOjIxOjU4ICI7MjM1MA=="/>
+        <attribute name="edited" value="bWFzc2k7RE9DRU5URTAxOzIwMjItMDktMjk7IjExOjUyOjM5ICI7MTsyNDYy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="PopolazioneAnnoPrecedente, PopolazioneAnnoSuccessivo, IncrementoAssoluto" type="Integer" array="False" size=""/>
+            <declare name="IncrementoRelativo" type="Real" array="False" size=""/>
+            <output expression="&quot;Immetti la popolazione dell'anno precedente: &quot;" newline="True"/>
+            <input variable="PopolazioneAnnoPrecedente"/>
+            <output expression="&quot;Immetti la popolazione dell'anno successivo: &quot;" newline="True"/>
+            <input variable="PopolazioneAnnoSuccessivo"/>
+            <assign variable="IncrementoAssoluto" expression="PopolazioneAnnoSuccessivo - PopolazioneAnnoPrecedente"/>
+            <assign variable="IncrementoRelativo" expression="IncrementoAssoluto / PopolazioneAnnoPrecedente"/>
+            <output expression="&quot;L'incremento assoluto della popolazione &#232; pari a &quot; &amp; IncrementoAssoluto &amp; ToChar(13) &amp; &quot;L'incremento relativo &#232; pari a &quot; &amp; (IncrementoRelativo * 100) &amp; &quot; %.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

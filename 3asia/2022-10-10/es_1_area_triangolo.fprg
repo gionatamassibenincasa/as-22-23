@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="MASSI"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-11 12:30:15 "/>
+        <attribute name="created" value="TUFTU0k7RE9DRU5URTAxOzIwMjItMTAtMTE7IjEyOjEzOjA3ICI7MjE3MA=="/>
+        <attribute name="edited" value="TUFTU0k7RE9DRU5URTAxOzIwMjItMTAtMTE7IjEyOjMwOjE1ICI7MTsyMjc2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A" type="Real" array="False" size=""/>
+            <assign variable="A" expression="areaTriangolo(10, 4)"/>
+        </body>
+    </function>
+    <function name="areaTriangolo" type="Real" variable="A">
+        <parameters>
+            <parameter name="b" type="Real" array="False"/>
+            <parameter name="h" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="A" type="Real" array="False" size=""/>
+            <assign variable="A" expression="b * h / 2"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="MASSI"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-11 01:26:47 "/>
+        <attribute name="created" value="TUFTU0k7RE9DRU5URTAxOzIwMjItMTAtMTE7IjAxOjIxOjQwICI7MjE2NA=="/>
+        <attribute name="edited" value="TUFTU0k7RE9DRU5URTAxOzIwMjItMTAtMTE7IjAxOjI2OjQ3ICI7MjsyMjg1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="s" type="Integer" array="False" size=""/>
+            <assign variable="s" expression="sommatoria(1, 100)"/>
+        </body>
+    </function>
+    <function name="sommatoria" type="Integer" variable="s">
+        <parameters>
+            <parameter name="n" type="Integer" array="False"/>
+            <parameter name="m" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="s, i" type="Integer" array="False" size=""/>
+            <assign variable="s" expression="0"/>
+            <assign variable="i" expression="n"/>
+            <while expression="i &lt;= m">
+                <assign variable="s" expression="s + i"/>
+                <assign variable="i" expression="i + 1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

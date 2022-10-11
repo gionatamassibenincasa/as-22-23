@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="MASSI"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-11 01:13:49 "/>
+        <attribute name="created" value="TUFTU0k7RE9DRU5URTAxOzIwMjItMTAtMTE7IjEyOjU4OjQ3ICI7MjE4Mw=="/>
+        <attribute name="edited" value="TUFTU0k7RE9DRU5URTAxOzIwMjItMTAtMTE7IjAxOjEzOjQ5ICI7MTsyMjgy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="s" type="String" array="False" size=""/>
+            <assign variable="s" expression="pari(10)"/>
+        </body>
+    </function>
+    <function name="pari" type="String" variable="s">
+        <parameters>
+            <parameter name="n" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="s" type="String" array="False" size=""/>
+            <if expression="n % 2 = 0">
+                <then>
+                    <assign variable="s" expression="&quot;Pari&quot;"/>
+                </then>
+                <else>
+                    <assign variable="s" expression="&quot;Dispari&quot;"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

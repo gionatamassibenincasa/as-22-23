@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="massi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-15 12:15:02 "/>
+        <attribute name="created" value="bWFzc2k7RE9DRU5URTAxOzIwMjItMDktMTU7IjEwOjI1OjQzICI7MjM0Mw=="/>
+        <attribute name="edited" value="bWFzc2k7RE9DRU5URTAxOzIwMjItMDktMTU7IjEyOjE1OjAyICI7MjsyNDQ4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="adulti, studenti, costo" type="Integer" array="False" size=""/>
+            <do expression="adulti &lt; 1">
+                <output expression="&quot;Immetti il numero di adulti&quot;" newline="True"/>
+                <input variable="adulti"/>
+            </do>
+            <do expression="studenti &lt; 0">
+                <output expression="&quot;Immetti il numero di studenti&quot;" newline="True"/>
+                <input variable="studenti"/>
+            </do>
+            <assign variable="costo" expression="60*adulti + 35*studenti"/>
+            <output expression="&quot;Il costo dell'abbonamento per la famiglia ammonta a &quot; &amp; costo &amp; &quot; &#8364;.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
