@@ -1,21 +1,109 @@
 <?xml version="1.0"?>
-<flowgorithm fileversion="3.0">
+<flowgorithm fileversion="2.11">
     <attributes>
         <attribute name="name" value=""/>
         <attribute name="authors" value="massi"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2022-10-10 12:13:04 "/>
+        <attribute name="saved" value="2022-10-11 09.25.59 "/>
         <attribute name="created" value="bWFzc2k7RE9DRU5URTAxOzIwMjItMTAtMTA7IjA4OjI2OjE3ICI7MjMzOQ=="/>
         <attribute name="edited" value="bWFzc2k7RE9DRU5URTAxOzIwMjItMTAtMTA7IjEyOjEzOjA0ICI7MzsyNDM2"/>
+        <attribute name="edited" value="bWFzc2k7TUFTU0ktQVNQSVJFLVYzOzIwMjItMTAtMTE7IjA5LjI1LjU5ICI7NDsyODgy"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
             <declare name="p" type="Real" array="False" size=""/>
-            <assign variable="p" expression="quadratoTest()"/>
+            <assign variable="p" expression="0"/>
+            <assign variable="p" expression="p + quadratoTest()"/>
             <assign variable="p" expression="p + perimetroRettangoloTest()"/>
             <assign variable="p" expression="p + perimetroTrapezioTest()"/>
+            <assign variable="p" expression="p + pariTest()"/>
+            <assign variable="p" expression="p + maggiorenneTest()"/>
+            <assign variable="p" expression="p + abbonamentoTest()"/>
             <output expression="&quot;Punteggio grezzo: &quot; &amp; p" newline="True"/>
+        </body>
+    </function>
+    <function name="abbonamento" type="Integer" variable="importo">
+        <parameters>
+            <parameter name="eta" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="importo" type="Integer" array="False" size=""/>
+            <if expression="eta &lt; 11 OR eta &gt; 64">
+                <then>
+                    <assign variable="importo" expression="35"/>
+                </then>
+                <else>
+                    <assign variable="importo" expression="50"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="abbonamentoTest" type="Real" variable="punteggio">
+        <parameters/>
+        <body>
+            <declare name="punteggio" type="Real" array="False" size=""/>
+            <if expression="abbonamento(10) = 35 AND abbonamento(16) = 50 AND abbonamento(65) = 35">
+                <then>
+                    <assign variable="punteggio" expression="1"/>
+                </then>
+                <else>
+                    <assign variable="punteggio" expression="0"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="maggiorenne" type="String" variable="m">
+        <parameters>
+            <parameter name="eta" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="m" type="String" array="False" size=""/>
+            <if expression="eta &gt;= 18">
+                <then>
+                    <assign variable="m" expression="&quot;maggiorenne&quot;"/>
+                </then>
+                <else>
+                    <assign variable="m" expression="&quot;minorenne&quot;"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="maggiorenneTest" type="Real" variable="punteggio">
+        <parameters/>
+        <body>
+            <declare name="punteggio" type="Real" array="False" size=""/>
+            <if expression="maggiorenne(16) = &quot;minorenne&quot; AND maggiorenne(18) = &quot;maggiorenne&quot; AND maggiorenne(42) = &quot;maggiorenne&quot;">
+                <then>
+                    <assign variable="punteggio" expression="1"/>
+                </then>
+                <else>
+                    <assign variable="punteggio" expression="0"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="pari" type="Boolean" variable="p">
+        <parameters>
+            <parameter name="n" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="p" type="Boolean" array="False" size=""/>
+            <assign variable="p" expression="n % 2 = 0"/>
+        </body>
+    </function>
+    <function name="pariTest" type="Real" variable="punteggio">
+        <parameters/>
+        <body>
+            <declare name="punteggio" type="Real" array="False" size=""/>
+            <if expression="pari(0) = True AND pari(1) = False AND pari(100) = True">
+                <then>
+                    <assign variable="punteggio" expression="1"/>
+                </then>
+                <else>
+                    <assign variable="punteggio" expression="0"/>
+                </else>
+            </if>
         </body>
     </function>
     <function name="perimentroRettangolo" type="Real" variable="P">
@@ -25,8 +113,8 @@
         </parameters>
         <body>
             <declare name="P, h" type="Real" array="False" size=""/>
-            <assign variable="h" expression="A/b"/>
-            <assign variable="P" expression="2*(b+h)"/>
+            <assign variable="h" expression="A / b"/>
+            <assign variable="P" expression="2 * (b + h)"/>
         </body>
     </function>
     <function name="perimetroRettangoloTest" type="Real" variable="p">
@@ -39,6 +127,33 @@
                 </then>
                 <else>
                     <assign variable="p" expression="0"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="perimetroTrapezio" type="Real" variable="P">
+        <parameters>
+            <parameter name="BB" type="Real" array="False"/>
+            <parameter name="h" type="Real" array="False"/>
+            <parameter name="A" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="P, b, c" type="Real" array="False" size=""/>
+            <assign variable="b" expression="2 * A / h - BB"/>
+            <assign variable="c" expression="sqrt((BB - b)^2 + h^2)"/>
+            <assign variable="P" expression="BB+b+h+c"/>
+        </body>
+    </function>
+    <function name="perimetroTrapezioTest" type="Real" variable="punteggio">
+        <parameters/>
+        <body>
+            <declare name="punteggio" type="Real" array="False" size=""/>
+            <if expression="perimetroTrapezio(7, 3, 15) = 18 AND perimetroTrapezio(17, 5, 55) = 40 AND perimetroTrapezio(31, 7, 133) = 70">
+                <then>
+                    <assign variable="punteggio" expression="1"/>
+                </then>
+                <else>
+                    <assign variable="punteggio" expression="0"/>
                 </else>
             </if>
         </body>
@@ -57,34 +172,6 @@
         <body>
             <declare name="punteggio" type="Real" array="False" size=""/>
             <if expression="quadrato(0) = 0 AND quadrato(1) = 1 AND quadrato(10) = 100">
-                <then>
-                    <assign variable="punteggio" expression="1"/>
-                </then>
-                <else>
-                    <assign variable="punteggio" expression="0"/>
-                </else>
-            </if>
-        </body>
-    </function>
-    <function name="perimetroTrapezio" type="Real" variable="P">
-        <parameters>
-            <parameter name="BB" type="Real" array="False"/>
-            <parameter name="h" type="Real" array="False"/>
-            <parameter name="A" type="Real" array="False"/>
-        </parameters>
-        <body>
-            <declare name="P, b, c" type="Real" array="False" size=""/>
-            <assign variable="b" expression="BB-2*A/h"/>
-            <assign variable="c" expression="sqrt((BB-b)^2 + h^2)"/>
-            <assign variable="P" expression="BB+b+h+c"/>
-        </body>
-    </function>
-    <!-- da qui -->
-    <function name="perimetroTrapezioTest" type="Real" variable="punteggio">
-        <parameters/>
-        <body>
-            <declare name="punteggio" type="Real" array="False" size=""/>
-            <if expression="perimetroTrapezio(7, 3, 15) = 18 AND perimetroTrapezio(17, 5, 55) = 40 AND perimetroTrapezio(31, 7, 133) = 70">
                 <then>
                     <assign variable="punteggio" expression="1"/>
                 </then>

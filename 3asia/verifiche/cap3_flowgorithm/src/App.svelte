@@ -19,8 +19,8 @@
           input: "I parametri reali <code>b</code> e <code>A</code>",
           output: "Il perimetro <code>2(b+h)</code>",
           esempi: [
-            "perimentroRettangolo(0, 0) = 0",
             "perimentroRettangolo(1, 2) = 6",
+            "perimentroRettangolo(10, 20) = 24",
             "perimentroRettangolo(25, 625) = 100",
           ],
         },
@@ -32,9 +32,9 @@
           input: "I parametri reali <code>b</code> e <code>A</code>",
           output: "Il perimetro <code>2(b+h)</code>",
           esempi: [
-            "perimetroTrapezio(0, 0) = 0",
-            "perimetroTrapezio(1, 2) = 6",
-            "perimetroTrapezio(25, 625) = 100",
+            "perimetroTrapezio(7, 3, 15) = 18",
+            "perimetroTrapezio(17, 5, 55) = 40",
+            "perimetroTrapezio(31, 7, 133) = 70",
           ],
         },
       ],
@@ -50,13 +50,13 @@
           input: "Il parametro intero <code>n</code>",
           output:
             "<code>VERO</code> se <code>n</code> è divisibile per 2, <code>FALSO</code> altrimenti",
-          esempi: ["pari(0) = 0", "quadrato(1) = 1", "quadrato(10) = 100"],
+          esempi: ["pari(0) = True", "pari(1) = False", "pari(100) = True"],
         },
         {
           titolo: "Maggiorenne o minorenne",
           descrizione:
             "Si modifichi la funzione <code>maggiorenne</code> affiché restituisca <code>maggiorenne</code> o <code>minorenne</code> in funzione dell'età",
-          input: "Il parametro reale <code>era</code>",
+          input: "Il parametro intero <code>eta</code>",
           output:
             "<code>minorenne</code> se <code>eta &lt; 18</code>, <code>maggiorenne</code> altrimenti",
           esempi: [
@@ -69,13 +69,13 @@
           titolo:
             "Abbonamento con tariffa base e ridotta in base al parametro <code>eta</code>",
           descrizione:
-            "Si modifichi la funzione <code>importoAbbonamento</code> affiché restituisca <code>35</code> se l'età è minore di 11 o maggiore di 64, <code>50</code> altrimenti.",
+            "Si modifichi la funzione <code>abbonamento</code> affiché restituisca <code>35</code> se l'età è minore di 11 o maggiore di 64, <code>50</code> altrimenti.",
           input: "Il parametro intero <code>eta</code>",
-          output: "La tariffa",
+          output: "La tariffa come numero intero",
           esempi: [
-            "importoAbbonamento(10) = 35",
-            "importoAbbonamento(16) = 50",
-            "importoAbbonamento(65) = 35",
+            "abbonamento(10) = 35",
+            "abbonamento(16) = 50",
+            "abbonamento(65) = 35",
           ],
         },
       ],
