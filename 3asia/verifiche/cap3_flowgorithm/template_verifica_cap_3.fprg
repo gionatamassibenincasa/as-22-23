@@ -4,10 +4,10 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="massi"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2022-10-11 09.25.59 "/>
+        <attribute name="saved" value="2022-10-11 11.53.38 "/>
         <attribute name="created" value="bWFzc2k7RE9DRU5URTAxOzIwMjItMTAtMTA7IjA4OjI2OjE3ICI7MjMzOQ=="/>
         <attribute name="edited" value="bWFzc2k7RE9DRU5URTAxOzIwMjItMTAtMTA7IjEyOjEzOjA0ICI7MzsyNDM2"/>
-        <attribute name="edited" value="bWFzc2k7TUFTU0ktQVNQSVJFLVYzOzIwMjItMTAtMTE7IjA5LjI1LjU5ICI7NDsyODgy"/>
+        <attribute name="edited" value="bWFzc2k7TUFTU0ktQVNQSVJFLVYzOzIwMjItMTAtMTE7IjExLjUzLjM4ICI7NjsyODc1"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -20,6 +20,8 @@
             <assign variable="p" expression="p + pariTest()"/>
             <assign variable="p" expression="p + maggiorenneTest()"/>
             <assign variable="p" expression="p + abbonamentoTest()"/>
+            <assign variable="p" expression="p + fattorialeTest()"/>
+            <assign variable="p" expression="p + sommaPariTest()"/>
             <output expression="&quot;Punteggio grezzo: &quot; &amp; p" newline="True"/>
         </body>
     </function>
@@ -44,6 +46,34 @@
         <body>
             <declare name="punteggio" type="Real" array="False" size=""/>
             <if expression="abbonamento(10) = 35 AND abbonamento(16) = 50 AND abbonamento(65) = 35">
+                <then>
+                    <assign variable="punteggio" expression="1"/>
+                </then>
+                <else>
+                    <assign variable="punteggio" expression="0"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="fattoriale" type="Integer" variable="f">
+        <parameters>
+            <parameter name="n" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="f, i" type="Integer" array="False" size=""/>
+            <assign variable="f" expression="1"/>
+            <assign variable="i" expression="1"/>
+            <while expression="i &lt;= n">
+                <assign variable="f" expression="f * i"/>
+                <assign variable="i" expression="i + 1"/>
+            </while>
+        </body>
+    </function>
+    <function name="fattorialeTest" type="Real" variable="punteggio">
+        <parameters/>
+        <body>
+            <declare name="punteggio" type="Real" array="False" size=""/>
+            <if expression="fattoriale(1) = 1 AND fattoriale(5) = 120 AND fattoriale(10) = 3628800">
                 <then>
                     <assign variable="punteggio" expression="1"/>
                 </then>
@@ -172,6 +202,34 @@
         <body>
             <declare name="punteggio" type="Real" array="False" size=""/>
             <if expression="quadrato(0) = 0 AND quadrato(1) = 1 AND quadrato(10) = 100">
+                <then>
+                    <assign variable="punteggio" expression="1"/>
+                </then>
+                <else>
+                    <assign variable="punteggio" expression="0"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="sommaPari" type="Integer" variable="s">
+        <parameters>
+            <parameter name="n" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="s, i" type="Integer" array="False" size=""/>
+            <assign variable="s" expression="0"/>
+            <assign variable="i" expression="0"/>
+            <while expression="i &lt; n">
+                <assign variable="s" expression="s + i"/>
+                <assign variable="i" expression="i + 2"/>
+            </while>
+        </body>
+    </function>
+    <function name="sommaPariTest" type="Real" variable="punteggio">
+        <parameters/>
+        <body>
+            <declare name="punteggio" type="Real" array="False" size=""/>
+            <if expression="sommaPari(0) = 0 AND sommaPari(10) = 20 AND sommaPari(100) = 2450">
                 <then>
                     <assign variable="punteggio" expression="1"/>
                 </then>

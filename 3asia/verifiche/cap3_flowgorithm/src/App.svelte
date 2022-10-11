@@ -85,18 +85,6 @@
       competenza: "Esercizi sulla struttura di iterazione",
       esercizi: [
         {
-          titolo: "Somma dei primi n numeri pari",
-          descrizione:
-            "Si modifichi la funzione <code>sommaPari</code> affiché restituisca la somma dei primi n numeri pari: 0 + 2 + 4 + ... + 2 (n - 1)",
-          input: "Il parametro intero <code>n</code>",
-          output: "0 + 2 + 4 + ... + 2 (n - 1)",
-          esempi: [
-            "sommaPari(0) = 0",
-            "sommaPari(10) = 1",
-            "quadrato(10) = 100",
-          ],
-        },
-        {
           titolo: "Prodotto dei numeri da 1 a <code>n</code>",
           descrizione:
             "Si modifichi la funzione <code>fattoriale</code> affiché restituisca il prodotto di tutti i numeri tra 1 e <code>n</code>",
@@ -106,6 +94,18 @@
             "fattoriale(1) = 1",
             "fattoriale(5) = 120",
             "fattoriale(10) = 3628800",
+          ],
+        },
+        {
+          titolo: "Somma dei primi n numeri pari",
+          descrizione:
+            "Si modifichi la funzione <code>sommaPari</code> affiché restituisca la somma dei primi n numeri pari: 0 + 2 + 4 + ... + 2 (n - 1)",
+          input: "Il parametro intero <code>n</code>",
+          output: "0 + 2 + 4 + ... + 2 (n - 1)",
+          esempi: [
+            "sommaPari(0) = 0",
+            "sommaPari(10) = 20",
+            "sommaPari(100) = 2450",
           ],
         },
         {
