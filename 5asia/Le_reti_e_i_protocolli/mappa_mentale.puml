@@ -1,0 +1,38 @@
+@startmindmap
+* Le reti di computer
+** Come sono fatte
+*** Due o più computer autonomi interconnessi tramite intefacce, dispositivi e mezzi trasmissivi
+*** Modello Client/Server
+*** Modello Peer2Peer
+*** Protocolli di rete
+**** HTTP/s (app)
+**** POP3/IMAP4 (app)
+**** SMTP (app)
+**** FTP (app)
+**** TCP (tra)
+**** UDP (tra)
+**** IP (rete)
+*** Stack ISO/OSI
+**** Applicazione (7)
+**** Presentazione (6)
+**** Sessione (5)
+**** Trasporto (4)
+**** Rete (3)
+**** Collegamento (2)
+**** Fisico (1)
+*** Tipologie di rete per estensione geografica
+**** LAN o WLAN
+**** MAN
+**** WAN
+** S/Vantaggi
+*** Condivisione di risorse
+**** Hardware: stampanti, plotter, memorie di massa...
+**** Software: programmi e servizi, dati (file)
+*** Riduzione dei costi dello hardware
+**** Rapporto prestazioni/costo
+**** Scalabilità: costo marginale ridotto per aumentare le prestazioni
+**** Affidabilità: repliche servizi, backup dati...
+*** Affidabilità (fault tollerance)(19
+**** ARPANET (1969)
+**** Internet (1983)
+@endmindmap
