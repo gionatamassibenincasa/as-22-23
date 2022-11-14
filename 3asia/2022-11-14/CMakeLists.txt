@@ -1,0 +1,1 @@
+add_executable(tipo_char tipo_char.cpp)
