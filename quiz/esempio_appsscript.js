@@ -16,6 +16,10 @@ function creaModulo() {
   form.setCollectEmail(true);
   // Trasforma in quiz
   form.setIsQuiz(true);
+  // Metti in disordine le domande
+  form.setShuffleQuestions(true);
+  form.setProgressBar(true);
+  
 
   quizMulti.multiList.forEach((quesito) => {
     let item = form.addMultipleChoiceItem();
