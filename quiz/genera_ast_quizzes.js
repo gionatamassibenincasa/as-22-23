@@ -5,6 +5,56 @@ const { exit } = require("process");
 const files = fs.readFileSync("quiz-ls.txt", "utf-8").split("\n");
 const quizzes = [];
 var geval = eval;
+
+/**
+ * Convert from HTML to plain text
+ *
+ * @param {string} h the HTML string
+ * @returns {string} the h inner text
+ */
+function html2text(h) {
+  if (typeof h != "string") console.error(h, typeof h);
+  let pt = h
+    // elimina gli stili
+    .replace(/<style([\s\S]*?)<\/style>/gi, "")
+    // elimina gli script
+    .replace(/<script([\s\S]*?)<\/script>/gi, "")
+    //.replace(/(<(?:.|\n)*?>)/gm, "")
+    // elimina spazi multipli
+    .replace(/\s+/gm, " ")
+    // italic
+    .replace(/<[/]*i\s*>/gm, "")
+    // bold
+    .replace(/<[/]*b\s*>/gm, "")
+    // pre
+    .replace(/<[/]*pre\s*>/gm, "")
+    // img
+    .replace(/<img\s[^>]*>/gm, "")
+    // &agrave;
+    .replace(/&agrave;/gi, "à")
+    // &eacute;
+    .replace(/&eacute;/gi, "é")
+    // &egrave;
+    .replace(/&egrave;/gi, "è")
+    // &ograve;
+    .replace(/&ograve;/gi, "ò")
+    // &ugrave;
+    .replace(/&ugrave;/gi, "ù")
+    // &ndash; &lt; &gt;
+    .replace(/&ndash;/gi, "-")
+    // &lt;
+    .replace(/&lt;/gi, "<")
+    // &gt;
+    .replace(/&gt;/gi, ">")
+    // ritorni a capo
+    .replace(new RegExp("<br\\s*[/]*>", "gm"), "\n");
+  // Non è possibile eliminare ogni altro tag perché si confonde con
+  // file di inclusione
+  // .replace(/<[^>]+>/gm, "");
+
+  return pt;
+}
+
 files.forEach((f) => {
   if (f == "") return;
   const volAndCapRE = /.*Vol([3-5]).*Capitolo([0-9]+)/;
@@ -37,7 +87,9 @@ files.forEach((f) => {
       // httpsImageDir: f.substring(0, f.lastIndexOf("/js")) + "/images",
       classe: vol,
       capitolo: cap,
-      titolo: options.title,
+      titolo:
+        "Classe " + vol + " cap. " + html2text(options.title).split("\n")[1],
+      descrizione: html2text(options.title),
       quizMulti: quizMulti,
     });
   } catch (e) {
@@ -65,23 +117,19 @@ quizzes.forEach((quiz) => {
   });
 });
 
-// TODO:
-// Per ogni tipo di domanda, su ques, ans e ansSel:
-//   1. Rimpiazzare <br> con \n
-//   2. Convertire le entità: &agrave; &eacute; &egrave; &ograve; &ugrave; &ndash; &lt; &gt; ...
-//   3. Eliminare i tag pre.
-//   4. Eliminare tag rimanenti
-
 quizzes.forEach((q) => {
   for (t of Object.keys(q.quizMulti)) {
     let quizGroupArray = q.quizMulti[t];
     quizGroupArray.forEach((item) => {
-      for (stringKey of Object.keys(item)) {
-        let txt;
-        console.log(stringKey);
+      for (k of Object.keys(item)) {
+        if (typeof item[k] == "string") {
+          item[k] = html2text(item[k]);
+        } else if (Array.isArray(item[k])) {
+          for (ans of item[k]) ans = html2text(ans);
+        }
       }
     });
   }
 });
-return 0;
+//return 0;
 console.log(JSON.stringify(quizzes, null, 2));
