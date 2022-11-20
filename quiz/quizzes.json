@@ -1,5 +1,6 @@
 [
   {
+    "baseDir": "Vol3/QuizInterattivi/Capitolo1",
     "classe": "3",
     "capitolo": "1",
     "titolo": "Pro.SIA - Informatica e processi aziendali - Classe 3<br />1. Processi aziendali e sistema informatico",
@@ -45,6 +46,7 @@
     }
   },
   {
+    "baseDir": "Vol3/QuizInterattivi/Capitolo2",
     "classe": "3",
     "capitolo": "2",
     "titolo": "Pro.SIA - Informatica e processi aziendali - Classe 3<br />2. Sistemi operativi",
@@ -245,6 +247,7 @@
     }
   },
   {
+    "baseDir": "Vol3/QuizInterattivi/Capitolo3",
     "classe": "3",
     "capitolo": "3",
     "titolo": "Pro.SIA - Informatica e processi aziendali - Classe 3<br />3. Progettazione degli algoritmi",
@@ -356,6 +359,7 @@
     }
   },
   {
+    "baseDir": "Vol3/QuizInterattivi/Capitolo4",
     "classe": "3",
     "capitolo": "4",
     "titolo": "PRO.SIA - Informatica e processi aziendali<br />4. Il linguaggio C++",
@@ -474,7 +478,8 @@
             "3",
             "5",
             "6"
-          ]
+          ],
+          "url": "https://github.com/gionatamassibenincasa/as-22-23/raw/main/quiz/Vol3/QuizInterattivi/Capitolo4/images/Cap9_6a.png/"
         },
         {
           "ques": "Qual &egrave; l'output del seguente programma, supponendo che da tastiera venga assegnato ad <i>a</i> il valore 3? <br/> <img src='images/Cap9_6b.png' width='280' /><br/>",
@@ -483,7 +488,8 @@
             "8",
             "5",
             "6"
-          ]
+          ],
+          "url": "https://github.com/gionatamassibenincasa/as-22-23/raw/main/quiz/Vol3/QuizInterattivi/Capitolo4/images/Cap9_6b.png/"
         },
         {
           "ques": "Qual &egrave; l'output del seguente programma, supponendo che da tastiera venga assegnato ad <i>a</i> il valore 3 e a <i>b</i> il valore 5? <br/> <img src='images/Cap9_6c.png' width='280' /><br/>",
@@ -492,7 +498,8 @@
             "7",
             "5",
             "6"
-          ]
+          ],
+          "url": "https://github.com/gionatamassibenincasa/as-22-23/raw/main/quiz/Vol3/QuizInterattivi/Capitolo4/images/Cap9_6c.png/"
         },
         {
           "ques": "Qual &egrave; l'output prodotto dall'esecuzione del seguente segmento di codice? <br/> <img src='images/Cap9_12.png' width='280' /><br/>",
@@ -501,7 +508,8 @@
             "7",
             "5",
             "9"
-          ]
+          ],
+          "url": "https://github.com/gionatamassibenincasa/as-22-23/raw/main/quiz/Vol3/QuizInterattivi/Capitolo4/images/Cap9_12.png/"
         },
         {
           "ques": "Qual &egrave; l'output prodotto dall'esecuzione del seguente segmento di codice? <br/> <img src='images/Cap9_12b.png' width='280' /><br/>",
@@ -510,7 +518,8 @@
             "7",
             "8",
             "9"
-          ]
+          ],
+          "url": "https://github.com/gionatamassibenincasa/as-22-23/raw/main/quiz/Vol3/QuizInterattivi/Capitolo4/images/Cap9_12b.png/"
         },
         {
           "ques": "Che cosa viene scritto in output dall'esecuzione del seguente segmento di programma se <i>x</i> vale 1? <br/> <img src='images/Cap9_13.png' width='280' /><br/>",
@@ -519,7 +528,8 @@
             "7",
             "5",
             "4"
-          ]
+          ],
+          "url": "https://github.com/gionatamassibenincasa/as-22-23/raw/main/quiz/Vol3/QuizInterattivi/Capitolo4/images/Cap9_13.png/"
         },
         {
           "ques": "Che cosa viene scritto in output dall'esecuzione del seguente segmento di programma se <i>x</i> vale 1? <br/> <img src='images/Cap9_14.png' width='280' /><br/>",
@@ -528,7 +538,8 @@
             "7",
             "5",
             "9"
-          ]
+          ],
+          "url": "https://github.com/gionatamassibenincasa/as-22-23/raw/main/quiz/Vol3/QuizInterattivi/Capitolo4/images/Cap9_14.png/"
         },
         {
           "ques": "Che cosa viene scritto in output dall'esecuzione del seguente segmento di programma? <br/> <img src='images/Cap9_15.png' width='280' /><br/>",
@@ -536,7 +547,8 @@
           "ansSel": [
             "20, 30, 40",
             "30, 40, 50"
-          ]
+          ],
+          "url": "https://github.com/gionatamassibenincasa/as-22-23/raw/main/quiz/Vol3/QuizInterattivi/Capitolo4/images/Cap9_15.png/"
         },
         {
           "ques": "Che cosa viene scritto in output dall'esecuzione del seguente segmento di programma? <br/> <img src='images/Cap9_16.png' width='280' /><br/>",
@@ -544,7 +556,8 @@
           "ansSel": [
             "20",
             "30"
-          ]
+          ],
+          "url": "https://github.com/gionatamassibenincasa/as-22-23/raw/main/quiz/Vol3/QuizInterattivi/Capitolo4/images/Cap9_16.png/"
         },
         {
           "ques": "Che cosa viene scritto in output dall'esecuzione del seguente segmento di programma? <br/> <img src='images/Cap9_17.png' width='280' /><br/>",
@@ -552,7 +565,8 @@
           "ansSel": [
             "2, 4, 6, 8, 10",
             "1, 2, 3, 4, 5"
-          ]
+          ],
+          "url": "https://github.com/gionatamassibenincasa/as-22-23/raw/main/quiz/Vol3/QuizInterattivi/Capitolo4/images/Cap9_17.png/"
         },
         {
           "ques": "Che cosa viene scritto in output dall'esecuzione del seguente segmento di programma? <br/> <img src='images/Cap9_18.png' width='280' /><br/>",
@@ -560,7 +574,8 @@
           "ansSel": [
             "2",
             "7"
-          ]
+          ],
+          "url": "https://github.com/gionatamassibenincasa/as-22-23/raw/main/quiz/Vol3/QuizInterattivi/Capitolo4/images/Cap9_18.png/"
         }
       ],
       "tf": [
@@ -618,6 +633,7 @@
     }
   },
   {
+    "baseDir": "Vol3/QuizInterattivi/Capitolo5",
     "classe": "3",
     "capitolo": "5",
     "titolo": "PRO.SIA - Informatica e processi aziendali<br />5. Funzioni e strutture di dati",
@@ -630,7 +646,8 @@
             "2",
             "5",
             "6"
-          ]
+          ],
+          "url": "https://github.com/gionatamassibenincasa/as-22-23/raw/main/quiz/Vol3/QuizInterattivi/Capitolo5/images/Cap10_2a.png/"
         },
         {
           "ques": "Quale valore scrive con l'istruzione di output il seguente programma? <br/> <img src='images/Cap10_2b.png' width='280' /><br/>",
@@ -639,7 +656,8 @@
             "2",
             "3",
             "7"
-          ]
+          ],
+          "url": "https://github.com/gionatamassibenincasa/as-22-23/raw/main/quiz/Vol3/QuizInterattivi/Capitolo5/images/Cap10_2b.png/"
         },
         {
           "ques": "Quale valore scrive con l'istruzione di output il seguente programma? <br/> <img src='images/Cap10_2c.png' width='280' /><br/>",
@@ -648,7 +666,8 @@
             "20, 40",
             "33, 67",
             "7, 11"
-          ]
+          ],
+          "url": "https://github.com/gionatamassibenincasa/as-22-23/raw/main/quiz/Vol3/QuizInterattivi/Capitolo5/images/Cap10_2c.png/"
         },
         {
           "ques": "Qual &egrave; il significato della funzione <i>sqrt</i>?",
@@ -690,7 +709,8 @@
             "6, 4",
             "4, 3",
             "2, 9"
-          ]
+          ],
+          "url": "https://github.com/gionatamassibenincasa/as-22-23/raw/main/quiz/Vol3/QuizInterattivi/Capitolo5/images/Cap10_8a.png' width='280' /><br/><br/> e le istruzioni <br/> <img src='images/Cap10_8b.png/"
         },
         {
           "ques": "Date le seguenti dichiarazioni <br/> <code>enum Colori {BIANCO, ROSSO, VERDE, ARANCIONE, VIOLA, GIALLO, BLU, MAGENTA}; <br>Colori a, b, c;</code><br/> Che cosa contengono le variabili a, b, c dopo le seguenti assegnazioni? <br/><code>a = ARANCIONE;<br>b = VIOLA;<br>c = BIANCO;</code><br/>",
@@ -782,6 +802,7 @@
     }
   },
   {
+    "baseDir": "Vol3/QuizInterattivi/Capitolo6",
     "classe": "3",
     "capitolo": "6",
     "titolo": "PRO.SIA - Informatica e processi aziendali<br />6. Programmazione ad oggetti",
@@ -1055,6 +1076,7 @@
     }
   },
   {
+    "baseDir": "Vol3/QuizInterattivi/Capitolo7",
     "classe": "3",
     "capitolo": "7",
     "titolo": "PRO.SIA - Informatica e processi aziendali<br />7. Librerie di template",
@@ -1313,6 +1335,7 @@
     }
   },
   {
+    "baseDir": "Vol3/QuizInterattivi/Capitolo8",
     "classe": "3",
     "capitolo": "8",
     "titolo": "Pro.SIA - Informatica e processi aziendali - Classe 3<br />8. Reti e comunicazione",
@@ -1609,6 +1632,7 @@
     }
   },
   {
+    "baseDir": "Vol3/QuizInterattivi/Capitolo9",
     "classe": "3",
     "capitolo": "9",
     "titolo": "Pro.SIA - Informatica e processi aziendali - Classe 3<br />9. Pagine Web e fogli di stile",
@@ -1891,6 +1915,7 @@
     }
   },
   {
+    "baseDir": "Vol4/QuizInterattivi/Capitolo1",
     "classe": "4",
     "capitolo": "1",
     "titolo": "PRO.SIA Informatica e processi aziendali - Classe 4<br />1. Fasi di sviluppo di un progetto software",
@@ -2136,6 +2161,7 @@
     }
   },
   {
+    "baseDir": "Vol4/QuizInterattivi/Capitolo2",
     "classe": "4",
     "capitolo": "2",
     "titolo": "PRO.SIA Informatica e processi aziendali - Classe 4<br />2. Modello concettuale dei dati",
@@ -2386,6 +2412,7 @@
     }
   },
   {
+    "baseDir": "Vol4/QuizInterattivi/Capitolo3",
     "classe": "4",
     "capitolo": "3",
     "titolo": "PRO.SIA Informatica e processi aziendali - Classe 4<br />3. Modello relazionale",
@@ -2718,6 +2745,7 @@
     }
   },
   {
+    "baseDir": "Vol4/QuizInterattivi/Capitolo4",
     "classe": "4",
     "capitolo": "4",
     "titolo": "PRO.SIA Informatica e processi aziendali - Classe 4<br />4. Access",
@@ -2891,7 +2919,8 @@
             "La proiezione di Tabella su Campo1.",
             "Nessuna, viene visualizzata l'intera tabella.",
             "Errore: Tabella.* non e' un nome legale per Campo."
-          ]
+          ],
+          "url": "https://github.com/gionatamassibenincasa/as-22-23/raw/main/quiz/Vol4/QuizInterattivi/Capitolo4/images/img8.png/"
         },
         {
           "ques": "Quale elenco viene prodotto dalla seguente interrogazione? <br /> <img src='images/img10.png' width='500' />",
@@ -2900,7 +2929,8 @@
             "L'elenco ordinato per cognome delle persone in anagrafica con nome cognome indirizzo.",
             "L'elenco delle persone in anagrafica, della citta' scelta, con nome e cognome.",
             "L'elenco delle persone di Firenze in anagrafica con nome e cognome e indirizzo."
-          ]
+          ],
+          "url": "https://github.com/gionatamassibenincasa/as-22-23/raw/main/quiz/Vol4/QuizInterattivi/Capitolo4/images/img10.png/"
         },
         {
           "ques": "Quale elenco viene prodotto dalla seguente interrogazione? <br /> <img src='images/img12.png' width='500' />",
@@ -2909,7 +2939,8 @@
             "Nome e Cognome delle persone in anagrafica alle quali non sono associati movimenti E che hanno uno o piu' movimenti senza importo, a condizione che il join tra le tabelle sia un join esterno opportuno.",
             "Nome e Cognome delle persone in anagrafica alle quali non sono associati movimenti O che hanno uno o piu' movimenti con importo a zero, a condizione che il join tra le tabelle sia un join esterno opportuno.",
             "Nome e Cognome delle persone in anagrafica alle quali non sono associati movimenti E che hanno uno o piu' movimenti con importo a zero, a condizione che il join tra le tabelle sia un join esterno opportuno."
-          ]
+          ],
+          "url": "https://github.com/gionatamassibenincasa/as-22-23/raw/main/quiz/Vol4/QuizInterattivi/Capitolo4/images/img12.png/"
         },
         {
           "ques": "Quale elenco viene prodotto dalla seguente interrogazione? <br /> <img src='images/img14.png' width='500' />",
@@ -2918,7 +2949,8 @@
             "L'elenco dei versamenti di Giuseppe Garinei completato con numero e somma degli importi.",
             "L'elenco dei versamenti raggruppati per nome e cognome.",
             "L'elenco dei versamenti raggruppati per causale."
-          ]
+          ],
+          "url": "https://github.com/gionatamassibenincasa/as-22-23/raw/main/quiz/Vol4/QuizInterattivi/Capitolo4/images/img14.png/"
         },
         {
           "ques": "Quale elenco viene prodotto dalla seguente interrogazione? <br /> <img src='images/img15.png' width='500' />",
@@ -2927,7 +2959,8 @@
             "L'elenco dei prelievi delle persone con cognome che inizia per A con: nome, data e importo.",
             "L'elenco dei prelievi delle persone con cognome che inizia per A con: cognome, data e importo.",
             "L'elenco dei prelievi delle persone con cognome che inizia per A con: nome, cognome, data, importo e causale."
-          ]
+          ],
+          "url": "https://github.com/gionatamassibenincasa/as-22-23/raw/main/quiz/Vol4/QuizInterattivi/Capitolo4/images/img15.png/"
         },
         {
           "ques": "Quale elenco viene prodotto dalla seguente interrogazione? <br /> <img src='images/img16.png' width='500' />",
@@ -2936,7 +2969,8 @@
             "L'elenco dei movimenti di Mario Rossi con data, importo e causale, aumentati del 10%.",
             "L'elenco degli stipendi di Mario Rossi, posteriori al 2017, con data, importo e causale.",
             "L'elenco dei prelievi di Mario Rossi effettuati nel 2018, incrementati del 10%."
-          ]
+          ],
+          "url": "https://github.com/gionatamassibenincasa/as-22-23/raw/main/quiz/Vol4/QuizInterattivi/Capitolo4/images/img16.png/"
         },
         {
           "ques": "Quale elenco viene prodotto dalla seguente interrogazione? <br /> <img src='images/img20.png' width='500' />",
@@ -2945,7 +2979,8 @@
             "L'elenco dei movimenti di importo superiore a 5000, con nome, cognome, data e importo.",
             "L'elenco dei versamenti, di importo superiore a 5000, con nome, cognome, data, importo e causale.",
             "L'elenco dei versamenti con nome, cognome, data e importo."
-          ]
+          ],
+          "url": "https://github.com/gionatamassibenincasa/as-22-23/raw/main/quiz/Vol4/QuizInterattivi/Capitolo4/images/img20.png/"
         },
         {
           "ques": "Quale elenco viene prodotto dalla seguente interrogazione? <br /> <img src='images/img21.png' width='500' />",
@@ -2954,7 +2989,8 @@
             "L'elenco delle persone in anagrafica con nome cognome e indirizzo.",
             "L'elenco delle persone in anagrafica con nome cognome.",
             "L'elenco delle persone in anagrafica della citta' scelta con nome e cognome e indirizzo."
-          ]
+          ],
+          "url": "https://github.com/gionatamassibenincasa/as-22-23/raw/main/quiz/Vol4/QuizInterattivi/Capitolo4/images/img21.png/"
         },
         {
           "ques": "Quale elenco viene prodotto dalla seguente interrogazione? <br /> <img src='images/img22.png' width='500' />",
@@ -2963,7 +2999,8 @@
             "L'elenco dei movimenti di Giacomo Arcangeli, con data, importo e causale, ordinati per data.",
             "L'elenco dei versamenti di Giacomo Arcangeli, con data, importo e causale.",
             "L'elenco dei versamenti di Giacomo Arcangeli, con data, importo e causale, ordinati per data."
-          ]
+          ],
+          "url": "https://github.com/gionatamassibenincasa/as-22-23/raw/main/quiz/Vol4/QuizInterattivi/Capitolo4/images/img22.png/"
         },
         {
           "ques": "A che cosa serve una query di creazione tabella?",
@@ -3005,6 +3042,7 @@
     }
   },
   {
+    "baseDir": "Vol4/QuizInterattivi/Capitolo5",
     "classe": "4",
     "capitolo": "5",
     "titolo": "PRO.SIA Informatica e processi aziendali - Classe 4<br />5. Il linguaggio SQL",
@@ -3248,6 +3286,7 @@
     }
   },
   {
+    "baseDir": "Vol4/QuizInterattivi/Capitolo6",
     "classe": "4",
     "capitolo": "6",
     "titolo": "PRO.SIA Informatica e processsi aziendali - Classe 4<br />6. MySQL",
@@ -3366,6 +3405,7 @@
     }
   },
   {
+    "baseDir": "Vol4/QuizInterattivi/Capitolo7",
     "classe": "4",
     "capitolo": "7",
     "titolo": "PRO.SIA Informatica e processi aziendali - Classe 4<br />7. Linguaggio XML",
@@ -3470,6 +3510,7 @@
     }
   },
   {
+    "baseDir": "Vol4/QuizInterattivi/Capitolo8",
     "classe": "4",
     "capitolo": "8",
     "titolo": "PRO.SIA Informatica e processi aziendali - Classe 4<br />8. Dati in rete con pagine PHP",
@@ -3569,6 +3610,7 @@
     }
   },
   {
+    "baseDir": "Vol5/QuizInterattivi/Capitolo1",
     "classe": "5",
     "capitolo": "1",
     "titolo": "PRO.SIA - Informatica e processi aziendali <br />1. Sistemi operativi e comandi Linux",
@@ -3839,6 +3881,7 @@
     }
   },
   {
+    "baseDir": "Vol5/QuizInterattivi/Capitolo2",
     "classe": "5",
     "capitolo": "2",
     "titolo": "PRO.SIA - Informatica e processi aziendali<br />2. Reti e protocolli",
@@ -4281,6 +4324,7 @@
     }
   },
   {
+    "baseDir": "Vol5/QuizInterattivi/Capitolo3",
     "classe": "5",
     "capitolo": "3",
     "titolo": "PRO.SIA - Informatica e processi aziendali<br />3. Servizi di rete e sicurezza",
@@ -4484,6 +4528,7 @@
     }
   },
   {
+    "baseDir": "Vol5/QuizInterattivi/Capitolo4",
     "classe": "5",
     "capitolo": "4",
     "titolo": "PRO.SIA - Informatica e processi aziendali<br />4. Comandi per server, sicurezza e crittografia",
@@ -4745,6 +4790,7 @@
     }
   },
   {
+    "baseDir": "Vol5/QuizInterattivi/Capitolo5",
     "classe": "5",
     "capitolo": "5",
     "titolo": "PRO.SIA - Informatica e processi aziendali<br />5. Informatica mobile",
@@ -4948,6 +4994,7 @@
     }
   },
   {
+    "baseDir": "Vol5/QuizInterattivi/Capitolo6",
     "classe": "5",
     "capitolo": "6",
     "titolo": "PRO.SIA - Informatica e processi aziendali<br />6. Sistemi ERP e CRM",
@@ -5029,6 +5076,7 @@
     }
   },
   {
+    "baseDir": "Vol5/QuizInterattivi/Capitolo7",
     "classe": "5",
     "capitolo": "7",
     "titolo": "PRO.SIA - Informatica e processi aziendali <br />7. Analisi dei dati aziendali e big data",
