@@ -1,0 +1,1 @@
+add_executable(tournament2 tournament2.cpp)
