@@ -216,8 +216,7 @@ nwdiag {
       serverICDL [shape="node" description="<&cog*3>\nICDL"];
       FSB  [address="192.168.1.252"];
       FSS  [address="192.168.1.253"];
-  
-
+      FSF  [address="192.168.1.254"];
     }
     
     group nuovo {
@@ -225,6 +224,7 @@ nwdiag {
       color="#00FFFF";
       FSB;
       FSS;
+      FSF;
     }
   
     network Lab_Benincasa {
@@ -278,6 +278,30 @@ nwdiag {
         WiFi_Sy [address="192.168.3.(150 + y)/24" description="<&wifi*3>\nSy"];
       }
     }
+    network Lab_FL {
+      color="#AAAAFF"
+      width="full";
+      address="192.168.4.x/24"
+      description="FutureLAB\nLAN+WLAN"
+  
+      FSF  [address="192.168.4.254" shape="node" description="<&cog*3>\n   FUSS\n  Server\nFutureLab"];
+      group F_Cabled {
+        description="Rete cablata"
+        color="#AAAAFF"
+        
+        doc_F [address="192.168.4.100/24" description="<&monitor*3>\nFINS"];
+        pc_Fx  [address="192.168.4.x/24" description="<&person*3>\nPCFx"];
+  
+        printer_F1 [address="192.168.4.51/24" description="<&print*3>\n PF1"];
+        printer_F2 [address="192.168.4.52/24" description="<&print*3>\n PF2"];
+      }
+      
+      group F_WiFi {
+        description="Rete WiFi"
+        color="#CCCCFF"
+        
+        WiFi_Fy [address="192.168.f.(150 + y)/24" description="<&wifi*3>\nFy"];
+      }
   }
 }
 ....
