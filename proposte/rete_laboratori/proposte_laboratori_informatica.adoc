@@ -40,6 +40,26 @@ Per la sperimentazione di alcuni algoritmi particolarmente onerosi potrebbe rich
 .Cloud privato
 Per riprendere il controllo dei dati ed evitare le preoccupazioni causate dall'uso di servizi cloud gestiti da fornitori esteri, è da valutare l'introduzione di una piattaforma di condivisione gestita internamente.
 
+== Problematiche del Future Lab
+
+.Separazione dall'atrio dell'Aula Magna
+Attualmente il Future Lab non è separato dall'ingresso dell'aula magna e questo causa distrazioni e confusione.
+
+.Disponibilità di punti di punti luce
+Attualmente la rete elettrica non dispone di punti luce tranne che sulle colonne e sulle postazioni fisse.
+Andrebbero create delle strutture per ospitare delle prese elettriche funzionali all'ambiente.
+
+.Disponibilità di punti prese di rete
+Attualmente la rete dati dispone di prese ethernet solo nelle postazioni fisse.
+Nelle strutture presso le quali ospitare le prese elettriche sarebbero da integrare prese per la rete cablata e/o switch.
+
+
+.Disponibilità di PC/notebook
+Non vi sono PC o notebook e quindi si deve confidare nei dispositivi degli studenti. Si potrebbero utilizzare o i PC dei laboratori mobili, fra cui i circa 30 presenti nel magazzino del Benincasa e non ancora utilizzati, o anche aquistare dei sistemi economici quali le https://www.raspberrypi.com/products/raspberry-pi-400/[Rasperry Pi 400].
+
+.Altre problematiche
+Le altre problematiche sono le stesse dei laboratori
+
 == Requisiti dell'ambiente laboratoriale di Informatica
 
 Per facilitare l'insegnamento in ambienti di apprendimento digitale devono essere soddisfatte le seguenti specifiche:
@@ -87,9 +107,9 @@ Per facilitare l'insegnamento in ambienti di apprendimento digitale devono esser
 .... https://docs.asciidoctor.org/pdf-converter/latest/[Asciidoctor PDF]
 .... https://docs.asciidoctor.org/epub3-converter/latest/[Asciidoctor EPUB3]
 .... https://docs.asciidoctor.org/reveal.js-converter/latest/[Asciidoctor reveal.js]
-.... rouge
-.... coderay
-.... pygments.rb
+.... https://github.com/rouge-ruby/rouge[Ruby rouge]
+.... https://github.com/rubychan/coderay[Ruby coderay]
+.... https://github.com/pygments/pygments.rb[Ruby pygments.rb]
 .. Interpreti, compilatori, debugger, toolchain
 ... https://gcc.gnu.org/[GCC, the GNU Compiler Collection]
 ... https://clang.llvm.org/[Clang]
@@ -114,58 +134,59 @@ Per facilitare l'insegnamento in ambienti di apprendimento digitale devono esser
 ...  https://posit.co/products/open-source/rstudio/[RStudio Desktop Open Source Edition]
 ... http://www.flowgorithm.org/[Flowgorithm], https://www.imparando.net/sito/strumenti_di_sviluppo/flowgorithm/come_installare_in_linux.htm[sotto Linux]
 .. Strumenti di versionamento
-... git
+... https://git-scm.com/[git]
 .. Accesso remoto
-... ssh
-... netcat
-... openVPN client
+... https://www.openssh.com/[ssh]
+... https://nc110.sourceforge.io/[netcat]
+... https://openvpn.net/[openVPN client]
 .. Audio e video
-... Audacity
-... FFMPEG
-... Shotcut
+... https://www.audacityteam.org/[Audacity]
+... https://ffmpeg.org/[FFMPEG]
+... https://shotcut.org/[Shotcut]
 .. Browser
-... Firefox
-... Chrome
+... https://www.mozilla.org/it-IT/firefox/[Firefox]
+... https://www.google.com/intl/it_it/chrome/[Chrome]
 .. CAD
-... FreeCad
+... https://www.freecadweb.org/index.php?lang=it[FreeCad]
 .. Grafica
-... GNU Image Manipulation Program
-... Inkscape
-... GraphViz
-... GnuPlot
-... imagemagick
-... PlantUML
-... Kroki
+... https://www.gimp.org/[GNU Image Manipulation Program]
+... https://inkscape.org/[Inkscape]
+... https://graphviz.org/[GraphViz]
+... http://www.gnuplot.info/[GnuPlot]
+... https://www.imagemagick.org/[imagemagick]
+... https://plantuml.com/[PlantUML]
+... https://kroki.io/[Kroki]
 .. Calcolo scientifico e ingegneristico
-... GNU Octave (octave-forge)
-... Scilab
-... GeoGebra
-... R
-... miniconda
+... https://octave.sourceforge.io/[GNU Octave (octave-forge)]
+... https://www.scilab.org/[Scilab]
+... https://www.geogebra.org/?lang=it[GeoGebra]
+... https://www.r-project.org/[R]
+... https://conda.io/miniconda.html[miniconda]
 .. MindMapping
-... FreePlane
+... https://www.freeplane.org/[FreePlane]
+... https://plantuml.com/[PlantUML]
 .. Software per l'analisi della rete
-... WireShark
-... ping
+... https://www.wireshark.org/[WireShark]
+... https://en.wikipedia.org/wiki/Ping_(networking_utility)[ping]
 .. Software per la configurazione del firewall
-... gufw
+... http://gufw.org/[gufw]
 . Servizi
 .. Web server
-... Apache
-... Nginx
-.. Data base
-... PostgreSQL
-... MySQL
+... https://httpd.apache.org/[Apache]
+... https://www.nginx.com/[Nginx]
+.. Data Base Management System
+... https://www.postgresql.org/[PostgreSQL]
+... https://www.mysql.com/[MySQL]
 .. Consegna dei compiti di programmazione
-... CMS
-... CMSSocial
+... https://github.com/cms-dev/cms[CMS]
+... https://github.com/algorithm-ninja/cmsocial[CMSSocial]
 .. DBMS
-... PostgresSQL
-... MySQL
-.. Cloud
-... Nextcloud
-.. Privacy
-... GNU GPG
+... https://www.postgresql.org/[PostgresSQL]
+... https://www.mysql.com/[MySQL]
+.. Piattaforma per il Cloud
+... https://nextcloud.com/[Nextcloud]
+.. Tutela della Privacy
+... https://gnupg.org/[GNU GPG]
 ... https://apps.kde.org/it/kleopatra[Kleopatra]
 
 == Architettura ipotizzata
