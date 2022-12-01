@@ -93,13 +93,13 @@ Per facilitare l'insegnamento in ambienti di apprendimento digitale devono esser
 . Applicazioni
 .. Software per l'ufficio
 ... https://it.libreoffice.org/[LibreOffice]
-.... Base
-.... Calc
-.... Charts
-.... Draw
-.... Impress
-.... Math
-.... Writer
+.... https://it.libreoffice.org/scopri/base/[LibreOffice Base]
+.... https://it.libreoffice.org/scopri/calc/[LibreOffice Calc]
+.... https://it.libreoffice.org/scopri/charts/[LibreOffice Charts]
+.... https://it.libreoffice.org/scopri/draw/[LibreOffice Draw]
+.... https://it.m.wikipedia.org/wiki/File:LibreOffice_6.1_Impress_Icon.svg[LibreOffice Impress]
+.... https://it.libreoffice.org/scopri/math/[LibreOffice Math]
+.... https://it.libreoffice.org/scopri/writer/[LibreOffice Writer]
 .. Software per l'editoria
 ... https://www.tug.org/texlive/[TeX Live]
 ... https://asciidoctor.org/[Asciidoctor]
@@ -275,11 +275,11 @@ nwdiag {
         description="Rete WiFi"
         color="#CCCCFF"
         
-        WiFi_Sy [address="192.168.3.(150 + y)/24" description="<&wifi*3>\nSy"];
+        WiFi_Sy [address="192.168.3.(150 + y)/24" description="<&wifi*3>\n Sy"];
       }
     }
     network Lab_FL {
-      color="#AAAAFF"
+      color="#FFAAFF"
       width="full";
       address="192.168.4.x/24"
       description="FutureLAB\nLAN+WLAN"
@@ -287,7 +287,7 @@ nwdiag {
       FSF  [address="192.168.4.254" shape="node" description="<&cog*3>\n   FUSS\n  Server\nFutureLab"];
       group F_Cabled {
         description="Rete cablata"
-        color="#AAAAFF"
+        color="#FFAAFF"
         
         doc_F [address="192.168.4.100/24" description="<&monitor*3>\nFINS"];
         pc_Fx  [address="192.168.4.x/24" description="<&person*3>\nPCFx"];
@@ -298,9 +298,9 @@ nwdiag {
       
       group F_WiFi {
         description="Rete WiFi"
-        color="#CCCCFF"
+        color="#FFCCFF"
         
-        WiFi_Fy [address="192.168.f.(150 + y)/24" description="<&wifi*3>\nFy"];
+        WiFi_Fy [address="192.168.f.(150 + y)/24" description="<&wifi*3>\n Fy"];
       }
   }
 }
