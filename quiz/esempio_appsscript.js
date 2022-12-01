@@ -24,21 +24,26 @@ function creaQuiz(quiz) {
   }
 
   if (quiz.quizMulti.multiList) {
-    quiz.quizMulti.multiList.forEach((quesito) => {
-      f.addPageBreakItem();
-      if (quesito.url) {
-        let imgBlob = UrlFetchApp.fetch(quesito.url).getBlob();
-        f.addImageItem()
-          .setImage(imgBlob)
-          .setTitle("Riferisciti a questa immagine");
+  if (quiz.quizMulti.multiList) {
+    quiz.quizMulti.multiList.forEach(quesito => {
+      try {
+        f.addPageBreakItem();
+        if (quesito.url) {
+          let imgBlob = UrlFetchApp.fetch(quesito.url).getBlob();
+          f.addImageItem().setImage(imgBlob).setTitle("Riferisciti a questa immagine");
+        }
+        let item = f.addMultipleChoiceItem();
+        item.setPoints(1);
+        item.setTitle((quesito.ques));
+        let scelte = [];
+        scelte.push(item.createChoice((quesito.ans), true));
+        quesito.ansSel.forEach((q) =>
+          scelte.push(item.createChoice((q), false))
+        );
+        item.setChoices(scelte);
+      } catch (e) {
+          Logger.log("Errore " + quiz.titolo + " " + e);
       }
-      let item = f.addMultipleChoiceItem();
-      item.setPoints(1);
-      item.setTitle(quesito.ques);
-      let scelte = [];
-      scelte.push(item.createChoice(quesito.ans, true));
-      quesito.ansSel.forEach((q) => scelte.push(item.createChoice(q, false)));
-      item.setChoices(scelte);
     });
   }
 
