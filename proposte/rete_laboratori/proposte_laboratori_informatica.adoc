@@ -31,6 +31,9 @@ L'attuale scelta dei sistemi inoltre vincola all'utilizzo di ogni dispositivo co
 
 Sarebbe auspicabile poter disporre di sistemi operativi aperti, con la possibilità di scegliere il sistema operativo da avviare, software e risorse di calcolo condivise.
 
+.Accesso limitato a social network e siti di streaming
+Sarebbe auspicabile filtrare l'accesso ai  siti di social network e streaming.
+
 .Sistemi a codice sorgente aperto
 Per la didattica del linguaggio C++, dei sistemi operativi, delle reti di calcolatori, delle tematiche di cybersicurezza sarebbe opportuno lavorare con Sistemi Operativi liberi quali GNU/Linux o BSD.
 
@@ -180,9 +183,6 @@ Per facilitare l'insegnamento in ambienti di apprendimento digitale devono esser
 .. Consegna dei compiti di programmazione
 ... https://github.com/cms-dev/cms[CMS]
 ... https://github.com/algorithm-ninja/cmsocial[CMSSocial]
-.. DBMS
-... https://www.postgresql.org/[PostgresSQL]
-... https://www.mysql.com/[MySQL]
 .. Piattaforma per il Cloud
 ... https://nextcloud.com/[Nextcloud]
 .. Tutela della Privacy
@@ -438,5 +438,44 @@ Si potrebbe usare anche un solo FUSS Server creando due cluster, uno per laborat
 * Se il nuovo nodo diventa indisponibile, la rete del laboratorio non è operativa
 * la banda disponibile per PC studente si riduce notevolmente in quanto su un'unica scheda di rete ed un unico host viene gestita, via software, la connessione di tutte le postazioni del laboratorio
 * il FUSS sever potrebbe essere congestionato aumentando i tempi di latenza
+
+==== Proposta alternativa
+
+Sulla Base della precedente architettura di rete, in ottica del trasferimento dell'Istituto nel prossimo A.S. 2023/2024, si potrebbe pensare di creare delle 'classi virtuali', accessibili anche da casa.
+L'idea è di realizzare su un server una serie di macchine virtuali, con sistemi operativi Windows/Unix, una per ogni classe, in cui sono già installati programmi per la didattica.
+
+MODALITA' D' USO:
+.Lo studente accede alle macchine virtuali con le stesse credenziali odierne di accesso ai pc (cognome.nome e password).
+.L'utente accede alla propria classe mediante una porta TCP/IP ben specifica.
+
+ES:
+.A SCUOLA:
+..MACCHINA VIRTUALE 1ATUR : ip= 10.2.2.13
+..MACCHINA VIRTUALE 5FSA: ip=10.2.2.51
+.A CASA:
+..MACCHINA VIRTUALE 1ATUR : url= lab.iissavoiabenincasa.it porta TCP:2213
+..MACCHINA VIRTUALE 5FSA: url=lab.iissavoiabenincasa.it porta TCP:2251
+
+VANTAGGI:
+.computer del laboratorio diventano dei semplici terminali di accesso alle macchine virtuali;
+.migliorare qualità di una eventuale didattica a distanza
+.i ragazzi possono cambiare posizione nelle postazioni del laboratorio (perche i dati di un utente non sarebbero salvati su uno specifico pc del labopratorio);
+.possibilità di controllare ciascun utente connesso alla macchina virtuale;
+.possibilità di proiettare lo schermo del docente su ciascun terminale connesso alla macchina virtuale della classe;
+.possibilità di favorire l'uso delle macchine virtuali anche a casa, seguendo maggiormente l'andamento didattico di ciascuno studente, specialmente nello svolgimento dei compiti;
+.possibilità di usare il laboratorio (o almeno la macchina virtuale) anche in altre materie. Se, ad esempio, il prof. di Italiano ritenesse opprtuno l'uso di software per la sua didattica si può installare quel software cosi che i ragazzi possano usralo per quella materia.
+
+
+
+Per qeusta soluzione, già implementata in altre scuole, possiamo sentire il tecnico che ha progettato la rete di questa scuola: Matteo Bruschi.
+
+
+==== PASSAGGIO A SOFTWARE DI BASE  CON LICENZA GRATUITA
+
+Per poter far fronte ad eventuali costi, si potrebbe pensare totalmente a passare software di base totalmente gratuiti (e indipendenti dal sistema operativo) quali 
+OPEN OFFICE o LIBRE OFFICE.
+Alcuni testi di Informatica delle calssi prime riservano dei capitoli anche per l'utilizzo di questi due pacchetti.
+
+
 
 Gionata Massi
