@@ -96,11 +96,15 @@
       </tr>
     </thead>
     <tbody>
-      {#each soluzione1a as riga}
+      {#each soluzione1a as riga, i}
         <tr>
           <td>{riga.k}</td>
-          <td>{riga.x.toExponential(4)}</td>
-          <td>{riga.ek.toExponential(4)}</td>
+          <td>{riga.x.toPrecision(5)}</td>
+          <td
+            >{#if i == 0}<center>&mdash;</center>{:else}{riga.ek.toPrecision(
+                5
+              )}{/if}</td
+          >
         </tr>
       {/each}
     </tbody>
@@ -130,11 +134,15 @@
       </tr>
     </thead>
     <tbody>
-      {#each soluzione1b as riga}
+      {#each soluzione1b as riga, i}
         <tr>
           <td>{riga.k}</td>
-          <td>{riga.x.toExponential(4)}</td>
-          <td>{riga.ek.toExponential(4)}</td>
+          <td>{riga.x.toPrecision(5)}</td>
+          <td
+            >{#if i == 0}<center>&mdash;</center>{:else}{riga.ek.toPrecision(
+                5
+              )}{/if}</td
+          >
         </tr>
       {/each}
     </tbody>
@@ -178,11 +186,11 @@
       {#each soluzione2a as riga}
         <tr>
           <td>{riga.k}</td>
-          <td>{riga.a.toExponential(4)}</td>
-          <td>{riga.b.toExponential(4)}</td>
-          <td>{riga.x.toExponential(4)}</td>
+          <td>{riga.a.toPrecision(5)}</td>
+          <td>{riga.b.toPrecision(5)}</td>
+          <td>{riga.x.toPrecision(5)}</td>
           <td>{riga.segno}</td>
-          <td>{riga.ek.toExponential(4)}</td>
+          <td>{riga.ek.toPrecision(5)}</td>
         </tr>
       {/each}
     </tbody>
@@ -224,11 +232,11 @@
       {#each soluzione2b as riga}
         <tr>
           <td>{riga.k}</td>
-          <td>{riga.a.toExponential(4)}</td>
-          <td>{riga.b.toExponential(4)}</td>
-          <td>{riga.x.toExponential(4)}</td>
+          <td>{riga.a.toPrecision(5)}</td>
+          <td>{riga.b.toPrecision(5)}</td>
+          <td>{riga.x.toPrecision(5)}</td>
           <td>{riga.segno}</td>
-          <td>{riga.ek.toExponential(4)}</td>
+          <td>{riga.ek.toPrecision(5)}</td>
         </tr>
       {/each}
     </tbody>
@@ -236,6 +244,10 @@
 </main>
 
 <style>
+  * {
+    background-color: white;
+    color: black;
+  }
   table {
     margin-left: auto;
     margin-right: auto;
@@ -243,5 +255,7 @@
 
   td {
     text-align: right;
+    margin: 3px 15px 3px 15px;
+    padding: 3px 5px 3px 5px;
   }
 </style>
