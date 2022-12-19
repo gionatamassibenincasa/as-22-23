@@ -1,0 +1,1 @@
+add_executable(oii_scolastica_22 oii_scolastica_22)
