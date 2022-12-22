@@ -1,0 +1,4 @@
+add_executable(pari pari.cpp)
+add_executable(somma_primi_nat_while somma_primi_nat_while.cpp)
+add_executable(somma_primi_nat_do_while somma_primi_nat_do_while.cpp)
+add_executable(somma_primi_nat_for somma_primi_nat_for.cpp)
