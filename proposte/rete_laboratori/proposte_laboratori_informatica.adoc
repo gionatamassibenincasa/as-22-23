@@ -1,92 +1,324 @@
 = Proposte per migliorare la didattica nei Laboratori
 Dipartimento di informatica - Savoia Benincasa
-2022-12-22: Revisione 1.2
+2022-12-28: Revisione 1.3
 :figure-caption: Figura
 :toc-title: Indice
 :toclevels: 5
 :toc: auto
 :sectnums:
+:bibtex-file: proposte_laboratori_informatica.bib
+:bibtex-style: ieee
+:bibtex-order: alphabetical
+:bibtex-locale: it-IT
+:bibtex-throw: true
+
 
 <<<
 
 [quote,Renzo Davoli, ...tutto quello che avreste voluto sapere sui laboratori ma non avete mai osato chiedere...]
 ____
-Il laboratorio:
+Il laboratorio
 
 * I Biologi hanno microscopi e vetrini
 * I Chimici hanno provette e Bunsen
 * I Fisici hanno acceleratori di particelle
-* Noi abbiamo  **elaboratori** e **reti**
+* Noi abbiamo **elaboratori** e **reti**
+
+cite:[davoli2012lab(19)]
+____
+
+[quote,Stanislas Dehaene, How we learn. 2020, Penguin, London.]
+____
+I quattro pilastri dell'apprendimento
+
+* attenzione (_attention_)
+* impegno attivo (_active engagement_)
+* feedback dagli errori (_error feedback_)
+* consolidamento (_consolidation_)
+
+cite:[dehaene2020(i)]
 ____
 
 == Problematiche dei Laboratori
 
 === I Laboratori d'Informatica
 
-L'attività didattica in laboratorio richiede un'adeguata predisposizione dei PC e dei collegamenti che non sempre si riscontra nelle attuali condizioni.
+L'attività didattica in laboratorio richiede un'adeguata predisposizione dei PC e dei collegamenti che non sempre si riscontra nelle attuali condizioni. Alcune situazioni problematiche sono indicate nel prosieguo.
 
-.Monitoraggio
-Una problematica consiste nell'uso, da parte degli studenti, delle tecnologie per fini non didattici che l'insegnante, mentre è impegnato nella presentazione della teoria o nell'illustrazione delle tecniche e dei metodi, non riesce a rilevare. Capita, infatti, che nelle classi numerose gli studenti aprano video-giochi piuttosto che guardino pagine non inerenti l'attività didattica.
+[[usoNonDidattico]]
+Uso delle tecnologie per fini non didattici::
+gli studenti possono usare i PC del laboratorio per fini non didattici, anche commettendo illeciti, senza che l'insegnante riesca a rilevare l'uso improprio dello strumento informatico. Esempi di usi impropri sono l'uso di video-giochi, già installati sul PC oppure online, la visualizzazione di video, social network, messaggistica istantanea o pagine web non inerenti l'attività didattica, lo svolgimento di compiti di altre materie al PC...
+La mancanza di strumenti di monitoraggio dà allo studente un senso di impunità in quanto l'insegnate non riesce a rilevare in modo esatto l'uso improprio e non può sanzionare il comportamento che non può osservare. 
+////
+Per mitigare la problematica si può intervenire eliminando le fonti di distrazione e monitorando quanto svolto dallo studente. Il monitoraggio non implica che lo studente presti la dovuta attenzione e che s'impegni attivamente ma permette di rilevare, limitare e censurare i comportamenti scorretti.
+////
 
-.Condivisione di videate
-Un'altra problematica è la condivisione delle videate che, sebbene supportata dal proiettore, resta problematica specie per gli studenti delle ultime file.
+[[lontananzaSchermo]]
+Visualizzazione dello schermo dell'insegnante::
+l'insegnante spesso usa il PC per illustrare contenuti e metodi propri della disciplina, come le tecniche di programmazione, e frequentemente le schermate possono risultare di difficile lettura da lontano. Gli studenti che non riescono a visualizzare facilmente la schermata possono perdere facilmente l'attenzione e il coinvolgimento attivo.
+////
+Poter proiettare le schermate sui monitor degli studenti può favorire il porre l'attenzione sugli aspetti rilevanti di un'attività didattica e facilita l'apprendimento nella modalità recettiva cite:[dehaene2020], nella quale si assorbe quanto trasmesso dagli altri senza verificarlo personalmente.
+////
 
-.Stesse versioni del software
-Alle volte il software richiesto per l'attività didattica risulta non disponibile in alcuni PC o installato in versioni diverse e incompatibili.
+[[proiezioneSchermoStudente]]
+Proiezione dello schermo dello studente::
+lo studente non può condividere il proprio schermo con l'insegnante e/o gli altri studenti rendono più complesse le dinamiche sociali dell'apprendimento e il coinvolgimento attivo.
+////
+La condivisione di videate dallo schermo dello studente al proiettore favorisce il coinvolgimento attivo.
+////
 
-.Aggiornamento centralizzato
-L'aggiornamento di un software richiede tempo in quanto ogni postazione deve essere aggiornata.
+[[disponibilitaStessaVersione]]
+Disponibilità del software e in un'unica versione::
+nella configurazione attuale alle volte il software richiesto per l'attività didattica non risulta installato in alcuni PC, oppure lo è ma non è configurato correttamente, oppure è installato in versioni diverse e incompatibili con quella che si desidera usare per la didattica. Ciò crea difficoltà e frustrazione da parte degli studenti e dell'insegnante, riduce l'attenzione e il coinvolgimento.
 
-.Permanenza dei dati
-In casi sporadici capita che gli studenti si autentica al PC e il sistema operativo assegna una sessione temporanea. Alla disconnessione dello studente tutti i dati vengono persi senza possibilità di ripristino.
+////
+Per migliorare la situazione sarebbe utile disporre di un repository condiviso di programmi. Un modo per realizzarlo consiste nel collocare tutti i programmi e le loro dipendenze in un file system di rete accessibile da tutti i computer del laboratorio.
+////
 
-.Controllo _fine_ della rete
-Per alcune verifiche è fatto divieto di accedere a risorse esterne al proprio PC oltre a quelle del servizio di erogazione della prova e allo stato attuale il docente non ha controllo sul filtraggio di rete.
-Casi rilevanti sono i _Campionati italiani e internazionali di Informatica_ e le _Olimpiadi di Informatica a Squadre_ che richiedono di disattivare l'accesso ad Internet ad eccezione della pagina della gara.
+[[costoAggiornamento]]
+Installazioni e aggiornamenti complessi e time-consuming::
+l'installazione o l'aggiornamento di un software richiede l'intervento dell'assistente tecnico e richiede tempo in quanto le stesse operazioni vengono replicate in ogni postazione. La mancanza di un gestore di pacchetti rende rischiosa l'installazione del software sia per l'eventuale presenza di malware che per il rischio di dipendenze insoddisfatte. La situazione induce l'insegnante a pensare che sia troppo oneroso installare o aggiornare un nuovo software per cui conveniente mantenere in uso il software obsoleto piuttosto che quello migliore per la didattica.
+////
+Per risolvere il problema si può ricorrere alla soluzione descritta nel capoverso precedente.
+////
 
-.Blocco delle pubblicità 
-Per l'accesso ad alcune risorse capita che vi siano pubblicità inserite nelle pagine web e queste causano distrazione oltre a poter presentare contenuti non adatti all'ambito scolastico.
+[[volatilitaDatiUtente]]
+Gestione errata della persistenza dei dati degli utenti::
+in casi sporadici, con le versioni di Microsoft Windows (R) installate nei laboratori, succede che all'autenticazione segua la creazione di una sessione temporanea. In tale situazione alla disconnessione dell'utente tutti i dati salvati vengono cancellati senza possibilità di ripristino. La situazione non è controllabile e può causare frustrazione e perdita di dati rilevanti per studenti e insegnanti.
+////
+Per risolvere la problematica potrebbe essere utile prevedere che le cartelle degli utenti siano memorizzate in un file system di rete o un Network Attached Storage (NAS).
+////
 
-.Reti cablata e senza fili unificate
-Le reti cablate e senza fili sono separate e non vi è un bridge che le renda interoperabili. Per un docente è impossibile raccogliere le prove di uno studente che opera con il suo dispositivo senza passare tramite lo scambio, insicuro, di dispositivi di storage o l'uso di piattaforme esterne.
 
-Allo stato attuale le uniche modalità di mitigazione delle problematiche sopra esposte sono l'attenta sorveglianza da parte dell'insegnante e i tempestivi aggiornamenti del software da parte degli assistenti tecnici.
+[[sperimentazioneRete]]
+Impossibilità di sperimentare il software di rete::
+attualmente i laboratori sono collegati alla stessa rete in cui sono presenti altri servizi, anche critici, come quelli di supporto alle Segreterie. Vi sono problemi nel perimetro fisico dei dati che non consentono una sperimentazione sicura. Non si dispone di un diagramma che illustri l'infrastruttura, i servizi e i dispositivi. Questo non permette la sperimentazione sicura del software di rete. Le reti, invece, sono da considerarsi parte integrante del laboratorio di informatica cite:[davoli2012lab(19)] e sono oggetto di studio in tutti gli indirizzi dell'Istituto che hanno l'insegnamento di Informatica.
+////
+Per permettere la sperimentazione con la rete questa deve essere separata dal resto dell'infrastruttura scolastica, deve essere note la topologia, i dispositivi e i servizi di rete e deve essere consentito di avviarne di nuovi.
+////
 
-L'attuale scelta dei sistemi inoltre vincola all'utilizzo di ogni dispositivo come sistema stand-alone e solo con un sistema operativo.
+[[mancanzaControlloRete]]
+Impossibilità di controllo della rete del Laboratorio::
+molte competizioni, tra cui i __Campionati italiani e internazionali di Informatica__ e le __Olimpiadi di Informatica a Squadre__, richiedono di disattivare l'accesso ad Internet ad eccezione della pagina della gara.
+Anche per alcune verifiche potrebbe essere fatto divieto di accedere a risorse esterne al proprio PC oltre a quelle del servizio di erogazione della prova.
+Allo stato attuale il docente non ha nessun controllo sul traffico di rete.
+////
+Per evitare l'accesso a risorse esterne è sufficiente che l'insegnante possa agire su un firewall operante per il solo laboratorio di sua competenza.
+////
 
-Sarebbe auspicabile poter disporre di sistemi operativi aperti, con la possibilità di scegliere il sistema operativo da avviare, software e risorse di calcolo condivise.
+[[politicaPredefinitaFiltraggioRete]]
+Accesso limitato a social network, sistemi di messaggistica e siti di streaming::
+attualmente gli studenti hanno accesso illimitato ai social network, alle piattaforme di messaggistica e a quelle di streaming; queste rappresentano potenziali distrazioni e generano la possibilità che gli studenti commettano, anche involontariamente, degli illeciti.
+////
+L'accesso dovrebbe essere autorizzato solo esplicitamente.
+////
 
-.Accesso limitato a social network e siti di streaming
-Sarebbe auspicabile filtrare l'accesso ai siti di social network e streaming consentendone solo esplicitamente l'accesso.
+[[controlloPubblicita]]
+Impossibilità di blocco delle pubblicità::
+allo stato attuale le pubblicità non sono filtrate. Questo oltre a creare distrazione può sfociare in casi in cui si presentano contenuti non adatti all'ambito scolastico.
+////
+Per evitare queste situazioni il firewall può essere inefficace e si ricorre a filtri applicati al DNS.
+////
 
-.Sistemi a codice sorgente aperto
-Per la didattica del linguaggio C++ (classi terze ITE  SIA e Liceo Scientifico sia Scienze Applicate che opzione Inforatica), dei sistemi operativi (tutte le classi), delle reti di calcolatori (tutte le classi), delle tematiche di cybersicurezza (tutte le classi) sarebbe opportuno lavorare con Sistemi Operativi liberi quali GNU/Linux o BSD.
+[[lanWifiUnificate]]
+Impossibilità di comunicazione tra notebook connessi tramite WiFi e PC connessi tramite cavo::
+nei laboratori non è presente nessun access point e la WLAN è in una rete privata separata da quella LAN. Ciò condiziona gli insegnanti a raccogliere le prove di uno studente che opera con il suo dispositivo a scambiare i file in modo, insicuro, o usando dispositivi di storage (pericolo di malware) o tramite l'uso di piattaforme esterne di cui non ha il controllo.
+////
+La rete cablata e senza fili sono separate e non vi è un bridge che le renda interoperabili.
+////
 
-.Clustering
-Per la sperimentazione di alcuni algoritmi particolarmente onerosi potrebbe richiedere l'utilizzo di più PC come se questi fossero un'unica potente workstation. L'architettura hardware e software deve permettere la creazione di cluster.
-
-.Cloud privato
+[[cloudEsterno]]
+Uso di soluzioni cloud esterne::
+allo stato attuale molti file sono gestiti tramite piattaforme cloud che non memorizzano i dati sul territorio nazionale e che rilasciano i servizi per la scuola allo scopo di creare futuri clienti. Così facendo non si hanno nè la sovranità dei dati, ossia il controllo sulla crittografia e sull'accesso dei dati, nè la sovranità operativa, ossia la visibilità e il controllo sulle operazioni del fornitore, e neppure la sovranità del software, ossia poter eseguire programmi senza dipendere dal software di un fornitore.
+////
 Per riprendere il controllo dei dati ed evitare le preoccupazioni causate dall'uso di servizi cloud gestiti da fornitori esteri, sarebbe interessante da valutare l'introduzione di una piattaforma di condivisione gestita internamente.
+////
+
+[[unicoSistemaOperativo]]
+Uso eslusivo del sistema operativo a sorgente chiuso Windows (R)::
+sulle postazioni del laboratorio è installato il solo sistema operativo Windows (R).
+Tale sistema, sebbene sia molto diffuso e permetta di far girare molto del software disponibile, è chiuso e non permette lo studio del Sistema Operativo stesso.
+Molte applicazioni, tra cui alcune per il monitoraggio della rete, richiedono installazioni complesse. Questa situazione limita le possibilità di didattica sui Sistemi Operativi, le Reti di Elaboratori, delle rete, la Cyber Sicurezza.
+
+////
+L'attuale scelta dei sistemi inoltre vincola all'utilizzo di ogni dispositivo come sistema stand-alone e solo con un sistema operativo.
+Sarebbe auspicabile poter disporre di sistemi operativi aperti, con la possibilità di scegliere il sistema operativo da avviare, software e risorse di calcolo condivise.
+////
+
+[[toolchain]]
+Difficile gestione toolchain di sviluppo::
+Windows (R) ha molti ambienti di sviluppo che sono distribuiti separatamente dal sistema operativo, richiedono un'installazione e non sono standard.
+Per avere una _toolchain_ per il __Linguaggio C++__ (classi terze ITE SIA e Liceo Scientifico sia Scienze Applicate che opzione Informatica), per lo Sviluppo del Web (tutti gli indirizzi con approfondimenti diversi), una __shell__ dei __Sistemi Operativi__ (tutti gli indirizzi), gli strumenti standard di gestione e analisi delle __Reti di Calcolatori__ (tutti gli indirizzi), gli strumenti per la criptografia e la cripto-analisi relative alla __Cyber Sicurezza__ (tutti gli indirizzi sebbene con approfondimenti diversi) è necessario installare software e driver di dispositivo. Queste operazioni richiedono privilegi da super-utente e risultano difficoltose. Tutti i sistemi operativi che derivano da Unix (R), invece, includono questi strumenti come parte integrante della distribuzione.
+
+[[clustering]]
+Condivisione delle risorse di calcolo::
+Gli estensori del documento non conoscono tecniche, sotto Windows (R), per condividere le risorse di calcolo in modo da sperimentare alcuni algoritmi particolarmente onerosi e che richiedono l'utilizzo di più PC come se questi fossero un'unica potente workstation.
+////
+L'architettura hardware e software deve permettere la creazione di cluster.
+////
+
+Allo stato attuale le uniche modalità di mitigazione di alcune delle problematiche sopra esposte sono l'attenta sorveglianza da parte dell'insegnante e i tempestivi aggiornamenti del software da parte degli assistenti tecnici.
 
 === Il Future Lab
 
-.Separazione dall'atrio dell'Aula Magna
-Attualmente il Future Lab non è separato dall'ingresso dell'aula magna e questo causa distrazioni e confusione.
+Il Future Lab viene impiegato come aula disciplinare d'Informatica e ivi si riscontrano le stesse problematiche sono le stesse dei laboratori con l'aggiunta delle seguenti.
 
-.Disponibilità di punti di punti luce
-Attualmente la rete elettrica non dispone di punti luce tranne che sulle colonne e sulle postazioni fisse.
+Mancanza di separazione dall'atrio dell'Aula Magna::
+il Future Lab non è separato dall'ingresso dell'Aula Magna, luogo in cui frequentemente sono ospitati incontri.
+Quando ciò avviene si verificano distrazioni e confusione con perdita di attenzione da parte degli studenti.
+
+Scarsa disponibilità di punti di punti luce::
+la rete elettrica non dispone di punti luce ad eccezione di alcune colonne e delle postazioni fisse.
+////
 Andrebbero create delle strutture per ospitare delle prese elettriche funzionali all'ambiente.
+////
 
-.Disponibilità di punti prese di rete
-Attualmente la rete dati dispone di prese ethernet solo nelle postazioni fisse.
+Scarsa disponibilità di punti prese di rete::
+la rete dati dispone di prese ethernet solo nelle postazioni fisse.
+////
 Nelle strutture presso le quali ospitare le prese elettriche sarebbero da integrare prese per la rete cablata e/o switch.
+////
+
+Indisponibilità di PC/notebook dedicati al Future Lab::
+non vi sono PC o notebook predisposti per questo ambiente e quindi si deve confidare nei dispositivi degli studenti.
+
+////
+Si potrebbero utilizzare o i notebook dei laboratori mobili, fra cui i circa 30 presenti nel magazzino del Benincasa e non ancora utilizzati, o anche acquistare dei sistemi economici realizzati appositamente per la didattica quali le https://www.raspberrypi.com/products/raspberry-pi-400/[Rasperry Pi 400]. L'acquisto deve riguardare anche monitor con interfaccia HDMI. 
+////
+
+== Proposta di soluzioni ICT
+
+=== Il quadro normativo sull'acquisto delle soluzioni ICT
+
+Per la valutazione e la proposta di soluzioni software consideriamo il quadro normativo fissato dal Codice dell'Amministrazione Digitale cite:[cad], in particolare gli artt. https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2018-09-28/_rst/capo6_art69.html[68] e https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2018-09-28/_rst/capo6_art69.html[69].
+
+.Art. 68. Analisi comparativa delle soluzioni
+[quote,Codice per l'Amministrazione Digitale, Capo VI. SVILUPPO, ACQUISIZIONE E RIUSO DI SISTEMI INFORMATICI NELLE PUBBLICHE AMMINISTRAZIONI]
+....
+1. Le pubbliche amministrazioni acquisiscono programmi informatici o parti di essi nel rispetto dei principi di economicità e di efficienza, tutela degli investimenti, riuso e neutralità tecnologica, a seguito di una valutazione comparativa di tipo tecnico ed economico tra le seguenti soluzioni disponibili sul mercato:
+
+  a) software sviluppato per conto della pubblica amministrazione;
+  b) riutilizzo di software o parti di esso sviluppati per conto della pubblica amministrazione;
+  c) software libero o a codice sorgente aperto;
+  d) software fruibile in modalità cloud computing;
+  e) software di tipo proprietario mediante ricorso a licenza d'uso;
+  f) software combinazione delle precedenti soluzioni.
+
+1-bis. A tal fine, le pubbliche amministrazioni prima di procedere all'acquisto, secondo le procedure di cui al codice di cui al decreto legislativo ((n. 50 del 2016)), effettuano una valutazione comparativa delle diverse soluzioni disponibili sulla base dei seguenti criteri:
+
+  a) costo complessivo del programma o soluzione quale costo di acquisto, di implementazione, di mantenimento e supporto;
+  b) livello di utilizzo di formati di dati e di interfacce di tipo aperto nonché di standard in grado di assicurare l'interoperabilità e la cooperazione applicativa tra i diversi sistemi informatici della pubblica amministrazione;
+  c) garanzie del fornitore in materia di livelli di sicurezza, conformità alla normativa in materia di protezione dei dati personali, livelli di servizio tenuto conto della tipologia di software acquisito.
+
+ 1-ter. Ove dalla valutazione comparativa di tipo tecnico ed economico, secondo i criteri di cui al comma 1-bis, risulti motivatamente l'impossibilità di accedere a soluzioni già disponibili all'interno della pubblica amministrazione, o a software liberi o a codici sorgente aperto, adeguati alle esigenze da soddisfare, è consentita l'acquisizione di programmi informatici di tipo proprietario mediante ricorso a licenza d'uso. La valutazione di cui al presente comma è effettuata secondo le modalità e i criteri definiti dall'AgID.
+....
+
+.Art. 69. Riuso delle soluzioni e standard aperti
+[quote,Codice per l'Amministrazione Digitale, Capo VI. SVILUPPO, ACQUISIZIONE E RIUSO DI SISTEMI INFORMATICI NELLE PUBBLICHE AMMINISTRAZIONI]
+.... 
+ 1. Le pubbliche amministrazioni che siano titolari di soluzioni e programmi informatici realizzati su specifiche indicazioni del committente pubblico, hanno l'obbligo di rendere disponibile il relativo codice sorgente, completo della documentazione e rilasciato in repertorio pubblico sotto licenza aperta, in uso gratuito ad altre pubbliche amministrazioni o ai soggetti giuridici che intendano adattarli alle proprie esigenze, salvo motivate ragioni di ordine e sicurezza pubblica, difesa nazionale e consultazioni elettorali.
+
+ 2. Al fine di favorire il riuso dei programmi informatici di proprietà delle pubbliche amministrazioni, ai sensi del comma 1, nei capitolati o nelle specifiche di progetto è previsto, salvo che ciò risulti eccessivamente oneroso per comprovate ragioni di carattere tecnico-economico, che l'amministrazione committente sia sempre titolare di tutti i diritti sui programmi e i servizi delle tecnologie dell'informazione e della comunicazione, appositamente sviluppati per essa.
+
+ 2-bis. Al medesimo fine di cui al comma 2, il codice sorgente, la documentazione e la relativa descrizione tecnico funzionale di tutte le soluzioni informatiche di cui al comma 1 sono pubblicati attraverso una o più piattaforme individuate dall'AgID con proprie Linee guida.
+....
+
+Per l'applicazione si rimanda a cite:[lineeGuidaAgID].
+
+Si tengono in considerazione, in particolare:
+
+comma **1** lettera **c**:: software libero o a codice sorgente aperto
+comma **1-bis** lettera **a**:: costo complessivo del programma o soluzione
+comma **1-bis** lettera **b**:: ...utilizzo di formati di dati e di interfacce di tipo aperto...
+
+Un'analisi estesa della normativa e del perché è volutamente e dichiaratamente ignorata è in cite:[meo2022].
+
+=== Alcuni punti di vista in favore del Software Libero
 
 
-.Disponibilità di PC/notebook
-Non vi sono PC o notebook predisposti per questo ambiente e quindi si deve confidare nei dispositivi degli studenti. Si potrebbero utilizzare o i notebook dei laboratori mobili, fra cui i circa 30 presenti nel magazzino del Benincasa e non ancora utilizzati, o anche aquistare dei sistemi economici realizzati appositamente per la didattica quali le https://www.raspberrypi.com/products/raspberry-pi-400/[Rasperry Pi 400]. L'acquisto deve riguardare anche monitor con interfaccia HDMI. 
+Nella didattica dell'informatica si avverte una pressione che spinge le istituzioni scolastiche verso scelte opposte a quelle formativo ed educativo cite:[rmsEduSchools, rmsSaaSS, tesioAScuolaGoogle, zoja2022]:
 
-.Altre problematiche
-Le altre problematiche sono le stesse dei laboratori
+* addestramento all'uso di tecnologie, hardware e/o software, proprietarie;
+* uso di servizi come surrogato del software;
+* la cessione dei dati alle grandi multinazionali che operano nel settore ICT.
+
+////
+Attualmente molti software installati sui computer dei laboratori sono rilasciate con licenze software payware (e.g. Microsoft Office (R)), shareware (e.g. WinZip (R)) e freeware (e.g. Acrobat Reader (R)).
+////
+
+// Adattato da http://cs.unibo.it/~renzo/00-uso_lab.pdf
+Il passaggio al software libero garantisce all'utente, insegnante o studente, quattro libertà in più cite:[rmsFreeSw]:
+
+[start=0]
+. Libertà di eseguire il programma, per qualsiasi scopo.
+. Libertà di studiare come funziona il programma ed adattarlo alle proprie necessità.
+. Libertà di ridistribuire copie in modo da aiutare il prossimo.
+. Libertà di migliorare il programma e distribuirne pubblicamente i miglioramenti, in modo tale che tutta la comunità ne tragga beneficio.
+
+L'accesso al codice sorgente è un prerequisito per la seconda e la quarta libertà.
+
+Si rimanda agli articoli della Free Software Foundation per maggiori dettagli sul tema etico: cite:[fsfEduFAQ,fsfEdu,fsfEduWhy,rmsEduSchools].
+
+Molti docenti universitari si sono fatti promotori del software libero nelle Università e nelle Scuole.
+
+
+Davoli cite:[davoli2010LD] offre molti spunti di riflessione sulla didattica dell'informatica in tutti i cicli scolastici indicando gli oggetti e gli strumenti di studio e per lo studio. Davoli afferma che la scuola deve usare soltanto software libero.
+
+[quote,Renzo Davoli, L'informatica nella Scuola: strumenti e metodi, scienza e tecnologia. La libertà di usare il software libero]
+____
+* Una scuola che non consenta di poter capire come funzionano gli strumenti che usa è la negazione di se stessa
+* Una scuola senza sapere libero non istiga alla curiosità e spreca denaro pubblico
+* La scuola mai deve essere parziale, e.g. i libri di testo non devono contenere messaggi pubblicitari
+* La scuola deve pensare al futuro dei propri studenti (risparmi immediati, soluzioni "chiavi in mano", possono portare a costi di dipendenza futuri)
+* La scuola deve sempre educare alla condivisione della conoscenza, deve essere un luogo di aggregazione di idee, dove si insegna il rispetto, l'aiuto vicendevole e l'impegno sociale.
+
+cite:[davoli2010LD(23)]
+____
+
+Sempre Davoli cite:[davoli2012lab], giustifica l'uso del software libero nelle università con motivazioni didattiche e filosofiche:
+
+[quote,Renzo Davoli, ...tutto quello che avreste voluto sapere sui laboratori ma non avete mai osato chiedere...]
+____
+* stimola lo spirito critico; nulla è segreto o nascosto, ogni curiosità conoscitiva può essere soddisfatta
+* dovere di imparzialità: il software è un mezzo, non un fine
+* massima accessibilità e uguali possibilità a tutti gli studenti (non possiamo forzarli a pagare e/o piratare software)
+* materiale di studio: non solo 5-minute exercises, hands-on su progetti software enormi
+* perché usare software libero porta con sé un un messaggio etico intrinseco
+
+cite:[davoli2012lab(26)]
+____
+
+Per l'autore i motivi didattici sono importanti ma paiono un ragionamento _a fortiori_ in quanto per Davoli il software libero presenta intrinsecamente almeno i seguenti vantaggi:
+
+[quote,Renzo Davoli, ...tutto quello che avreste voluto sapere sui laboratori ma non avete mai osato chiedere...]
+____
+vantaggi di sicurezza:: aumenta il numero di occhi che possono risolvere bug di sicurezza → contrasta i pirati informatici
+vantaggi qualitativi:: tutti possono guardare il mio codice, devo fare bella figura!
+vantaggi comunitari:: l'accesso al codice favorisce la formazione di comunità interessate a migliorarlo
+vantaggi per i power user:: piego i miei strumenti al mio volere
+vantaggi economici:: minore TCO, indipendenza da possibili monopoli (il codice è [anche] mio e [se proprio devo] me lo gestisco io!)
+
+cite:[davoli2012lab(25)]
+____
+
+Meo concentra l'attenzione sul valore sociale del software libero cite:[berra2001informatica,berra2006informatica] e propone un'analisi storica del software libero, in particolare in Italia cite:[meo2022], avendo presieduto la Commissione Stanca sul software Open Source (2003) da cui derivarono gli articoli 68 e 69 della legge 82/05 cite:[cad] e la seconda commissione sul software Open Source nella Pubblica Amministrazione (2007) questa volta istituita dal ministro Nicolais. Nell'illustrare il quadro normativo italiano ed europeo, e presentare l'aggravarsi dell'uso di software severamente vietati dalla norma italiana e comunitaria e ammonisce i decisori pubblici, che individua nei dirigenti scolastici, affinché non debbano motivare le loro scelte alla Corte dei Conti e al Garante della Protezione dei Dati Personali.
+
+[quote, Angelo Raffaele Meo, Scuola e università: perché preferire il software libero]
+____
+Conclusioni
+
+
+Molti studiosi ritengono che oggi l'informatica libera rappresenti l'unico strumento disponibile per il progresso tecnologico ed economico dei Paesi poveri e anche di un Paese come il nostro. Per questa ragione alcune norme di legge italiane e/o comunitarie impongono l'adozione di software libero in sostituzione del software proprietario. Sfortunatamente, quelle norme sono spesso disattese e, nell'area della scuola, sono volutamente e dichiaratamente ignorate (rimando al bellissimo articolo di Stefano Zoia La scuola italiana al mercato dei dati. Così il controllo sulla didattica rafforza lo strapotere delle multinazionali, “Altreconomia”).
+
+Temo che la grande maggioranza dei dirigenti scolastici che hanno adottato software proprietario non sappia dove trovare una adeguata relazione comparativa che giustifichi la scelta e non disponga di dati importanti in un formato aperto. Di conseguenza quei dirigenti scolastici non potrebbero difendersi dalle accuse di "danno erariale" provenienti da un magistrato della Corte dei Conti. Quasi tutti i dirigenti scolastici e molti rettori di università potrebbero essere colpiti da pesantissime sanzioni del Garante della protezione dei dati personali.
+
+L'analisi della realtà induce a pensare che le accuse di danno erariale e le sanzioni del Gpdp siano attualmente molto improbabili. Tuttavia, per scelte politiche diverse la realtà potrebbe cambiare nell'arco di pochi giorni. A quel punto la giustificazione "così fanno tutti" non potrebbe essere giustificata perché i testi delle leggi vigenti sono molto chiari.
+____
+
+
+* https://scuolalibera.continuity.space/lettera-professor-meo[Lettera alla ministra Azzolina] di Angelo Raffale Meo
+* https://iamarf.org/2022/12/09/libreitalia-conference-2022/[Importanza del Free and Open Source Software (FOSS) per l'istruzione.] di https://iamarf.org/[Andreas Formiconi]
+
 
 == Requisiti dell'ambiente laboratoriale di Informatica
 
@@ -130,6 +362,7 @@ Le applicazioni che dovrebbero essere installate sono:
 .... https://it.m.wikipedia.org/wiki/File:LibreOffice_6.1_Impress_Icon.svg[LibreOffice Impress]
 .... https://it.libreoffice.org/scopri/math/[LibreOffice Math]
 .... https://it.libreoffice.org/scopri/writer/[LibreOffice Writer]
+.... https://help.libreoffice.org/latest/it/text/swriter/librelogo/LibreLogo.html[LibreLogo]
 ... Software per la lettura dei PDF
 .. Software per l'editoria
 ... https://www.tug.org/texlive/[TeX Live]
@@ -244,7 +477,7 @@ Se il boot avviene con FUSS Client, allora la rete è la "192.168.2.x/24", il de
 In alternativa a FUSS potrebbe essere valido il software del progetto https://sodilinux.itd.cnr.it/[SoDiLinux] anche se più datato.
 
 .Architettura di rete
-[plantuml, "target=architettura-alto-livello", format="svg"]   
+[plantuml, target="architettura-alto-livello", format="svg"]   
 ....
 nwdiag {
   Rete_esterna [shape = cloud desccription="Internet"];
@@ -528,54 +761,14 @@ Per qeusta soluzione, già implementata in altre scuole, possiamo sentire il tec
 * Rinnovo costi di licenza nel caso di software proprietario (Microsoft Windows (R)) sul server;
 * Necessità di ingenti risorse di calcolo e di archiviazione sul server.
 
-== Migrazione al Software Libero e art. 68 CAD
 
-Per ridurre, se non azzerare, i costi di licenza del software in uso nei laboratori si potrebbe installare Linux, oppure BSD, come sistema operativo.
+[bibliography]
+== Riferimenti
 
-Questa opzione è da considerarsi in ottemperanza all'art. 68 del Codice per l'Amministrazione Digitale:
-
-.Art. 68. Analisi comparativa delle soluzioni
-[quote,Codice per l'Amministrazione Digitale, Capo VI. SVILUPPO, ACQUISIZIONE E RIUSO DI SISTEMI INFORMATICI NELLE PUBBLICHE AMMINISTRAZIONI]
-....
-1. Le pubbliche amministrazioni acquisiscono programmi informatici o parti di essi nel rispetto dei principi di economicità e di efficienza, tutela degli investimenti, riuso e neutralità tecnologica, a seguito di una valutazione comparativa di tipo tecnico ed economico tra le seguenti soluzioni disponibili sul mercato:
-
-  a) software sviluppato per conto della pubblica amministrazione;
-  b) riutilizzo di software o parti di esso sviluppati per conto della pubblica amministrazione;
-  c) software libero o a codice sorgente aperto;
-  d) software fruibile in modalità cloud computing;
-  e) software di tipo proprietario mediante ricorso a licenza d'uso;
-  f) software combinazione delle precedenti soluzioni.
-
-1-bis. A tal fine, le pubbliche amministrazioni prima di procedere all'acquisto, secondo le procedure di cui al codice di cui al decreto legislativo ((n. 50 del 2016)), effettuano una valutazione comparativa delle diverse soluzioni disponibili sulla base dei seguenti criteri:
-
-  a) costo complessivo del programma o soluzione quale costo di acquisto, di implementazione, di mantenimento e supporto;
-  b) livello di utilizzo di formati di dati e di interfacce di tipo aperto nonché di standard in grado di assicurare l'interoperabilità e la cooperazione applicativa tra i diversi sistemi informatici della pubblica amministrazione;
-  c) garanzie del fornitore in materia di livelli di sicurezza, conformità alla normativa in materia di protezione dei dati personali, livelli di servizio tenuto conto della tipologia di software acquisito.
-
- 1-ter. Ove dalla valutazione comparativa di tipo tecnico ed economico, secondo i criteri di cui al comma 1-bis, risulti motivatamente l'impossibilità di accedere a soluzioni già disponibili all'interno della pubblica amministrazione, o a software liberi o a codici sorgente aperto, adeguati alle esigenze da soddisfare, è consentita l'acquisizione di programmi informatici di tipo proprietario mediante ricorso a licenza d'uso. La valutazione di cui al presente comma è effettuata secondo le modalità e i criteri definiti dall'AgID.
-....
-
-Il rimando normativo è alle https://www.agid.gov.it/sites/default/files/repository_files/lg-acquisizione-e-riuso-software-per-pa-docs_pubblicata.pdf[Linee guida su acquisizione e riuso di software per le pubbliche amministrazioni].
-
-Si evidenziano:
-
-comma **1** lettera **c**:: software libero o a codice sorgente aperto
-comma **1-bis** lettera **a**:: costo complessivo del programma o soluzione
-comma **1-bis** lettera **b**:: [...]utilizzo di formati di dati e di interfacce di tipo aperto[...]
-
-A favore di questa opzione si citano le argomentazioni
-
-
-* della Free Software Foundation:
-
-** https://www.gnu.org/education/edu-schools.html[Perché la scuola deve usare esclusivamente software libero] di Richard Stallman
-* https://www.gnu.org/education/edu-faq.it.html[Domande ricorrenti su software libero ed istruzione]
-
-* di alcuni dei più illustri professori italiani di Informatica:
-
-** https://gliasinirivista.org/scuola-e-universita-perche-preferire-il-software-libero/[Scuola e università: perché preferire il software libero] di https://www.polito.it/personale?p=angelo.meo[Angelo Raffale Meo]
-** https://scuolalibera.continuity.space/lettera-professor-meo[Lettera alla ministra Azzolina] di Angelo Raffale Meo
-* https://iamarf.org/2022/12/09/libreitalia-conference-2022/[Importanza del Free and Open Source Software (FOSS) per l'istruzione.] di https://iamarf.org/[Andreas Formiconi]
-** http://erlug.linux.it/linuxday/2010/contrib/davoli_bo.gld.2010.odp[L'informatica nella Scuola: strumenti e metodi, scienza e tecnologia. La libertà di usare il Software Libero] di https://www.cs.unibo.it/~renzo/[Renzo Davoli]
+bibliography::[]
 
 Gionata Massi per il Dipartimento di Informatica
+
+https://www.gnu.org/philosophy/who-does-that-server-really-serve.it.html
+https://www.gnu.org/education/edu-why.html
+https://www.gnu.org/education/edu-schools.html
