@@ -1,0 +1,137 @@
+=== Orientamenti in favore del Software Libero
+
+Nella didattica dell'informatica si avverte una pressione che spinge le istituzioni scolastiche verso scelte opposte a quelle formativo ed educativo cite:[rmseduschools, rmssaass, tesioascuolagoogle, zoja2022]:
+
+* addestramento all'uso di tecnologie, hardware e/o software, proprietarie;
+* uso di servizi come surrogato del software;
+* la cessione dei dati alle grandi multinazionali che operano nel settore ICT.
+
+Il messaggio commerciale raggiunge gli insegnanti in modo più forte e capillare di quello scientifico. Vista la grande quantità di informazioni provenienti dalle aziende del __settore education__  e considerata la normativa, si considereranno gli orientamenti provenienti dalle organizzazioni con fini sociali e scientifici.
+
+////
+Attualmente molti software installati sui computer dei laboratori sono rilasciate con licenze software payware (e.g. Microsoft Office (R)), shareware (e.g. WinZip (R)) e freeware (e.g. Acrobat Reader (R)).
+////
+
+La Free Software Foundation argomenta che passaggio al Software Libero garantisce all'utente, insegnante o studente, quattro libertà in più cite:[rmsfreesw]:
+
+[start=0]
+. Libertà di eseguire il programma, per qualsiasi scopo.
+. Libertà di studiare come funziona il programma ed adattarlo alle proprie necessità.
+. Libertà di ridistribuire copie in modo da aiutare il prossimo.
+. Libertà di migliorare il programma e distribuirne pubblicamente i miglioramenti, in modo tale che tutta la comunità ne tragga beneficio.
+
+L'accesso al codice sorgente è un prerequisito per la seconda e la quarta libertà.
+
+Per maggiori dettagli sul tema etico e sulla necessità di usare esclusivamente il Software Libero nelle scuole si rimanda agli articoli cite:[fsfedufaq,fsfedu,fsfeduwhy,rmseduschools].
+
+Molti docenti universitari, principalmente quelli operanti nel settore dell'Informatica, si sono fatti promotori del Software Libero nelle Università e nelle Scuole.
+
+Davoli cite:[davoli2010ld] offre molti spunti di riflessione sulla didattica dell'informatica in tutti i cicli scolastici indicando gli oggetti e gli strumenti di studio e per lo studio. Egli ritiene che la scuola deve usare soltanto Software Libero.
+
+[quote,Renzo Davoli, L'informatica nella Scuola: strumenti e metodi, scienza e tecnologia. La libertà di usare il Software Libero]
+____
+* Una scuola che non consenta di poter capire come funzionano gli strumenti che usa è la negazione di se stessa
+* Una scuola senza sapere libero non istiga alla curiosità e spreca denaro pubblico
+* La scuola mai deve essere parziale, e.g. i libri di testo non devono contenere messaggi pubblicitari
+* La scuola deve pensare al futuro dei propri studenti (risparmi immediati, soluzioni "chiavi in mano", possono portare a costi di dipendenza futuri)
+* La scuola deve sempre educare alla condivisione della conoscenza, deve essere un luogo di aggregazione di idee, dove si insegna il rispetto, l'aiuto vicendevole e l'impegno sociale.
+
+cite:[davoli2010ld(23)]
+____
+
+Sempre Davoli cite:[davoli2012lab] argomenta a favore dell'uso del Software Libero nelle università con motivazioni didattiche e filosofiche:
+
+[quote,Renzo Davoli, ...tutto quello che avreste voluto sapere sui laboratori ma non avete mai osato chiedere...]
+____
+* stimola lo spirito critico; nulla è segreto o nascosto, ogni curiosità conoscitiva può essere soddisfatta
+* dovere di imparzialità: il software è un mezzo, non un fine
+* massima accessibilità e uguali possibilità a tutti gli studenti (non possiamo forzarli a pagare e/o piratare software)
+* materiale di studio: non solo 5-minute exercises, hands-on su progetti software enormi
+* perché usare Software Libero porta con sé un un messaggio etico intrinseco
+
+cite:[davoli2012lab(26)]
+____
+
+Davoli non considera solo i motivi didattici ma sostiene che il Software Libero presenta è intrinsecamente migliore di quello proprietario in quanto presenta i seguenti vantaggi:
+
+[quote,Renzo Davoli, ...tutto quello che avreste voluto sapere sui laboratori ma non avete mai osato chiedere...]
+____
+vantaggi di sicurezza:: aumenta il numero di occhi che possono risolvere bug di sicurezza → contrasta i pirati informatici
+vantaggi qualitativi:: tutti possono guardare il mio codice, devo fare bella figura!
+vantaggi comunitari:: l'accesso al codice favorisce la formazione di comunità interessate a migliorarlo
+vantaggi per i power user:: piego i miei strumenti al mio volere
+vantaggi economici:: minore TCO, indipendenza da possibili monopoli (il codice è [anche] mio e [se proprio devo] me lo gestisco io!)
+
+cite:[davoli2012lab(25)]
+____
+
+Meo concentra l'attenzione sul valore sociale cite:[berra2001informatica,berra2006informatica] del Software Libero e ne propone un'analisi storica sull'evoluzione della sua adozione in Italia cite:[meo2022].
+Egli presenta gli aspetti normativi avendo presieduto la Commissione Stanca sul software Open Source (2003) da cui derivarono gli articoli 68 e 69 della legge 82/05 cite:[cad] e la seconda commissione sul software Open Source nella Pubblica Amministrazione (2007) istituita dal ministro Nicolais. Illustra con dovizia di particolari il quadro normativo italiano ed europeo, analizza l'aggravarsi dell'uso di software proprietari, severamente vietati dalla norma italiana e comunitaria, e ammonisce i decisori pubblici, che individua nei dirigenti scolastici, affinché non debbano motivare le loro scelte alla Corte dei Conti e al Garante della Protezione dei Dati Personali.
+
+[[meoNormativa,estratto "da Scuola e università: perché preferire il Software Libero"]]
+[quote, Angelo Raffaele Meo, Scuola e università: perché preferire il Software Libero]
+____
+Molti studiosi ritengono che oggi l'informatica libera rappresenti l'unico strumento disponibile per il progresso tecnologico ed economico dei Paesi poveri e anche di un Paese come il nostro. Per questa ragione alcune norme di legge italiane e/o comunitarie impongono l'adozione di Software Libero in sostituzione del software proprietario. Sfortunatamente, quelle norme sono spesso disattese e, nell'area della scuola, sono volutamente e dichiaratamente ignorate (rimando al bellissimo articolo di Stefano Zoja La scuola italiana al mercato dei dati. Così il controllo sulla didattica rafforza lo strapotere delle multinazionali, "Altreconomia").
+
+Temo che la grande maggioranza dei dirigenti scolastici che hanno adottato software proprietario non sappia dove trovare una adeguata relazione comparativa che giustifichi la scelta e non disponga di dati importanti in un formato aperto. Di conseguenza quei dirigenti scolastici non potrebbero difendersi dalle accuse di "danno erariale" provenienti da un magistrato della Corte dei Conti. Quasi tutti i dirigenti scolastici e molti rettori di università potrebbero essere colpiti da pesantissime sanzioni del Garante della protezione dei dati personali.
+
+L'analisi della realtà induce a pensare che le accuse di danno erariale e le sanzioni del Gpdp siano attualmente molto improbabili. Tuttavia, per scelte politiche diverse la realtà potrebbe cambiare nell'arco di pochi giorni. A quel punto la giustificazione "così fanno tutti" non potrebbe essere giustificata perché i testi delle leggi vigenti sono molto chiari.
+____
+
+Meo ha sollecitato varie volte il decisore pubblico nella scelta del Software Libero nella scuola, chiamando in causa, tra gli ultimi, la ministra Azzolina cite:[meoletteraazzolina].
+
+[quote,Meo]
+____
+[omissis]
+Negli ultimi anni le tecnologie di intrusione malevola hanno registrato progressi clamorosi, per cui quello che è successo con Zoom potrebbe verificarsi in qualunque momento su qualunque altra tecnologia proprietaria. Per questa ragione noi riteniamo che nelle applicazioni della Pubblica Amministrazione che implichino il trattamento di dati personali, e in particolare nelle applicazioni per la scuola, si dovrebbe vietare per legge l'uso di prodotti dei quali non sia conosciuto il codice sorgente.
+
+[omissis]
+Ricordo anche che le scuole sono tenute a scegliere le soluzioni da acquisire solo dopo aver realizzato la valutazione comparativa prevista dall'art. 68 del D. Lgs. 82/2005, che impone di preferire Software Libero: sarebbe importante che il Ministero supportasse le scuole nell'adempiere a quest'obbligo.
+
+Inoltre, Le chiedo il favore di adoperarsi per la promulgazione di una legge che:
+
+[loweralpha]
+. Proibisca l'uso di software proprietario nelle applicazioni della Pubblica Amministrazione che implicano il trattamento di dati personali
+. Obblighi ad usare formati di file standard e aperti
+. Consenta l'uso di infrastrutture IT in Cloud soltanto se queste sono nel controllo della pubblica amministrazione Italiana (Private Cloud).
+
+cite:[meoletteraazzolina]
+____
+
+Formiconi espone la sua visione sul Software Libero nelle scuole sul suo blog cite:[formiconiblob] e propone corsi MOOC sul Coding a scuola con Software Libero cite:[formiconiedx,formiconifederica].
+
+
+A livello comunitario la http://www.eun.org/[European Schoolnet] ha promosso un  tutorial cite:[georgiadi2020], tramite il portale School Education Gateway, che che propone alle scuole vari software liberi.
+
+[quote]
+____
+* Per tutta la scuola
+
+*Per supportare la vita digitale degli studenti*: https://joinmastodon.org/[Mastodon] (per creare un social network scolastico locale e sicuro), https://etherpad.org/[Etherpad] (per prendere appunti in collaborazione), https://mahara.org/[Mahara] (per creare portfolio online), https://www.zotero.org/[Zotero] (per raccogliere fonti e inserire bibliografie), https://klavaro.sourceforge.io/[Klavaro] (touch typing, una tecnica che permette di scrivere più velocemente con una tastiera)
+
+*Nella biblioteca scolastica*: https://koha-community.org/[Koha] e https://vufind.org/[VuFind] (gestione della biblioteca)
+
+*Per l’apprendimento online*: https://moodle.com/[Moodle] (per arricchire le lezioni in presenza), https://open.edx.org/[Open edX] (per i corsi online)
+
+*Per l’amministrazione*: https://www.opensis.com/[openSIS], http://richtech.ca/[Open Admin] e https://gibbonedu.org/[Gibbon] (gestione dati degli studenti)
+
+*Per gruppi e organi studenteschi e genitori*: https://www.loomio.org/[Loomio] (discussione e processo decisionale)
+
+*Per il laboratorio informatico*: https://veyon.io/[Veyon] (per vedere e gestire i computer)
+
+*Per test digitali*: https://tcexam.org/[TCExam] e https://www.techjockey.com/blog/7-free-open-source-exam-software[altri]
+
+* Per gli insegnanti
+
+*Per storia*: https://opensource.com/article/18/10/create-interactive-timelines-open-source-tool[TimelineJS] (per creare facilmente linee del tempo)
+
+*Per le lingue*: https://apps.ankiweb.net/[Anki] (carte con parole e immagini)
+
+*Per le arti*: https://www.blender.org/features/video-editing/[Blender] (per creare film animati), http://www.lenmus.org/[LenMus] (per studiare teoria musicale), https://musescore.org/[MuseScore] e https://opensource.com/life/16/2/5-music-making-tools[altri] (per creare e eseguire spartiti)
+
+*Per geografia*: https://celestia.space/[Celestia] (esplorazione dello https://www.youtube.com/watch?v=YwR6ET_m1FE[spazio]), https://marble.kde.org/[Marble] (atlanti virtuali del globo)
+
+*Per le STEM*: https://www.gnu.org/software/fisicalab/[FisicaLab] (per esplorare i problemi di fisica)
+
+cite:[georgiadi2020]
+____

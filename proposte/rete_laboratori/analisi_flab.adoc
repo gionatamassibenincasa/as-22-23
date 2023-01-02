@@ -1,0 +1,30 @@
+=== Problematiche del Future Lab
+
+Il Future Lab viene impiegato come aula disciplinare d'Informatica e ivi si riscontrano le stesse problematiche sono le stesse dei laboratori con l'aggiunta delle seguenti.
+
+[[spazioCondiviso]]
+Mancanza di separazione dall'atrio dell'Aula Magna::
+il Future Lab non è separato dall'ingresso dell'Aula Magna, luogo in cui frequentemente sono ospitati incontri.
+Quando ciò avviene si verificano distrazioni e confusione con perdita di attenzione da parte degli studenti.
+
+[[mancanzaPreseElettriche]]
+Scarsa disponibilità di prese elettriche::
+la rete elettrica non dispone di punti luce ad eccezione di alcune colonne e delle postazioni fisse.
+////
+Andrebbero create delle strutture per ospitare delle prese elettriche funzionali all'ambiente.
+////
+
+[[mancanzaPreseRete]]
+Scarsa disponibilità di punti prese di rete::
+la rete dati dispone di prese ethernet solo nelle postazioni fisse.
+////
+Nelle strutture presso le quali ospitare le prese elettriche sarebbero da integrare prese per la rete cablata e/o switch.
+////
+
+[[mancanzaComputer]]
+Indisponibilità di PC/notebook dedicati al Future Lab::
+non vi sono PC o notebook predisposti per questo ambiente e quindi si deve confidare nei dispositivi degli studenti.
+////
+Si potrebbero utilizzare o i notebook dei laboratori mobili, fra cui i circa 30 presenti nel magazzino del Benincasa e non ancora utilizzati, o anche acquistare dei sistemi economici realizzati appositamente per la didattica quali le https://www.raspberrypi.com/products/raspberry-pi-400/[Rasperry Pi 400]. L'acquisto deve riguardare anche monitor con interfaccia HDMI. 
+////
+

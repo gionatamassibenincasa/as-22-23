@@ -1,0 +1,116 @@
+=== Problematiche dei Laboratori d'Informatica
+
+L'attività didattica in laboratorio richiede un'adeguata predisposizione dei PC e dei collegamenti che non sempre si riscontra nelle attuali condizioni. Alcune situazioni problematiche sono indicate nel prosieguo.
+
+[[usoNonDidattico]]
+Uso delle tecnologie per fini non didattici::
+gli studenti possono usare i PC del laboratorio per fini non didattici, anche commettendo illeciti, senza che l'insegnante riesca a rilevare l'uso improprio dello strumento informatico. Esempi di usi impropri sono l'uso di video-giochi, già installati sul PC oppure online, la visualizzazione di video, social network, messaggistica istantanea o pagine web non inerenti l'attività didattica, lo svolgimento di compiti di altre materie al PC...
+La mancanza di strumenti di monitoraggio dà allo studente un senso di impunità in quanto l'insegnate non riesce a rilevare in modo esatto l'uso improprio e non può sanzionare il comportamento che non può osservare. 
+////
+Per mitigare la problematica si può intervenire eliminando le fonti di distrazione e monitorando quanto svolto dallo studente. Il monitoraggio non implica che lo studente presti la dovuta attenzione e che s'impegni attivamente ma permette di rilevare, limitare e censurare i comportamenti scorretti.
+////
+
+[[lontananzaSchermo]]
+Visualizzazione dello schermo dell'insegnante::
+l'insegnante spesso usa il PC per illustrare contenuti e metodi propri della disciplina, come le tecniche di programmazione, e frequentemente le schermate possono risultare di difficile lettura da lontano. Gli studenti che non riescono a visualizzare facilmente la schermata possono perdere facilmente l'attenzione e il coinvolgimento attivo.
+////
+Poter proiettare le schermate sui monitor degli studenti può favorire il porre l'attenzione sugli aspetti rilevanti di un'attività didattica e facilita l'apprendimento nella modalità recettiva cite:[dehaene2020], nella quale si assorbe quanto trasmesso dagli altri senza verificarlo personalmente.
+////
+
+[[proiezioneSchermoStudente]]
+Proiezione dello schermo dello studente::
+lo studente non può condividere il proprio schermo con l'insegnante e/o gli altri studenti rendono più complesse le dinamiche sociali dell'apprendimento e il coinvolgimento attivo.
+////
+La condivisione di videate dallo schermo dello studente al proiettore favorisce il coinvolgimento attivo.
+////
+
+[[disponibilitaStessaVersione]]
+Disponibilità del software e in un'unica versione::
+nella configurazione attuale alle volte il software richiesto per l'attività didattica non risulta installato in alcuni PC, oppure lo è ma non è configurato correttamente, oppure è installato in versioni diverse e incompatibili con quella che si desidera usare per la didattica. Ciò crea difficoltà e frustrazione da parte degli studenti e dell'insegnante, riduce l'attenzione e il coinvolgimento.
+
+////
+Per migliorare la situazione sarebbe utile disporre di un repository condiviso di programmi. Un modo per realizzarlo consiste nel collocare tutti i programmi e le loro dipendenze in un file system di rete accessibile da tutti i computer del laboratorio.
+////
+
+[[costoAggiornamento]]
+Installazioni e aggiornamenti complessi e time-consuming::
+l'installazione o l'aggiornamento di un software richiede l'intervento dell'assistente tecnico e richiede tempo in quanto le stesse operazioni vengono replicate in ogni postazione. La mancanza di un gestore di pacchetti rende rischiosa l'installazione del software sia per l'eventuale presenza di malware che per il rischio di dipendenze insoddisfatte. La situazione induce l'insegnante a pensare che sia troppo oneroso installare o aggiornare un nuovo software per cui conveniente mantenere in uso il software obsoleto piuttosto che quello migliore per la didattica.
+////
+Per risolvere il problema si può ricorrere alla soluzione descritta nel capoverso precedente.
+////
+
+[[volatilitaDatiUtente]]
+Gestione errata della persistenza dei dati degli utenti::
+in casi sporadici, con le versioni di Microsoft Windows (R) installate nei laboratori, succede che all'autenticazione segua la creazione di una sessione temporanea. In tale situazione alla disconnessione dell'utente tutti i dati salvati vengono cancellati senza possibilità di ripristino. La situazione non è controllabile e può causare frustrazione e perdita di dati rilevanti per studenti e insegnanti.
+////
+Per risolvere la problematica potrebbe essere utile prevedere che le cartelle degli utenti siano memorizzate in un file system di rete o un Network Attached Storage (NAS).
+////
+
+[[sperimentazioneRete]]
+Impossibilità di sperimentare il software di rete::
+attualmente i laboratori sono collegati alla stessa rete in cui sono presenti altri servizi, anche critici, come quelli di supporto alle Segreterie. Vi sono problemi nel perimetro fisico dei dati che non consentono una sperimentazione sicura. Non si dispone di un diagramma che illustri l'infrastruttura, i servizi e i dispositivi. Questo non permette la sperimentazione sicura del software di rete. Le reti, invece, sono da considerarsi parte integrante del laboratorio di informatica cite:[davoli2012lab(19)] e sono oggetto di studio in tutti gli indirizzi dell'Istituto che hanno l'insegnamento di Informatica.
+////
+Per permettere la sperimentazione con la rete questa deve essere separata dal resto dell'infrastruttura scolastica, deve essere note la topologia, i dispositivi e i servizi di rete e deve essere consentito di avviarne di nuovi.
+////
+
+[[mancanzaControlloRete]]
+Impossibilità di controllo della rete del Laboratorio::
+molte competizioni, tra cui i __Campionati italiani e internazionali di Informatica__ e le __Olimpiadi di Informatica a Squadre__, richiedono di disattivare l'accesso ad Internet ad eccezione della pagina della gara.
+Anche per alcune verifiche potrebbe essere fatto divieto di accedere a risorse esterne al proprio PC oltre a quelle del servizio di erogazione della prova.
+Allo stato attuale il docente non ha nessun controllo sul traffico di rete.
+////
+Per evitare l'accesso a risorse esterne è sufficiente che l'insegnante possa agire su un firewall operante per il solo laboratorio di sua competenza.
+////
+
+[[politicaPredefinitaFiltraggioRete]]
+Accesso illimitato a social network, sistemi di messaggistica e siti di streaming::
+attualmente gli studenti hanno accesso illimitato ai social network, alle piattaforme di messaggistica e a quelle di streaming; queste rappresentano potenziali distrazioni e generano la possibilità che gli studenti commettano, anche involontariamente, degli illeciti.
+////
+L'accesso dovrebbe essere autorizzato solo esplicitamente.
+////
+
+[[controlloPubblicita]]
+Impossibilità di blocco delle pubblicità::
+allo stato attuale le pubblicità non sono filtrate. Questo oltre a creare distrazione può sfociare in casi in cui si presentano contenuti non adatti all'ambito scolastico.
+////
+Per evitare queste situazioni il firewall può essere inefficace e si ricorre a filtri applicati al DNS.
+////
+
+[[lanWifiUnificate]]
+Impossibilità di comunicazione tra notebook connessi tramite WiFi e PC connessi tramite cavo::
+nei laboratori non è presente nessun access point e la WLAN è in una rete privata separata da quella LAN. Ciò condiziona gli insegnanti a raccogliere le prove di uno studente che opera con il suo dispositivo a scambiare i file in modo, insicuro, o usando dispositivi di storage (pericolo di malware) o tramite l'uso di piattaforme esterne di cui non ha il controllo.
+////
+La rete cablata e senza fili sono separate e non vi è un bridge che le renda interoperabili.
+////
+
+[[cloudEsterno]]
+Uso di soluzioni cloud esterne::
+allo stato attuale molti file sono gestiti tramite piattaforme cloud che non memorizzano i dati sul territorio nazionale e che rilasciano i servizi per la scuola allo scopo di creare futuri clienti. Così facendo non si hanno nè la sovranità dei dati, ossia il controllo sulla crittografia e sull'accesso dei dati, nè la sovranità operativa, ossia la visibilità e il controllo sulle operazioni del fornitore, e neppure la sovranità del software, ossia poter eseguire programmi senza dipendere dal software di un fornitore.
+////
+Per riprendere il controllo dei dati ed evitare le preoccupazioni causate dall'uso di servizi cloud gestiti da fornitori esteri, sarebbe interessante da valutare l'introduzione di una piattaforma di condivisione gestita internamente.
+////
+
+[[unicoSistemaOperativo]]
+Uso esclusivo del sistema operativo a sorgente chiuso Windows (R)::
+sulle postazioni del laboratorio è installato il solo sistema operativo Windows (R).
+Tale sistema, sebbene sia molto diffuso e permetta di far girare molto del software disponibile, è chiuso e non permette lo studio del Sistema Operativo stesso.
+Molte applicazioni, tra cui alcune per il monitoraggio della rete, richiedono installazioni complesse. Questa situazione limita le possibilità di didattica sui Sistemi Operativi, le Reti di Elaboratori, delle rete, la Cyber Sicurezza.
+
+////
+L'attuale scelta dei sistemi inoltre vincola all'utilizzo di ogni dispositivo come sistema stand-alone e solo con un sistema operativo.
+Sarebbe auspicabile poter disporre di sistemi operativi aperti, con la possibilità di scegliere il sistema operativo da avviare, software e risorse di calcolo condivise.
+////
+
+[[toolchainDifficile]]
+Difficile gestione toolchain di sviluppo::
+Windows (R) ha molti ambienti di sviluppo che sono distribuiti separatamente dal sistema operativo, richiedono un'installazione e non sono standard.
+Per avere una _toolchain_ per il __Linguaggio C++__ (classi terze ITE SIA e Liceo Scientifico sia Scienze Applicate che opzione Informatica), per lo Sviluppo del Web (tutti gli indirizzi con approfondimenti diversi), una __shell__ dei __Sistemi Operativi__ (tutti gli indirizzi), gli strumenti standard di gestione e analisi delle __Reti di Calcolatori__ (tutti gli indirizzi), gli strumenti per la criptografia e la cripto-analisi relative alla __Cyber Sicurezza__ (tutti gli indirizzi sebbene con approfondimenti diversi) è necessario installare software e driver di dispositivo. Queste operazioni richiedono privilegi da super-utente e risultano difficoltose. Tutti i sistemi operativi che derivano da Unix (R), invece, includono questi strumenti come parte integrante della distribuzione.
+
+[[separazioneRisorseCalcolo]]
+Separazione delle risorse di calcolo::
+Gli estensori del documento non conoscono tecniche, sotto Windows (R), per condividere le risorse di calcolo in modo da sperimentare alcuni algoritmi particolarmente onerosi e che richiedono l'utilizzo di più PC come se questi fossero un'unica potente workstation.
+////
+L'architettura hardware e software deve permettere la creazione di cluster.
+////
+
+Allo stato attuale le uniche modalità di mitigazione di alcune delle problematiche sopra esposte sono l'attenta sorveglianza da parte dell'insegnante e i tempestivi aggiornamenti del software da parte degli assistenti tecnici.

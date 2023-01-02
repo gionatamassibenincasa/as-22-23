@@ -1,0 +1,51 @@
+=== Progetti della PA per la gestione di laboratori e reti didattiche
+
+Nel corso del tempo si la Pubblica Amministrazione ha sviluppato vari progetti per la gestione dei laboratori e delle reti didattiche.
+
+[[sec:sodilinux]]
+==== So.Di.Linux
+
+Il progetto So.Di.Linux è stato avviato nel 2003 con collaborazione tra il https://www.itd.cnr.it/[Consiglio Nazionale delle Ricerche--Istituto Tecnologie Didattiche] (CNR-ITD) e l'https://www.aicanet.it/Aica[Associazione Italiana per il Calcolo Automatico] (AICA) finalizzata alla realizzazione e alla diffusione di una serie di strumenti didattici Open source nel mondo della scuola.
+Il prodotto realizzato è https://sodilinux.itd.cnr.it/[So.Di.Linux], una distribuzione live che raccoglie al suo interno il software didattico libero sviluppato per Linux.
+
+So.Di.Linux usa il software Veyon (vedi <<sec::veyon>>) per il monitoraggio delle postazioni.
+
+[[sec::fuss]]
+==== FUSS
+
+https://fuss.bz.it/[FUSS] è una soluzione GNU/Linux completa per la gestione di una rete didattica. È anche un progetto di sostenibilità digitale che dal 2005 permette ad alunni e docenti di usare a casa gli stessi strumenti informatici installati a scuola, liberamente e senza alcun aggravio di costo. Il progetto è stato finanziato dal Fondo Sociale Europeo.
+
+Il progetto pare essere il più attivo in Italia sia per rilasci, l'https://fuss.bz.it/post/2022-07-28_fuss-11/[ultimo] è del 28 luglio 2022, sia per numero di https://fuss.bz.it/page/info/[persone coinvolte].
+
+Anche FUSS usa il software https://veyon.io/it/[Veyon] per il monitoraggio delle postazioni.
+
+
+=== Progetti della PA per la gestione degli Open Educational Resource (OER)
+
+==== FARE
+
+Per l'uso e la distribuzione di Open Educational Resource (OER) il Politecnico di Torino ha sviluppato il progretto https://fare.polito.it/[FARE (Free Architecture for Remote Education)].
+Sono fruibili circa 2000 materiali didattici in lingua italiana sviluppati secondo licenze Libere ed è possibile pubblicare il proprio materiale.
+// https://www.eventi.garr.it/it/conf21/programma/materiali-conferenza-2021/561-fare-una-nuova-linea-di-strumenti-per-l-e-learning-a-r-meo-conferenza-garr-2021/file
+
+=== Software libero per la gestione di laboratori e reti didattiche
+
+[[sec::veyon]]
+==== Veyon
+
+https://veyon.io/it/[Veyon (Virtual Eye On Networks)] è un software libero e open source per monitorare e controllare i computer su più piattaforme. Veyon ha lo scopo di coadiuvare l'insegnamento in ambienti di apprendimento digitale.
+È disponibile come pacchetto nelle principali distribuzioni Linux e nei progetti della PA (vedi <<sec:sodilinux>> e <<sec::fuss>>).
+
+=== Software libero per privacy in cloud
+
+[[sec:cryptomator]]
+==== Cryptomator
+
+Le soluzioni di storage su cloud, anche se a detta dei fornitori del sono GDPR-compliant, risultano incompatibili con il Regolamento UE 2016/679 (GDPR) perché i dati potrebbero essere conservati in Paesi nei non vige il Regolamento e perché, se non opportunamente cifrati, potrebbero essere visibili a persone non autorizzate. Il software Cryptomator fornisce uno strato di criptografia che rende meno rischioso l'uso servizi cloud e https://gdprhub.eu/index.php?title=Council_of_State_-_251.378[compatibile con il GDPR].
+
+=== Software con codice a sorgente aperto per le videoconferenze
+
+=== Jitsi
+
+https://jitsi.org/[Jitsi] è una collezione di software per le video conferenze che posso essere eseguiti sul server controllati dall'Istituto. 
+Tra gli strumenti vi sono https://jitsi.org/jitsi-videobridge/[Jitsi Videobridge], il server per l'inoltro dei video e https://jitsi.org/jitsi-meet/[Jitsi Meet], l'applicazione per visualizzare la videoconferenza.

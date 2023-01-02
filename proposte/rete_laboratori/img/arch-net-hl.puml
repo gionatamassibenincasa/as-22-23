@@ -1,0 +1,103 @@
+nwdiag {
+  Rete_esterna [shape = cloud desccription="Internet"];
+  Rete_esterna -- gateway;
+  
+  network Altre_ICDL {
+      color="#FFCCCC";
+      width="full";
+      description="Dorsale\nIstituto";
+      address="192.168.1.x/24";
+      gateway [address="192.168.1.5" shape="node" description="<&cog*3>\nGW"];
+      dns [address="192.168.1.3" shape="node" description="<&cog*3>\nDNS"];
+      ad [shape="node" description="<&cog*3>\n AD"];
+      serverICDL [shape="node" description="<&cog*3>\nICDL"];
+      FSB  [address="192.168.1.252"];
+      FSS  [address="192.168.1.253"];
+      FSF  [address="192.168.1.254"];
+    }
+    
+    group nuovo {
+      description="Nodi nuovi";
+      color="#00FFFF";
+      FSB;
+      FSS;
+      FSF;
+    }
+  
+    network Lab_Benincasa {
+      color="#AAFFAA"
+      width="full";
+      address="192.168.2.x/24"
+      description="LAB INF\nBENINCASA\nLAN+WLAN"
+
+      FSB  [address="192.168.2.254"  shape="node" description="<&cog*3>\n   FUSS\n  Server\nBENINCASA"];
+      group B_Cabled {
+        description="Rete cablata"
+        color="#AAFFAA"
+        
+        doc_B [address="192.168.2.100/24" description="<&monitor*3>\nINSB"];
+        pc_Bx  [address="192.168.2.x/24, 192.168.1.(100+x)/24" description="<&person*3>\nPCBx"];
+        
+        printer_B1 [address="192.168.2.51/24" description="<&print*3>\n PB1"];
+        printer_B2 [address="192.168.2.52/24" description="<&print*3>\n PB2"];
+      }
+      
+      group B_WiFi {
+        description="Rete WiFi"
+        color="#CCFFCC"
+        
+        WiFi_By [address="192.168.2.(150 + y)/24" description="<&wifi*3>\n By"];
+      }
+    }
+    
+    network Lab_Savoia {
+      color="#AAAAFF"
+      width="full";
+      address="192.168.3.x/24"
+      description="LAB INF\nSAVOIA\nLAN+WLAN"
+  
+      FSS  [address="192.168.3.253" shape="node" description="<&cog*3>\nFUSS\nServer\nSAVOIA"];
+      group S_Cabled {
+        description="Rete cablata"
+        color="#AAAAFF"
+        
+        doc_S [address="192.168.3.100/24" description="<&monitor*3>\nSINS"];
+        pc_Sx  [address="192.168.3.x/24" description="<&person*3>\nPCSx"];
+  
+        printer_S1 [address="192.168.3.51/24" description="<&print*3>\n PS1"];
+        printer_S2 [address="192.168.3.52/24" description="<&print*3>\n PS2"];
+      }
+      
+      group S_WiFi {
+        description="Rete WiFi"
+        color="#CCCCFF"
+        
+        WiFi_Sy [address="192.168.3.(150 + y)/24" description="<&wifi*3>\n Sy"];
+      }
+    }
+    network Lab_FL {
+      color="#FFAAFF"
+      width="full";
+      address="192.168.4.x/24"
+      description="FutureLAB\nLAN+WLAN"
+  
+      FSF  [address="192.168.4.254" shape="node" description="<&cog*3>\n   FUSS\n  Server\nFutureLab"];
+      group F_Cabled {
+        description="Rete cablata"
+        color="#FFAAFF"
+        
+        doc_F [address="192.168.4.100/24" description="<&monitor*3>\nFINS"];
+        pc_Fx  [address="192.168.4.x/24" description="<&person*3>\nPCFx"];
+  
+        printer_F1 [address="192.168.4.51/24" description="<&print*3>\n PF1"];
+        printer_F2 [address="192.168.4.52/24" description="<&print*3>\n PF2"];
+      }
+      
+      group F_WiFi {
+        description="Rete WiFi"
+        color="#FFCCFF"
+        
+        WiFi_Fy [address="192.168.f.(150 + y)/24" description="<&wifi*3>\n Fy"];
+      }
+  }
+}

@@ -1,0 +1,148 @@
+== Specifica dei requisiti
+
+=== Requisiti dell'ambiente laboratoriale di Informatica
+
+In considerazione delle problematiche descritte in <<sec:analisiProblematiche>>, l'insegnamento in ambienti di apprendimento digitale deve soddisfare le seguenti specifiche:
+
+. Il docente deve poter gestire in autonomia i PC del laboratorio
+.. Il docente deve poter monitorare a distanza i PC del laboratorio
+... Il docente deve poter visualizzare la schermata dei PC del laboratorio dove sta insegnando
+... Il docente deve poter salvare la schermata dei PC del laboratorio dove sta insegnando
+.. Il docente deve poter controllare a distanza i PC del laboratorio
+... Il docente deve poter bloccare i dispositivi di input
+... Il docente deve poter prelevare da remoto i file
+... Il docente deve poter trasmettere lo schermo del proprio PC a quello degli studenti
+.. Il docente e studenti devono poter condividere gli schermi
+. Il docente deve poter condividere applicazioni e servizi con gli studenti
+.. Il docente deve poter gestire una macchina server, reale o virtuale, per creare e rimuovere utenti, applicazioni e servizi
+.. La macchina server si collega al servizio LDAP oppure mantiene l'elenco degli utenti
+.. Il docente deve poter installare pacchetti sulla macchina server
+.. Il docente deve poter avviare e terminare servizi sulla macchina server
+.. I PC devono poter avviare le applicazioni sulla macchina server
+... I PC devono supportare il forwarding per le applicazioni grafiche
+. Il docente deve poter controllare gli accessi ad internet
+.. Il docente deve poter impedire l'accesso ai file condivisi, ad eccezione dell'eventuale deposito della prova
+.. Il docente deve poter impedire la ricerca di informazioni nella rete Internet su siti non esplicitamente consentiti (whitelist)
+.. Il docente deve poter impedire lo scambio di messaggi con sistemi di chat (es: Google Chat), webmail (es: GMail) o altro (es: Whatsapp web, Google Drive)
+. Il docente deve poter controllare il DNS per rimuovere messaggi pubblicitari
+
+=== Requisiti sulla disponibilità di applicazioni
+
+La didattica dell'informatica in laboratorio, in relazione alle programmazioni dipartimentali dell'informatica, ai libri di testo adottati, alle Linee Guida e delle Indicazioni Nazionali, e alla https://www.consorzio-cini.it/images/Proposta-Indicazioni-Nazionali-Informatica-Scuola-numerata.pdf[Proposta di Indicazioni Nazionali per l'insegnamento dell'Informatica nella Scuola] del CINI richiede l'installazione delle seguenti applicazioni:
+
+. Monitoraggio e controllo
+.. https://veyon.io/it/[Veyon]
+. Applicazioni
+.. Software per l'ufficio
+... https://it.libreoffice.org/[LibreOffice]
+.... https://it.libreoffice.org/scopri/base/[LibreOffice Base]
+.... https://it.libreoffice.org/scopri/calc/[LibreOffice Calc]
+.... https://it.libreoffice.org/scopri/charts/[LibreOffice Charts]
+.... https://it.libreoffice.org/scopri/draw/[LibreOffice Draw]
+.... https://it.m.wikipedia.org/wiki/File:LibreOffice_6.1_Impress_Icon.svg[LibreOffice Impress]
+.... https://it.libreoffice.org/scopri/math/[LibreOffice Math]
+.... https://it.libreoffice.org/scopri/writer/[LibreOffice Writer]
+.... https://help.libreoffice.org/latest/it/text/swriter/librelogo/LibreLogo.html[LibreLogo]
+... Software per la lettura dei PDF
+.. Software per l'editoria
+... https://www.tug.org/texlive/[TeX Live]
+... https://www.lyx.org/[LyX]
+... https://asciidoctor.org/[Asciidoctor]
+.... https://docs.asciidoctor.org/diagram-extension/latest/[Asciidoctor Diagram]
+.... https://docs.asciidoctor.org/pdf-converter/latest/[Asciidoctor PDF]
+.... https://docs.asciidoctor.org/epub3-converter/latest/[Asciidoctor EPUB3]
+.... https://docs.asciidoctor.org/reveal.js-converter/latest/[Asciidoctor reveal.js]
+.... https://github.com/asciidoctor/asciidoctor-bibtex[asciidoctor-bibtex]
+.... https://github.com/rouge-ruby/rouge[Ruby rouge]
+.... https://github.com/rubychan/coderay[Ruby coderay]
+.... https://github.com/pygments/pygments.rb[Ruby pygments.rb]
+.. Stampa
+... http://www.cups.org/[CUPS]
+.. Interpreti, compilatori, debugger, toolchain
+... https://gcc.gnu.org/[GCC, the GNU Compiler Collection]
+... https://clang.llvm.org/[Clang]
+... https://www.php.net/[php]
+... https://nodejs.org/[Node.js] + https://pnpm.io/it/[pnpm] + https://www.typescriptlang.org/[TypeScript] + https://nativescript.org/[NativeScript]
+... https://www.python.org/[Python 3]
+... https://www.r-project.org/[R]
+... https://www.ruby-lang.org/it/[Ruby]
+... https://www.minizinc.org/[MiniZinc]
+... https://www.sourceware.org/gdb/[gdb]
+... https://lldb.llvm.org/[lldb]
+... https://rr-project.org/[rr]
+... https://valgrind.org/[Valgrind]
+... https://ghidra-sre.org/[ghidra]
+... https://cmake.org/[CMake]
+... https://www.gnu.org/software/make/[GNU Make]
+.. Ambienti integrati di sviluppo
+... https://code.visualstudio.com/[VS Code]
+//... QT Creator
+... https://www.codeblocks.org/[Code::Blocks IDE]
+... https://www.vim.org/[vim]
+... https://jupyter.org/[Jupyter Lab]
+...  https://posit.co/products/open-source/rstudio/[RStudio Desktop Open Source Edition]
+... http://www.flowgorithm.org/[Flowgorithm], https://www.imparando.net/sito/strumenti_di_sviluppo/flowgorithm/come_installare_in_linux.htm[sotto Linux]
+... https://education.lego.com/it-it/downloads/mindstorms-ev3/software#downloads[LEGO® MINDSTORMS® Education EV3 Classroom] (solo su alcuni notebook)
+... https://www.kogics.net/sf:kojo[Kojo]
+... https://racket-lang.org/[Racket]
+.. Strumenti di versionamento
+... https://git-scm.com/[git]
+.. Accesso remoto
+... https://www.openssh.com/[ssh]
+... https://openvpn.net/[openVPN client]
+.. Audio e video
+... https://www.audacityteam.org/[Audacity]
+... https://ffmpeg.org/[FFMPEG]
+... https://shotcut.org/[Shotcut]
+.. Browser
+... https://www.mozilla.org/it-IT/firefox/[Firefox]
+// ... https://www.google.com/intl/it_it/chrome/[Chrome]
+.. CAD
+... https://www.freecadweb.org/index.php?lang=it[FreeCad]
+.. Grafica
+... https://www.gimp.org/[GNU Image Manipulation Program]
+... https://inkscape.org/[Inkscape]
+... https://graphviz.org/[GraphViz]
+... http://www.gnuplot.info/[GnuPlot]
+... https://www.imagemagick.org/[imagemagick]
+... https://plantuml.com/[PlantUML]
+... https://kroki.io/[Kroki]
+.. Calcolo scientifico e ingegneristico
+... https://octave.sourceforge.io/[GNU Octave (octave-forge)]
+... https://www.scilab.org/[Scilab]
+... https://www.geogebra.org/?lang=it[GeoGebra]
+... https://www.r-project.org/[R]
+... https://conda.io/miniconda.html[miniconda]
+.. MindMapping
+... https://www.freeplane.org/[FreePlane]
+... https://plantuml.com/[PlantUML]
+.. Software per l'analisi della rete
+... https://www.wireshark.org/[WireShark]
+... https://en.wikipedia.org/wiki/Ping_(networking_utility)[ping]
+... https://linux.die.net/man/8/ethtool[ethtool]
+... http://www.illuminamente.org/dokuwiki/doku.php?id=educare:dnsutils[dig, dnsutils, bind-utils]
+... ip
+... https://it.wikipedia.org/wiki/Netcat[netcat]
+... https://nmap.org/[nmap]
+.. Software per la configurazione del firewall
+... http://gufw.org/[gufw]
+. Servizi
+.. Web server
+... https://httpd.apache.org/[Apache]
+... https://www.nginx.com/[Nginx]
+.. Data Base Management System
+... https://www.postgresql.org/[PostgreSQL]
+... https://www.mysql.com/[MySQL]
+.. GUI per SQLite
+... https://sqlitebrowser.org/[DB Browser for SQLite]
+... https://sqlitestudio.pl/[SQLite Studio]
+... https://dbeaver.io/[DBeaver]
+.. Consegna dei compiti di programmazione
+... https://github.com/cms-dev/cms[CMS]
+... https://github.com/algorithm-ninja/cmsocial[CMSSocial]
+.. Piattaforma per il Cloud
+... https://nextcloud.com/[Nextcloud]
+.. Tutela della Privacy
+... https://cryptomator.org/[Cryptomator]
+... https://gnupg.org/[GNU GPG]
+... https://apps.kde.org/it/kleopatra[Kleopatra]
