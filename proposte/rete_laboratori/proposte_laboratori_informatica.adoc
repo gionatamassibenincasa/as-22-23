@@ -39,7 +39,7 @@ I quattro pilastri dell'apprendimento
 cite:[dehaene2020(i)]
 ____
 
-== Problematiche dei Laboratori
+== Analisi delle problematiche dei Laboratori
 
 === I Laboratori d'Informatica
 
@@ -135,7 +135,7 @@ Per riprendere il controllo dei dati ed evitare le preoccupazioni causate dall'u
 ////
 
 [[unicoSistemaOperativo]]
-Uso eslusivo del sistema operativo a sorgente chiuso Windows (R)::
+Uso esclusivo del sistema operativo a sorgente chiuso Windows (R)::
 sulle postazioni del laboratorio è installato il solo sistema operativo Windows (R).
 Tale sistema, sebbene sia molto diffuso e permetta di far girare molto del software disponibile, è chiuso e non permette lo studio del Sistema Operativo stesso.
 Molte applicazioni, tra cui alcune per il monitoraggio della rete, richiedono installazioni complesse. Questa situazione limita le possibilità di didattica sui Sistemi Operativi, le Reti di Elaboratori, delle rete, la Cyber Sicurezza.
@@ -186,7 +186,7 @@ non vi sono PC o notebook predisposti per questo ambiente e quindi si deve confi
 Si potrebbero utilizzare o i notebook dei laboratori mobili, fra cui i circa 30 presenti nel magazzino del Benincasa e non ancora utilizzati, o anche acquistare dei sistemi economici realizzati appositamente per la didattica quali le https://www.raspberrypi.com/products/raspberry-pi-400/[Rasperry Pi 400]. L'acquisto deve riguardare anche monitor con interfaccia HDMI. 
 ////
 
-== Proposta di soluzioni ICT
+== Vincoli di contesto nell'acquisizione di soluzioni ICT
 
 === Il quadro normativo sull'acquisto delle soluzioni ICT
 
@@ -223,7 +223,7 @@ Per la valutazione e la proposta di soluzioni software consideriamo il quadro no
  2-bis. Al medesimo fine di cui al comma 2, il codice sorgente, la documentazione e la relativa descrizione tecnico funzionale di tutte le soluzioni informatiche di cui al comma 1 sono pubblicati attraverso una o più piattaforme individuate dall'AgID con proprie Linee guida.
 ....
 
-Per l'applicazione si rimanda a cite:[lineeGuidaAgID].
+Per l'applicazione si rimanda a cite:[lineeguidaagid].
 
 Si tengono in considerazione, in particolare:
 
@@ -231,12 +231,12 @@ comma **1** lettera **c**:: software libero o a codice sorgente aperto
 comma **1-bis** lettera **a**:: costo complessivo del programma o soluzione
 comma **1-bis** lettera **b**:: ...utilizzo di formati di dati e di interfacce di tipo aperto...
 
-Un'analisi estesa della normativa e del perché è volutamente e dichiaratamente ignorata è in cite:[meo2022].
+Un'analisi estesa della normativa nel contesto delle scuole, sul perché è volutamente e dichiaratamente ignorata, e sulle possibili conseguenze per il decisore si trova in cite:[meo2022].
 
 === Alcuni punti di vista in favore del Software Libero
 
 
-Nella didattica dell'informatica si avverte una pressione che spinge le istituzioni scolastiche verso scelte opposte a quelle formativo ed educativo cite:[rmsEduSchools, rmsSaaSS, tesioAScuolaGoogle, zoja2022]:
+Nella didattica dell'informatica si avverte una pressione che spinge le istituzioni scolastiche verso scelte opposte a quelle formativo ed educativo cite:[rmseduschools, rmssaass, tesioascuolagoogle, zoja2022]:
 
 * addestramento all'uso di tecnologie, hardware e/o software, proprietarie;
 * uso di servizi come surrogato del software;
@@ -247,7 +247,7 @@ Attualmente molti software installati sui computer dei laboratori sono rilasciat
 ////
 
 // Adattato da http://cs.unibo.it/~renzo/00-uso_lab.pdf
-Il passaggio al software libero garantisce all'utente, insegnante o studente, quattro libertà in più cite:[rmsFreeSw]:
+Il passaggio al software libero garantisce all'utente, insegnante o studente, quattro libertà in più cite:[rmsfreesw]:
 
 [start=0]
 . Libertà di eseguire il programma, per qualsiasi scopo.
@@ -257,12 +257,12 @@ Il passaggio al software libero garantisce all'utente, insegnante o studente, qu
 
 L'accesso al codice sorgente è un prerequisito per la seconda e la quarta libertà.
 
-Si rimanda agli articoli della Free Software Foundation per maggiori dettagli sul tema etico: cite:[fsfEduFAQ,fsfEdu,fsfEduWhy,rmsEduSchools].
+Si rimanda agli articoli della Free Software Foundation per maggiori dettagli sul tema etico: cite:[fsfedufaq,fsfedu,fsfeduwhy,rmseduschools].
 
 Molti docenti universitari si sono fatti promotori del software libero nelle Università e nelle Scuole.
 
 
-Davoli cite:[davoli2010LD] offre molti spunti di riflessione sulla didattica dell'informatica in tutti i cicli scolastici indicando gli oggetti e gli strumenti di studio e per lo studio. Davoli afferma che la scuola deve usare soltanto software libero.
+Davoli cite:[davoli2010ld] offre molti spunti di riflessione sulla didattica dell'informatica in tutti i cicli scolastici indicando gli oggetti e gli strumenti di studio e per lo studio. Davoli afferma che la scuola deve usare soltanto software libero.
 
 [quote,Renzo Davoli, L'informatica nella Scuola: strumenti e metodi, scienza e tecnologia. La libertà di usare il software libero]
 ____
@@ -272,7 +272,7 @@ ____
 * La scuola deve pensare al futuro dei propri studenti (risparmi immediati, soluzioni "chiavi in mano", possono portare a costi di dipendenza futuri)
 * La scuola deve sempre educare alla condivisione della conoscenza, deve essere un luogo di aggregazione di idee, dove si insegna il rispetto, l'aiuto vicendevole e l'impegno sociale.
 
-cite:[davoli2010LD(23)]
+cite:[davoli2010ld(23)]
 ____
 
 Sempre Davoli cite:[davoli2012lab], giustifica l'uso del software libero nelle università con motivazioni didattiche e filosofiche:
@@ -301,23 +301,81 @@ vantaggi economici:: minore TCO, indipendenza da possibili monopoli (il codice �
 cite:[davoli2012lab(25)]
 ____
 
-Meo concentra l'attenzione sul valore sociale del software libero cite:[berra2001informatica,berra2006informatica] e propone un'analisi storica del software libero, in particolare in Italia cite:[meo2022], avendo presieduto la Commissione Stanca sul software Open Source (2003) da cui derivarono gli articoli 68 e 69 della legge 82/05 cite:[cad] e la seconda commissione sul software Open Source nella Pubblica Amministrazione (2007) questa volta istituita dal ministro Nicolais. Nell'illustrare il quadro normativo italiano ed europeo, e presentare l'aggravarsi dell'uso di software severamente vietati dalla norma italiana e comunitaria e ammonisce i decisori pubblici, che individua nei dirigenti scolastici, affinché non debbano motivare le loro scelte alla Corte dei Conti e al Garante della Protezione dei Dati Personali.
+Meo concentra l'attenzione sul valore sociale cite:[berra2001informatica,berra2006informatica] e propone un'analisi storica del software libero, in particolare in Italia cite:[meo2022], avendo presieduto la Commissione Stanca sul software Open Source (2003) da cui derivarono gli articoli 68 e 69 della legge 82/05 cite:[cad] e la seconda commissione sul software Open Source nella Pubblica Amministrazione (2007) istituita dal ministro Nicolais. Nell'illustrare il quadro normativo italiano ed europeo, e presentare l'aggravarsi dell'uso di software severamente vietati dalla norma italiana e comunitaria e ammonisce i decisori pubblici, che individua nei dirigenti scolastici, affinché non debbano motivare le loro scelte alla Corte dei Conti e al Garante della Protezione dei Dati Personali.
 
 [quote, Angelo Raffaele Meo, Scuola e università: perché preferire il software libero]
 ____
-Conclusioni
-
-
-Molti studiosi ritengono che oggi l'informatica libera rappresenti l'unico strumento disponibile per il progresso tecnologico ed economico dei Paesi poveri e anche di un Paese come il nostro. Per questa ragione alcune norme di legge italiane e/o comunitarie impongono l'adozione di software libero in sostituzione del software proprietario. Sfortunatamente, quelle norme sono spesso disattese e, nell'area della scuola, sono volutamente e dichiaratamente ignorate (rimando al bellissimo articolo di Stefano Zoia La scuola italiana al mercato dei dati. Così il controllo sulla didattica rafforza lo strapotere delle multinazionali, “Altreconomia”).
+Molti studiosi ritengono che oggi l'informatica libera rappresenti l'unico strumento disponibile per il progresso tecnologico ed economico dei Paesi poveri e anche di un Paese come il nostro. Per questa ragione alcune norme di legge italiane e/o comunitarie impongono l'adozione di software libero in sostituzione del software proprietario. Sfortunatamente, quelle norme sono spesso disattese e, nell'area della scuola, sono volutamente e dichiaratamente ignorate (rimando al bellissimo articolo di Stefano Zoja La scuola italiana al mercato dei dati. Così il controllo sulla didattica rafforza lo strapotere delle multinazionali, "Altreconomia").
 
 Temo che la grande maggioranza dei dirigenti scolastici che hanno adottato software proprietario non sappia dove trovare una adeguata relazione comparativa che giustifichi la scelta e non disponga di dati importanti in un formato aperto. Di conseguenza quei dirigenti scolastici non potrebbero difendersi dalle accuse di "danno erariale" provenienti da un magistrato della Corte dei Conti. Quasi tutti i dirigenti scolastici e molti rettori di università potrebbero essere colpiti da pesantissime sanzioni del Garante della protezione dei dati personali.
 
 L'analisi della realtà induce a pensare che le accuse di danno erariale e le sanzioni del Gpdp siano attualmente molto improbabili. Tuttavia, per scelte politiche diverse la realtà potrebbe cambiare nell'arco di pochi giorni. A quel punto la giustificazione "così fanno tutti" non potrebbe essere giustificata perché i testi delle leggi vigenti sono molto chiari.
 ____
 
+Meo ha sollecitato varie volte il decisore pubblico nella scelta del software libero nella scuola, chiamando in causa, tra gli ultimi, la ministra Azzolina cite:[meoletteraazzolina].
 
-* https://scuolalibera.continuity.space/lettera-professor-meo[Lettera alla ministra Azzolina] di Angelo Raffale Meo
+[quote,Meo]
+____
+[omissis]
+Negli ultimi anni le tecnologie di intrusione malevola hanno registrato progressi clamorosi, per cui quello che è successo con Zoom potrebbe verificarsi in qualunque momento su qualunque altra tecnologia proprietaria. Per questa ragione noi riteniamo che nelle applicazioni della Pubblica Amministrazione che implichino il trattamento di dati personali, e in particolare nelle applicazioni per la scuola, si dovrebbe vietare per legge l'uso di prodotti dei quali non sia conosciuto il codice sorgente.
+
+[omissis]
+Ricordo anche che le scuole sono tenute a scegliere le soluzioni da acquisire solo dopo aver realizzato la valutazione comparativa prevista dall'art. 68 del D. Lgs. 82/2005, che impone di preferire software libero: sarebbe importante che il Ministero supportasse le scuole nell'adempiere a quest'obbligo.
+
+Inoltre, Le chiedo il favore di adoperarsi per la promulgazione di una legge che:
+
+[loweralpha]
+. Proibisca l'uso di software proprietario nelle applicazioni della Pubblica Amministrazione che implicano il trattamento di dati personali
+. Obblighi ad usare formati di file standard e aperti
+. Consenta l'uso di infrastrutture IT in Cloud soltanto se queste sono nel controllo della pubblica amministrazione Italiana (Private Cloud).
+
+cite:[meoletteraazzolina]
+____
+
+Formiconi espone la sua visione sul software libero nelle scuole sul suo blog cite:[formiconiblob] e in corsi MOOC sul Coding a scuola con Software Libero cite:[formiconiedx,formiconifederica].
+
+
+A livello comunitario la http://www.eun.org/[European Schoolnet] ha promosso un  tutorial cite:[georgiadi2020], tramite il portale School Education Gateway, che che propone alle scuole vari software liberi.
+
+[quote]
+____
+* Per tutta la scuola
+
+*Per supportare la vita digitale degli studenti*: https://joinmastodon.org/[Mastodon] (per creare un social network scolastico locale e sicuro), https://etherpad.org/[Etherpad] (per prendere appunti in collaborazione), https://mahara.org/[Mahara] (per creare portfolio online), https://www.zotero.org/[Zotero] (per raccogliere fonti e inserire bibliografie), https://klavaro.sourceforge.io/[Klavaro] (touch typing, una tecnica che permette di scrivere più velocemente con una tastiera)
+
+*Nella biblioteca scolastica*: https://koha-community.org/[Koha] e https://vufind.org/[VuFind] (gestione della biblioteca)
+
+*Per l’apprendimento online*: https://moodle.com/[Moodle] (per arricchire le lezioni in presenza), https://open.edx.org/[Open edX] (per i corsi online)
+
+*Per l’amministrazione*: https://www.opensis.com/[openSIS], http://richtech.ca/[Open Admin] e https://gibbonedu.org/[Gibbon] (gestione dati degli studenti)
+
+*Per gruppi e organi studenteschi e genitori*: https://www.loomio.org/[Loomio] (discussione e processo decisionale)
+
+*Per il laboratorio informatico*: https://veyon.io/[Veyon] (per vedere e gestire i computer)
+
+*Per test digitali*: https://tcexam.org/[TCExam] e https://www.techjockey.com/blog/7-free-open-source-exam-software[altri]
+
+* Per gli insegnanti
+
+*Per storia*: https://opensource.com/article/18/10/create-interactive-timelines-open-source-tool[TimelineJS] (per creare facilmente linee del tempo)
+
+*Per le lingue*: https://apps.ankiweb.net/[Anki] (carte con parole e immagini)
+
+*Per le arti*: https://www.blender.org/features/video-editing/[Blender] (per creare film animati), http://www.lenmus.org/[LenMus] (per studiare teoria musicale), https://musescore.org/[MuseScore] e https://opensource.com/life/16/2/5-music-making-tools[altri] (per creare e eseguire spartiti)
+
+*Per geografia*: https://celestia.space/[Celestia] (esplorazione dello https://www.youtube.com/watch?v=YwR6ET_m1FE[spazio]), https://marble.kde.org/[Marble] (atlanti virtuali del globo)
+
+*Per le STEM*: https://www.gnu.org/software/fisicalab/[FisicaLab] (per esplorare i problemi di fisica)
+
+cite:[georgiadi2020]
+____
+
+=== Valutazione di soluzioni esistenti
+
+Meo è anche un autore di molti Open Educational Resource (OER) sul FARE Free Architecture for Remote Education
+
 * https://iamarf.org/2022/12/09/libreitalia-conference-2022/[Importanza del Free and Open Source Software (FOSS) per l'istruzione.] di https://iamarf.org/[Andreas Formiconi]
+* https://fare.polito.it/
 
 
 == Requisiti dell'ambiente laboratoriale di Informatica
@@ -388,6 +446,7 @@ Le applicazioni che dovrebbero essere installate sono:
 ... https://www.minizinc.org/[MiniZinc]
 ... https://www.sourceware.org/gdb/[gdb]
 ... https://lldb.llvm.org/[lldb]
+... https://rr-project.org/[rr]
 ... https://valgrind.org/[Valgrind]
 ... https://ghidra-sre.org/[ghidra]
 ... https://cmake.org/[CMake]
