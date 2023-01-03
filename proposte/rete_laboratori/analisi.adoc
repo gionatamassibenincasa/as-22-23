@@ -1,10 +1,11 @@
-[[sec:analisiProblematiche]]
+[[sec:analisi-problematiche]]
 == Analisi delle problematiche dei Laboratori
 
 include::analisi_lab.adoc[]
 
 include::analisi_flab.adoc[]
 
+[[sec:analisi-vincoli]]
 == Analisi dei vincoli e degli indirizzi per le soluzioni ICT nella scuola
 
 include::analisi_vincoli_normativa.adoc[]

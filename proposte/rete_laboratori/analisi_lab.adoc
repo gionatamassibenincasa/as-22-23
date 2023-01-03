@@ -1,3 +1,4 @@
+[[sec::analisi-labs]]
 === Problematiche dei Laboratori d'Informatica
 
 L'attività didattica in laboratorio richiede un'adeguata predisposizione dei PC e dei collegamenti che non sempre si riscontra nelle attuali condizioni. Alcune situazioni problematiche sono indicate nel prosieguo.

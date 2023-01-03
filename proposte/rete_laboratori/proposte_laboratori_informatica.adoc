@@ -1,11 +1,13 @@
-= Proposte per migliorare la didattica nei Laboratori
+[separator=::]
+= Ambienti per la didattica dell'Informatica
 Dipartimento di informatica - Savoia Benincasa
 2022-12-28: Revisione 1.3
+:icons: font
 :figure-caption: Figura
 :toc-title: Indice
-:toclevels: 5
+:toclevels: 2
 :toc: auto
-:sectnums:
+:sectnumlevels: 5
 :bibtex-file: proposte_laboratori_informatica.bib
 :bibtex-style: ieee
 :bibtex-order: alphabetical
@@ -13,7 +15,6 @@ Dipartimento di informatica - Savoia Benincasa
 :bibtex-throw: true
 :xrefstyle: short
 :section-refsig: par.
-
 
 <<<
 
@@ -43,6 +44,20 @@ cite:[dehaene2020(i)]
 ____
 ////
 
+:sectnums!:
+== Introduzione
+
+Il presente documento, a cura del Dipartimento di Informatica, vuole a fissare i problemi rilevati dagli insegnanti afferenti al Dipartimento e vuole, soprattutto, fornire uno spunto per la Dirigenza, il Team dell'Innovazione, il progettista della rete dati, il Responsabile della Protezione dei Dati e i responsabili del Test Center ICDL affinché l'innovazione dei Laboratori e del Future Lab proceda in modo da risolvere le problematiche.
+
+Il testo illustra in modo analitico le problematiche che si verificano negli ambienti laboratoriali per la didattica dell'Informatica (<<sec:analisi-problematiche>>), indicando quelle imputabili alla configurazione delle reti e dei computer dei laboratori (<<sec::analisi-labs>>) e quelle che dipendono dalla gestione degli spazi nel Future Lab (<<sec::analisi-flab>>).
+
+La risoluzione di alcune delle criticità comporta una necessaria riconfigurazione delle reti, senza oneri per l'acquisto di nuovi dispositivi, e la sostituzione del software. Quest'ultima deve avvenire nel rispetto dei vincoli e delle linee di indirizzo sull'approvvigionamento del software da parte di una Pubblica Amministrazione, dei quali viene fornita una breve ricognizione (<<sec:analisi-vincoli>>). Il vincolo normativo sul software (<<sec:normativa>>) è di facile esposizione: il CAD cite:[cad] richiede il riuso del software sviluppato dalla PA o in alternativa del software libero. Questo documento include una breve rassegna di contributi sul software per la didattica presentati da illustri membri della comunità scientifica e delle reti scolastiche europee (<<sec:orientamenti>>). Per permettere la comparazione delle soluzioni, vengono presentati alcuni sistemi software (<<sec:riuso>>) per la gestione della rete didattica nel rispetto del CAD e del GDPR cite:[gdpr]. 
+
+I requisiti per l'uso dei dispositivi sono brevemente formalizzati nel testo (<<sec:requisiti-labs>>), divisi in requisiti sulla gestione delle postazioni (<<sec:req-generali>>) e di software installati (<<sec:req-software>>).
+
+Il documento si conclude con delle ipotesi progettuali di massima (<<sec:prj-ipotesi>>) che sembrano soddisfare i requisiti individuati. A livello della rete dati viene suggerita una possibile suddivisione della stessa in sottoreti (<<sec:prj-sottoreti>>). Per quanto concerne la gestione del software sui calcolatori, sono presentate due soluzioni complementari, una basata sull'adozione di una soluzione completa per la gestione di una rete didattica (<<sec:prj-fuss>>) e l'altra che prevede l'installazione di macchine virtuali sul server (<<sec:prj-thinclient>>) che sembrano essere adottate da un numero cresente di scuole.
+
+:sectnums:
 include::analisi.adoc[]
 
 include::requisiti.adoc[]
@@ -53,5 +68,6 @@ include::bibliografia.adoc[]
 
 Gionata Massi per il Dipartimento di Informatica
 
-Scritto con `VS Codium` +
-PDF prodotto con: `asciidoctor-pdf -v -r asciidoctor-bibtex -r asciidoctor-diagram`
+Scritto con Software Libero +
+Editor: `VS Codium` +
+PDF generator: `asciidoctor-pdf -v -r asciidoctor-bibtex -r asciidoctor-diagram`

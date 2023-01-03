@@ -1,3 +1,4 @@
+[[sec:normativa]]
 === Il quadro normativo sull'acquisto delle soluzioni ICT
 
 Per la valutazione e la proposta di soluzioni software consideriamo il quadro normativo fissato dal Codice dell'Amministrazione Digitale cite:[cad], in particolare gli artt. https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2018-09-28/_rst/capo6_art69.html[68] e https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2018-09-28/_rst/capo6_art69.html[69].

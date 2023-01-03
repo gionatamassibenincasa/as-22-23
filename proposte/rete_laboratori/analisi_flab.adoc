@@ -1,3 +1,4 @@
+[[sec::analisi-flab]]
 === Problematiche del Future Lab
 
 Il Future Lab viene impiegato come aula disciplinare d'Informatica e ivi si riscontrano le stesse problematiche sono le stesse dei laboratori con l'aggiunta delle seguenti.

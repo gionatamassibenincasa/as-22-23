@@ -1,3 +1,4 @@
+[[sec:prj-ipotesi]]
 == Ipotesi architetturali
 
 Il Dipartimento reputa interessanti alcune ipotesi da sottoporre al Team dell'Innovazione, al progettista della rete dati, al Responsabile della Protezione dei Dati e ai responsabili del Test Center ICDL.

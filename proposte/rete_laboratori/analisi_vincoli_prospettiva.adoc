@@ -1,3 +1,4 @@
+[[sec:orientamenti]]
 === Orientamenti in favore del Software Libero
 
 Nella didattica dell'informatica si avverte una pressione che spinge le istituzioni scolastiche verso scelte opposte a quelle formativo ed educativo cite:[rmseduschools, rmssaass, tesioascuolagoogle, zoja2022]:

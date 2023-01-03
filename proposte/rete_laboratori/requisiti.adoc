@@ -1,8 +1,10 @@
+[[sec:requisiti-labs]]
 == Specifica dei requisiti
 
+[[sec:req-generali]]
 === Requisiti dell'ambiente laboratoriale di Informatica
 
-In considerazione delle problematiche descritte in <<sec:analisiProblematiche>>, l'insegnamento in ambienti di apprendimento digitale deve soddisfare le seguenti specifiche:
+In considerazione delle problematiche descritte in <<sec:analisi-problematiche>>, l'insegnamento in ambienti di apprendimento digitale deve soddisfare le seguenti specifiche:
 
 . Il docente deve poter gestire in autonomia i PC del laboratorio
 .. Il docente deve poter monitorare a distanza i PC del laboratorio
@@ -26,6 +28,7 @@ In considerazione delle problematiche descritte in <<sec:analisiProblematiche>>,
 .. Il docente deve poter impedire lo scambio di messaggi con sistemi di chat (es: Google Chat), webmail (es: GMail) o altro (es: Whatsapp web, Google Drive)
 . Il docente deve poter controllare il DNS per rimuovere messaggi pubblicitari
 
+[[sec:req-software]]
 === Requisiti sulla disponibilità di applicazioni
 
 La didattica dell'informatica in laboratorio, in relazione alle programmazioni dipartimentali dell'informatica, ai libri di testo adottati, alle Linee Guida e delle Indicazioni Nazionali, e alla https://www.consorzio-cini.it/images/Proposta-Indicazioni-Nazionali-Informatica-Scuola-numerata.pdf[Proposta di Indicazioni Nazionali per l'insegnamento dell'Informatica nella Scuola] del CINI richiede l'installazione delle seguenti applicazioni:
@@ -137,6 +140,9 @@ La didattica dell'informatica in laboratorio, in relazione alle programmazioni d
 ... https://sqlitebrowser.org/[DB Browser for SQLite]
 ... https://sqlitestudio.pl/[SQLite Studio]
 ... https://dbeaver.io/[DBeaver]
+.. Learning Management Systems
+... https://moodle.org/?lang=it[Moodle]
+... https://www.leemons.io/[Leemons]
 .. Consegna dei compiti di programmazione
 ... https://github.com/cms-dev/cms[CMS]
 ... https://github.com/algorithm-ninja/cmsocial[CMSSocial]
