@@ -11,6 +11,8 @@ Dipartimento di informatica - Savoia Benincasa
 :bibtex-order: alphabetical
 :bibtex-locale: it-IT
 :bibtex-throw: true
+:xrefstyle: short
+:section-refsig: par.
 
 
 <<<
@@ -27,6 +29,7 @@ Il laboratorio
 cite:[davoli2012lab(19)]
 ____
 
+////
 [quote,Stanislas Dehaene, How we learn. 2020, Penguin, London.]
 ____
 I quattro pilastri dell'apprendimento
@@ -38,6 +41,7 @@ I quattro pilastri dell'apprendimento
 
 cite:[dehaene2020(i)]
 ____
+////
 
 include::analisi.adoc[]
 
@@ -49,7 +53,5 @@ include::bibliografia.adoc[]
 
 Gionata Massi per il Dipartimento di Informatica
 
-.Built-in
-asciidoctor-version:: {asciidoctor-version}
-safe-mode-name:: {safe-mode-name}
-docdir:: {docdir}
+Scritto con `VS Codium` +
+PDF prodotto con: `asciidoctor-pdf -v -r asciidoctor-bibtex -r asciidoctor-diagram`

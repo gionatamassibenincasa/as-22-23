@@ -4,34 +4,35 @@ Per la valutazione e la proposta di soluzioni software consideriamo il quadro no
 
 .Art. 68. Analisi comparativa delle soluzioni
 [quote,Codice per l'Amministrazione Digitale, Capo VI. SVILUPPO, ACQUISIZIONE E RIUSO DI SISTEMI INFORMATICI NELLE PUBBLICHE AMMINISTRAZIONI]
-....
-1. Le pubbliche amministrazioni acquisiscono programmi informatici o parti di essi nel rispetto dei principi di economicità e di efficienza, tutela degli investimenti, riuso e neutralità tecnologica, a seguito di una valutazione comparativa di tipo tecnico ed economico tra le seguenti soluzioni disponibili sul mercato:
+____
+1. Le pubbliche amministrazioni acquisiscono programmi informatici o parti di essi nel rispetto dei principi di economicità e di efficienza, tutela degli investimenti, riuso e neutralità tecnologica, a seguito di una valutazione comparativa di tipo tecnico ed economico tra le seguenti soluzioni disponibili sul mercato: +
++ 
+[loweralpha]
+. software sviluppato per conto della pubblica amministrazione;
+. riutilizzo di software o parti di esso sviluppati per conto della pubblica amministrazione;
+. software libero o a codice sorgente aperto;
+. software fruibile in modalità cloud computing;
+. software di tipo proprietario mediante ricorso a licenza d'uso;
+. software combinazione delle precedenti soluzioni.
 
-  a) software sviluppato per conto della pubblica amministrazione;
-  b) riutilizzo di software o parti di esso sviluppati per conto della pubblica amministrazione;
-  c) software libero o a codice sorgente aperto;
-  d) software fruibile in modalità cloud computing;
-  e) software di tipo proprietario mediante ricorso a licenza d'uso;
-  f) software combinazione delle precedenti soluzioni.
+1-bis. A tal fine, le pubbliche amministrazioni prima di procedere all'acquisto, secondo le procedure di cui al codice di cui al decreto legislativo ((n. 50 del 2016)), effettuano una valutazione comparativa delle diverse soluzioni disponibili sulla base dei seguenti criteri: + 
+[loweralpha]
+. costo complessivo del programma o soluzione quale costo di acquisto, di implementazione, di mantenimento e supporto;
+. livello di utilizzo di formati di dati e di interfacce di tipo aperto nonché di standard in grado di assicurare l'interoperabilità e la cooperazione applicativa tra i diversi sistemi informatici della pubblica amministrazione;
+. garanzie del fornitore in materia di livelli di sicurezza, conformità alla normativa in materia di protezione dei dati personali, livelli di servizio tenuto conto della tipologia di software acquisito.
 
-1-bis. A tal fine, le pubbliche amministrazioni prima di procedere all'acquisto, secondo le procedure di cui al codice di cui al decreto legislativo ((n. 50 del 2016)), effettuano una valutazione comparativa delle diverse soluzioni disponibili sulla base dei seguenti criteri:
-
-  a) costo complessivo del programma o soluzione quale costo di acquisto, di implementazione, di mantenimento e supporto;
-  b) livello di utilizzo di formati di dati e di interfacce di tipo aperto nonché di standard in grado di assicurare l'interoperabilità e la cooperazione applicativa tra i diversi sistemi informatici della pubblica amministrazione;
-  c) garanzie del fornitore in materia di livelli di sicurezza, conformità alla normativa in materia di protezione dei dati personali, livelli di servizio tenuto conto della tipologia di software acquisito.
-
- 1-ter. Ove dalla valutazione comparativa di tipo tecnico ed economico, secondo i criteri di cui al comma 1-bis, risulti motivatamente l'impossibilità di accedere a soluzioni già disponibili all'interno della pubblica amministrazione, o a software liberi o a codici sorgente aperto, adeguati alle esigenze da soddisfare, è consentita l'acquisizione di programmi informatici di tipo proprietario mediante ricorso a licenza d'uso. La valutazione di cui al presente comma è effettuata secondo le modalità e i criteri definiti dall'AgID.
-....
+1-ter. Ove dalla valutazione comparativa di tipo tecnico ed economico, secondo i criteri di cui al comma 1-bis, risulti motivatamente l'impossibilità di accedere a soluzioni già disponibili all'interno della pubblica amministrazione, o a software liberi o a codici sorgente aperto, adeguati alle esigenze da soddisfare, è consentita l'acquisizione di programmi informatici di tipo proprietario mediante ricorso a licenza d'uso. La valutazione di cui al presente comma è effettuata secondo le modalità e i criteri definiti dall'AgID.
+____
 
 .Art. 69. Riuso delle soluzioni e standard aperti
 [quote,Codice per l'Amministrazione Digitale, Capo VI. SVILUPPO, ACQUISIZIONE E RIUSO DI SISTEMI INFORMATICI NELLE PUBBLICHE AMMINISTRAZIONI]
-.... 
- 1. Le pubbliche amministrazioni che siano titolari di soluzioni e programmi informatici realizzati su specifiche indicazioni del committente pubblico, hanno l'obbligo di rendere disponibile il relativo codice sorgente, completo della documentazione e rilasciato in repertorio pubblico sotto licenza aperta, in uso gratuito ad altre pubbliche amministrazioni o ai soggetti giuridici che intendano adattarli alle proprie esigenze, salvo motivate ragioni di ordine e sicurezza pubblica, difesa nazionale e consultazioni elettorali.
+____ 
+1. Le pubbliche amministrazioni che siano titolari di soluzioni e programmi informatici realizzati su specifiche indicazioni del committente pubblico, hanno l'obbligo di rendere disponibile il relativo codice sorgente, completo della documentazione e rilasciato in repertorio pubblico sotto licenza aperta, in uso gratuito ad altre pubbliche amministrazioni o ai soggetti giuridici che intendano adattarli alle proprie esigenze, salvo motivate ragioni di ordine e sicurezza pubblica, difesa nazionale e consultazioni elettorali.
 
- 2. Al fine di favorire il riuso dei programmi informatici di proprietà delle pubbliche amministrazioni, ai sensi del comma 1, nei capitolati o nelle specifiche di progetto è previsto, salvo che ciò risulti eccessivamente oneroso per comprovate ragioni di carattere tecnico-economico, che l'amministrazione committente sia sempre titolare di tutti i diritti sui programmi e i servizi delle tecnologie dell'informazione e della comunicazione, appositamente sviluppati per essa.
+2. Al fine di favorire il riuso dei programmi informatici di proprietà delle pubbliche amministrazioni, ai sensi del comma 1, nei capitolati o nelle specifiche di progetto è previsto, salvo che ciò risulti eccessivamente oneroso per comprovate ragioni di carattere tecnico-economico, che l'amministrazione committente sia sempre titolare di tutti i diritti sui programmi e i servizi delle tecnologie dell'informazione e della comunicazione, appositamente sviluppati per essa.
 
- 2-bis. Al medesimo fine di cui al comma 2, il codice sorgente, la documentazione e la relativa descrizione tecnico funzionale di tutte le soluzioni informatiche di cui al comma 1 sono pubblicati attraverso una o più piattaforme individuate dall'AgID con proprie Linee guida.
-....
+2-bis. Al medesimo fine di cui al comma 2, il codice sorgente, la documentazione e la relativa descrizione tecnico funzionale di tutte le soluzioni informatiche di cui al comma 1 sono pubblicati attraverso una o più piattaforme individuate dall'AgID con proprie Linee guida.
+____
 
 Per l'applicazione si rimanda a cite:[lineeguidaagid].
 

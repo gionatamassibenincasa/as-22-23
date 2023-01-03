@@ -45,7 +45,7 @@ Le soluzioni di storage su cloud, anche se a detta dei fornitori del sono GDPR-c
 
 === Software con codice a sorgente aperto per le videoconferenze
 
-=== Jitsi
+==== Jitsi
 
 https://jitsi.org/[Jitsi] è una collezione di software per le video conferenze che posso essere eseguiti sul server controllati dall'Istituto. 
 Tra gli strumenti vi sono https://jitsi.org/jitsi-videobridge/[Jitsi Videobridge], il server per l'inoltro dei video e https://jitsi.org/jitsi-meet/[Jitsi Meet], l'applicazione per visualizzare la videoconferenza.

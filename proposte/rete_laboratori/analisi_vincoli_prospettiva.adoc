@@ -2,11 +2,11 @@
 
 Nella didattica dell'informatica si avverte una pressione che spinge le istituzioni scolastiche verso scelte opposte a quelle formativo ed educativo cite:[rmseduschools, rmssaass, tesioascuolagoogle, zoja2022]:
 
-* addestramento all'uso di tecnologie, hardware e/o software, proprietarie;
-* uso di servizi come surrogato del software;
+* l'addestramento all'uso di tecnologie, hardware e/o software, proprietarie;
+* l'uso di servizi come surrogato del software;
 * la cessione dei dati alle grandi multinazionali che operano nel settore ICT.
 
-Il messaggio commerciale raggiunge gli insegnanti in modo più forte e capillare di quello scientifico. Vista la grande quantità di informazioni provenienti dalle aziende del __settore education__  e considerata la normativa, si considereranno gli orientamenti provenienti dalle organizzazioni con fini sociali e scientifici.
+Il messaggio commerciale raggiunge gli insegnanti, i dirigenti e, più in generale, il decisore pubblico in modo più forte e capillare del messaggio scientifico. La scuola risponde già una grande quantità di proposte dalle aziende del __settore education__ ma con scarsa considerazione della normativa e degli orientamenti provenienti dalle organizzazioni con fini sociali e scientifici.
 
 ////
 Attualmente molti software installati sui computer dei laboratori sono rilasciate con licenze software payware (e.g. Microsoft Office (R)), shareware (e.g. WinZip (R)) e freeware (e.g. Acrobat Reader (R)).
@@ -24,7 +24,7 @@ L'accesso al codice sorgente è un prerequisito per la seconda e la quarta liber
 
 Per maggiori dettagli sul tema etico e sulla necessità di usare esclusivamente il Software Libero nelle scuole si rimanda agli articoli cite:[fsfedufaq,fsfedu,fsfeduwhy,rmseduschools].
 
-Molti docenti universitari, principalmente quelli operanti nel settore dell'Informatica, si sono fatti promotori del Software Libero nelle Università e nelle Scuole.
+Molti docenti universitari, principalmente quelli dei settori dell'Informatica, si sono fatti promotori del Software Libero nelle Università e nelle Scuole.
 
 Davoli cite:[davoli2010ld] offre molti spunti di riflessione sulla didattica dell'informatica in tutti i cicli scolastici indicando gli oggetti e gli strumenti di studio e per lo studio. Egli ritiene che la scuola deve usare soltanto Software Libero.
 
@@ -80,13 +80,11 @@ ____
 
 Meo ha sollecitato varie volte il decisore pubblico nella scelta del Software Libero nella scuola, chiamando in causa, tra gli ultimi, la ministra Azzolina cite:[meoletteraazzolina].
 
-[quote,Meo]
+[quote,Angelo Raffaele Meo, Lettera alla ministra Azzolina dal professor Angelo Raffaele Meo...]
 ____
-[omissis]
-Negli ultimi anni le tecnologie di intrusione malevola hanno registrato progressi clamorosi, per cui quello che è successo con Zoom potrebbe verificarsi in qualunque momento su qualunque altra tecnologia proprietaria. Per questa ragione noi riteniamo che nelle applicazioni della Pubblica Amministrazione che implichino il trattamento di dati personali, e in particolare nelle applicazioni per la scuola, si dovrebbe vietare per legge l'uso di prodotti dei quali non sia conosciuto il codice sorgente.
+... Negli ultimi anni le tecnologie di intrusione malevola hanno registrato progressi clamorosi, per cui quello che è successo con Zoom potrebbe verificarsi in qualunque momento su qualunque altra tecnologia proprietaria. Per questa ragione noi riteniamo che nelle applicazioni della Pubblica Amministrazione che implichino il trattamento di dati personali, e in particolare nelle applicazioni per la scuola, si dovrebbe vietare per legge l'uso di prodotti dei quali non sia conosciuto il codice sorgente.
 
-[omissis]
-Ricordo anche che le scuole sono tenute a scegliere le soluzioni da acquisire solo dopo aver realizzato la valutazione comparativa prevista dall'art. 68 del D. Lgs. 82/2005, che impone di preferire Software Libero: sarebbe importante che il Ministero supportasse le scuole nell'adempiere a quest'obbligo.
+... Ricordo anche che le scuole sono tenute a scegliere le soluzioni da acquisire solo dopo aver realizzato la valutazione comparativa prevista dall'art. 68 del D. Lgs. 82/2005, che impone di preferire Software Libero: sarebbe importante che il Ministero supportasse le scuole nell'adempiere a quest'obbligo.
 
 Inoltre, Le chiedo il favore di adoperarsi per la promulgazione di una legge che:
 
@@ -99,7 +97,6 @@ cite:[meoletteraazzolina]
 ____
 
 Formiconi espone la sua visione sul Software Libero nelle scuole sul suo blog cite:[formiconiblob] e propone corsi MOOC sul Coding a scuola con Software Libero cite:[formiconiedx,formiconifederica].
-
 
 A livello comunitario la http://www.eun.org/[European Schoolnet] ha promosso un  tutorial cite:[georgiadi2020], tramite il portale School Education Gateway, che che propone alle scuole vari software liberi.
 

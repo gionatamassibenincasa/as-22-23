@@ -30,7 +30,7 @@ nwdiag {
       address="192.168.2.x/24"
       description="LAB INF\nBENINCASA\nLAN+WLAN"
 
-      FSB  [address="192.168.2.254"  shape="node" description="<&cog*3>\n   FUSS\n  Server\nBENINCASA"];
+      FSB  [address="192.168.2.254"  shape="node" description="     <&cog*3>\n   FUSS\n  Server\nBENINCASA"];
       group B_Cabled {
         description="Rete cablata"
         color="#AAFFAA"
@@ -56,7 +56,7 @@ nwdiag {
       address="192.168.3.x/24"
       description="LAB INF\nSAVOIA\nLAN+WLAN"
   
-      FSS  [address="192.168.3.253" shape="node" description="<&cog*3>\nFUSS\nServer\nSAVOIA"];
+      FSS  [address="192.168.3.253" shape="node" description="   <&cog*3>\n FUSS\nServer\nSAVOIA"];
       group S_Cabled {
         description="Rete cablata"
         color="#AAAAFF"
@@ -81,7 +81,7 @@ nwdiag {
       address="192.168.4.x/24"
       description="FutureLAB\nLAN+WLAN"
   
-      FSF  [address="192.168.4.254" shape="node" description="<&cog*3>\n   FUSS\n  Server\nFutureLab"];
+      FSF  [address="192.168.4.254" shape="node" description="    <&cog*3>\n   FUSS\n  Server\nFutureLab"];
       group F_Cabled {
         description="Rete cablata"
         color="#FFAAFF"

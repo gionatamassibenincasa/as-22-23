@@ -11,21 +11,21 @@ Per mitigare la problematica si può intervenire eliminando le fonti di distrazi
 ////
 
 [[lontananzaSchermo]]
-Visualizzazione dello schermo dell'insegnante::
+Visualizzazione difficoltosa dello schermo dell'insegnante::
 l'insegnante spesso usa il PC per illustrare contenuti e metodi propri della disciplina, come le tecniche di programmazione, e frequentemente le schermate possono risultare di difficile lettura da lontano. Gli studenti che non riescono a visualizzare facilmente la schermata possono perdere facilmente l'attenzione e il coinvolgimento attivo.
 ////
 Poter proiettare le schermate sui monitor degli studenti può favorire il porre l'attenzione sugli aspetti rilevanti di un'attività didattica e facilita l'apprendimento nella modalità recettiva cite:[dehaene2020], nella quale si assorbe quanto trasmesso dagli altri senza verificarlo personalmente.
 ////
 
 [[proiezioneSchermoStudente]]
-Proiezione dello schermo dello studente::
+Mancanza di proiezione dello schermo dello studente::
 lo studente non può condividere il proprio schermo con l'insegnante e/o gli altri studenti rendono più complesse le dinamiche sociali dell'apprendimento e il coinvolgimento attivo.
 ////
 La condivisione di videate dallo schermo dello studente al proiettore favorisce il coinvolgimento attivo.
 ////
 
 [[disponibilitaStessaVersione]]
-Disponibilità del software e in un'unica versione::
+Disponibilità del software e in molteplici versioni::
 nella configurazione attuale alle volte il software richiesto per l'attività didattica non risulta installato in alcuni PC, oppure lo è ma non è configurato correttamente, oppure è installato in versioni diverse e incompatibili con quella che si desidera usare per la didattica. Ciò crea difficoltà e frustrazione da parte degli studenti e dell'insegnante, riduce l'attenzione e il coinvolgimento.
 
 ////
