@@ -1,0 +1,147 @@
+[[sec:prj-fuss]]
+=== FUSS Server con Veyon ma dual boot
+
+Una proposta mirata alla minimizzazione del lavoro necessario alla transizione del software è quella, una volta partizionata la rete e installato un server FUSS - su macchina fisica o virtualizzata - di installare i client FUSS mantendo il dual boot con Windows. Il boot loader del client deve avviare in modo predefinito con FUSS e permettere la scelta di Windows (R).
+All'avvio di Windows deve avviarsi il servizio Veyon.
+
+L'architettura di riferimento è quella del progetto https://it.wikipedia.org/wiki/FUSS[FUSS], meglio dettagliato nella https://fuss.bz.it/page/info/[pagina informativa].
+
+A differenza del progetto FUSS, l'idea è quella di avere la possibilità scegliere al boot se avviare la distribuzione FUSS oppure Windows.
+
+Nel caso di avvio con Windows, sarebbe possibile usare, nel Laboratorio di Informatica del plesso Benincasa, la rete "192.168.1.x/24" con i precedenti indirizzi per DNS e Gateway, in modo da mantenere la compatibilità piena con la situazione attuale. Il FUSS Server si limita ad inoltrare i pacchetti provenienti e destinati alla rete "192.168.1.x/24".
+Se il boot avviene con FUSS Client, allora la rete è la "192.168.2.x/24", il default Gateway e il DNS puntano al FUSS Server e l'accesso alla rete avviene tramite autenticazione al portale Captive usando gli account in Active Directory.
+
+
+I https://www.truelite.it/presentazioni/introduzione-architettura-fuss/[servizi] dovrebbero essere quelli predefiniti nella distribuzione FUSS Server.
+
+////
+.Servizi
+[plantuml,targer="servizi",format="svg"]
+....
+title Servizi
+
+cloud Internet {
+
+}
+
+package InfrastrutturaAttuale {
+  component [Firewall] as FW1
+  component [DNS] as DNS1
+  component [LDAP]
+  component [NFS]
+  component [DHCP] AS DHCP1
+  component [Win Domanin File Server] AS WDFS
+  DNS1--FW1
+  DHCP1 -- DNS1
+  WDFS--LDAP
+}
+
+ 
+node "FUSS Server" {
+    [HTTP Content Filter] AS HFW
+    [HTTP Proxy cache] AS Proxy
+    [SSH]
+    component [DHCP] AS DHCP2
+    [Veyon Master] AS VM
+    [HTTP Server] AS Apache
+    database "PostgreSQL" {
+    }
+    database "MySQL" {
+    }
+    
+    interface IVeyon 
+    
+    Apache -- MySQL
+    Apache -- PostgreSQL
+    VM --( IVeyon
+    
+    Proxy -- DNS1
+    Proxy -- FW1
+} 
+
+
+package "Windows Clients" {
+    component [XMing]
+    component [SSH client]
+    component [MySQL Client] AS msw
+    component [Browser] AS bw
+    [Veyon Service] AS VCW
+    VCW --( IVeyon
+}
+
+package "Linux Clients" {
+    [Veyon Service] AS VCL
+    VCL --( IVeyon
+    [XFree86]
+}
+
+
+FW1 -- Internet
+....
+////
+
+==== Transizione
+
+Per gestire il periodo di transizione si deve tenere conto delle seguenti specifiche.
+
+. Il sistema deve permettere la coesistenza con le tecnologie correntemente in uso
+. La nuova configurazione non deve interrompere il servizio ICDL
+. La rete WiFi è attualmente gestita da MasterCom con politiche di amministrazione ad hoc
+. La nuova configurazione non deve interrompere il servizio di stampa
+. La nuova configurazione non deve sostituire il firewall ma integrarlo
+
+Nella fase di transizione la rete WiFi all'interno del laboratorio può restare così com'è.
+
+==== Servizi
+
+I FUSS Server hanno un sistema operativo Linux con Gufw come interfaccia al firewall software UFW, inoltre si possono aggiungere regole al DNS.
+
+Il sistema permette l'accesso in `ssh` anche con il server grafico `X`. Il sistema deve configurare come suo default gateway il nodo 192.168.1.5 e come DNS il nodo 192.168.1.3.
+
+La gestione della rete dovrebbe essere già preconfigurata ma nel caso si debbano gestire i precedenti indirizzi di rete si deve abilitare il solo IP forwarding, liberando risorse del kernel.
+
+La RAM dovrebbe essere di almeno 16 GB, il numero di CPU pari ad almeno 8, lo spazio su disco di almeno 256 GB.
+
+I nodi FUSS possono essere PC fisici o macchine virtuali.
+
+Il docente deve possedere un account sui FUSS Server e deve essere nella lista dei `sudoers` (gruppo `sudo`).
+
+Sui computer degli studenti deve essere installato FUSS Client con possibilità di __dual-boot__.
+Nel caso di avvio con Windows, deve essere impostato `Veyon` per consentire il monitoraggio.
+
+I servizi offerti dal FUSS Server sono:
+
+* Apache HTTPD Web server
+* IP stateful firewall e router 
+* HTTP Proxy Cache
+* HTTP Proxy Content Filter
+* Proxy Secure Shell
+
+Quelli offerti da FUSS Client sono:
+
+* Autenticazione degli utenti tramite server LDAP
+* Download e installazione dei certificati SSL necessari
+* Mount delle directory HOME tramite NFS
+* Installazione chiavi di autenticazione SSH
+* Sincronizzazione NSCD
+* Inserimento in configurazione cluster
+* Creazione di utente locale di amministrazione
+
+https://www.truelite.it/presentazioni/workshop-fuss-server/[L'installazione] ha un wizard.
+
+Si potrebbe usare anche un solo FUSS Server creando due cluster, uno per laboratorio.
+
+==== Pro e contro della soluzione proposta
+
+===== Pro
+
+* Tutte le richieste dei docenti di informatica sono soddisfatte
+* Impatto sulla restante rete molto limitato
+
+===== Contro
+
+* Il nuovo nodo rappresenta un punto guasto aggiuntivo
+* Se il nuovo nodo diventa indisponibile, la rete del laboratorio non è operativa
+* la banda disponibile per PC studente si riduce notevolmente in quanto su un'unica scheda di rete ed un unico host viene gestita, via software, la connessione di tutte le postazioni del laboratorio
+* il FUSS sever potrebbe essere congestionato aumentando i tempi di latenza
+

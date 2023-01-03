@@ -1,0 +1,19 @@
+[[sec:prj-sottoreti]]
+=== Separazione delle sotto-reti
+
+Le reti dei laboratori devono essere separate dalla restante infrastruttura dell'Istituto e possibilmente separate tra loro.
+
+Le reti devono essere monitorate con un software apposito quale Veyon.
+
+Le reti devono essere filtrate da un firewall dedicato, sia esso hardware o software, che è controllato dal docente.
+
+Se vi è un hotspot WiFi nei laboratori, questo deve essere configurato sulla stessa rete del laboratorio al fine di consentire le stesse operazioni delle postazioni fisse.
+
+Una diagramma che illustra un possibile schema di indirizzi è quello in <<fig:rete-labs>>. Il _FUSS Server_ indicato nel diagramma è un server dove è installato il software per il monitoraggio e il filtraggio della rete.
+
+[[fig:rete-labs]]
+.Architettura di rete
+[plantuml, target="architettura-alto-livello", format="svg"]   
+....
+!include ./img/arch-net-hl.puml
+....

@@ -1,0 +1,45 @@
+[[sec:prj-thinclient]]
+=== Macchine virtualizzate
+
+Una soluzione adottata da molti Istituti è quella di fornire un ambiente di calcolo, detto __classe virtuale__, che esegue il software su un server dell'Istituto che è accessibile dai PC del laboratorio come da casa.
+Di norma sono realizzate tramite tante macchine virtuali installate su un server quante sono le classi omogenee, e possono avere sistemi operativi Windows - con costi di licenza - o Unix-like - senza costi.
+Nella macchina virtuale sono installati e configurati dall'assistente tecnico o dal docente  i software per la didattica.
+
+.Uso delle _classi virtuali_
+====
+* L'utente accede alla propria classe mediante una porta TCP/IP ben specifica.
+* Lo studente accede alle macchine virtuali con le stesse credenziali di accesso ai PC (cognome.nome e password come da sistema LDAP).
+
+.Esempio di connessione da scuola:
+* MACCHINA VIRTUALE 1ATUR : ip= 10.2.2.13
+* MACCHINA VIRTUALE 5FSA: ip=10.2.2.51
+
+.Esempio di connessione da casa:
+..MACCHINA VIRTUALE 1ATUR : url= lab.iissavoiabenincasa.it porta TCP:2213
+..MACCHINA VIRTUALE 5FSA: url=lab.iissavoiabenincasa.it porta TCP:2251
+====
+
+==== Pro e contro
+
+===== Pro
+
+* i computer del laboratorio si comportano come terminali di accesso alle macchine virtuali e necessitano di risorse minimali;
+* si semplifica lo svolgimento dei compiti domestici e il loro controllo;
+* si permette agli studenti di cambiare postazione nel laboratorio mantenendo l'accesso ai loro dati;
+* si possono controllare gli accessi di ciascun utente connesso alla macchina virtuale, anche al fine del controllo dei compiti;
+////
+* possibilità di proiettare lo schermo del docente su ciascun terminale connesso alla macchina virtuale della classe;
+* possibilità di favorire l'uso delle macchine virtuali anche a casa, seguendo maggiormente l'andamento didattico di ciascuno studente, specialmente nello svolgimento dei compiti;
+////
+* si fornisce la possibilità di usare le macchine virtuali anche per l'ausilio alla docenza di altre materie. Se, ad esempio, il docente di Disegno ha bisogno di un CAD, potrebbe creare una macchina virtuale dedicata da condividere con i suoi studenti.
+
+////
+Per qeusta soluzione, già implementata in altre scuole, possiamo sentire il tecnico che ha progettato la rete di questa scuola: Matteo Bruschi.
+////
+
+===== Contro
+
+* Spreco di risorse interne in quanto i PC del laboratorio sarebbero utilizzati come _thin client_;
+* Rinnovo costi di licenza e violazione del CAD nel caso di software proprietario (Microsoft Windows (R)) sul server;
+* Necessità di ingenti risorse di calcolo e di archiviazione sul server.
+* Consumo di banda.
