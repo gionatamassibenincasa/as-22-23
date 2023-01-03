@@ -2,9 +2,12 @@
 = Ambienti per la didattica dell'Informatica
 Dipartimento di informatica - Savoia Benincasa
 2022-12-28: Revisione 1.3
+:reproducible:
+:experimental:
+:idprefix:
+:idseparator: -
+:lang: it
 :icons: font
-:figure-caption: Figura
-:toc-title: Indice
 :toclevels: 2
 :toc: auto
 :sectnumlevels: 5
@@ -14,7 +17,45 @@ Dipartimento di informatica - Savoia Benincasa
 :bibtex-locale: it-IT
 :bibtex-throw: true
 :xrefstyle: short
+:lang: it
+:stem: latexmath
+//:source-highlighter: coderay
+//:source-highlighter: pygments
+ifdef::backend-pdf[]
+:source-highlighter: rouge
+:media: print
+endif::backend-pdf[]
+ifdef::backend-html5[]
+:source-highlighter: highlight.js
+:highlightjs-languages: shell, docker, cpp
+endif::backend-html5[]
+:pdf-page-size: A4
+//:toc:
+ifeval::["{lang}" == "it"]
+:appendix-caption: Appendice
+:caution-caption: Attenzione
+:chapter-label: Capitolo
+:example-caption: Esempio
+:figure-caption: Figura
+:important-caption: Importante
+:last-update-label: Ultimo aggiornamento
+:listing-caption: Elenco
+:manname-title: NOME
+:note-caption: Nota
+:preface-title: Prefazione
 :section-refsig: par.
+:table-caption: Tabella
+:tip-caption: Suggerimento
+:toc-title: Indice
+:untitled-label: Senza titolo
+:version-label: Versione
+:warning-caption: Attenzione
+endif::[]
+ifdef::backend-pdf[]
+:mathematical-format: svg
+:mathematical-inline: true
+endif::[]
+:runner-node: v18
 
 <<<
 
@@ -70,4 +111,4 @@ Gionata Massi per il Dipartimento di Informatica
 
 Scritto con Software Libero +
 Editor: `VS Codium` +
-PDF generator: `asciidoctor-pdf -v -r asciidoctor-bibtex -r asciidoctor-diagram`
+PDF generator: `asciidoctor-pdf -v -a optimize=print -r asciidoctor-bibtex -r asciidoctor-diagram`
