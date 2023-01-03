@@ -26,7 +26,7 @@ La condivisione di videate dallo schermo dello studente al proiettore favorisce 
 ////
 
 [[disponibilitaStessaVersione]]
-Disponibilità del software e in molteplici versioni::
+Indisponibilità del software oppure molteplici versioni::
 nella configurazione attuale alle volte il software richiesto per l'attività didattica non risulta installato in alcuni PC, oppure lo è ma non è configurato correttamente, oppure è installato in versioni diverse e incompatibili con quella che si desidera usare per la didattica. Ciò crea difficoltà e frustrazione da parte degli studenti e dell'insegnante, riduce l'attenzione e il coinvolgimento.
 
 ////
@@ -55,7 +55,7 @@ Per permettere la sperimentazione con la rete questa deve essere separata dal re
 ////
 
 [[mancanzaControlloRete]]
-Impossibilità di controllo della rete del Laboratorio::
+Mancanza di controllo della rete del Laboratorio::
 molte competizioni, tra cui i __Campionati italiani e internazionali di Informatica__ e le __Olimpiadi di Informatica a Squadre__, richiedono di disattivare l'accesso ad Internet ad eccezione della pagina della gara.
 Anche per alcune verifiche potrebbe essere fatto divieto di accedere a risorse esterne al proprio PC oltre a quelle del servizio di erogazione della prova.
 Allo stato attuale il docente non ha nessun controllo sul traffico di rete.
@@ -71,14 +71,14 @@ L'accesso dovrebbe essere autorizzato solo esplicitamente.
 ////
 
 [[controlloPubblicita]]
-Impossibilità di blocco delle pubblicità::
+Pubblicità invasive::
 allo stato attuale le pubblicità non sono filtrate. Questo oltre a creare distrazione può sfociare in casi in cui si presentano contenuti non adatti all'ambito scolastico.
 ////
 Per evitare queste situazioni il firewall può essere inefficace e si ricorre a filtri applicati al DNS.
 ////
 
 [[lanWifiUnificate]]
-Impossibilità di comunicazione tra notebook connessi tramite WiFi e PC connessi tramite cavo::
+Separazione delle reti WiFi e cablata::
 nei laboratori non è presente nessun access point e la WLAN è in una rete privata separata da quella LAN. Ciò condiziona gli insegnanti a raccogliere le prove di uno studente che opera con il suo dispositivo a scambiare i file in modo, insicuro, o usando dispositivi di storage (pericolo di malware) o tramite l'uso di piattaforme esterne di cui non ha il controllo.
 ////
 La rete cablata e senza fili sono separate e non vi è un bridge che le renda interoperabili.

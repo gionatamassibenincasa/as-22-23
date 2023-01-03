@@ -55,7 +55,7 @@ La risoluzione di alcune delle criticità comporta una necessaria riconfigurazio
 
 I requisiti per l'uso dei dispositivi sono brevemente formalizzati nel testo (<<sec:requisiti-labs>>), divisi in requisiti sulla gestione delle postazioni (<<sec:req-generali>>) e di software installati (<<sec:req-software>>).
 
-Il documento si conclude con delle ipotesi progettuali di massima (<<sec:prj-ipotesi>>) che sembrano soddisfare i requisiti individuati. A livello della rete dati viene suggerita una possibile suddivisione della stessa in sottoreti (<<sec:prj-sottoreti>>). Per quanto concerne la gestione del software sui calcolatori, sono presentate due soluzioni complementari, una basata sull'adozione di una soluzione completa per la gestione di una rete didattica (<<sec:prj-fuss>>) e l'altra che prevede l'installazione di macchine virtuali sul server (<<sec:prj-thinclient>>) che sembrano essere adottate da un numero cresente di scuole.
+Il documento si conclude con delle ipotesi progettuali di massima (<<sec:prj-ipotesi>>) che sembrano soddisfare i requisiti individuati. A livello della rete dati viene suggerita una possibile suddivisione della stessa in sotto-reti (<<sec:prj-sottoreti>>). Per quanto concerne la gestione del software sui calcolatori, sono presentate due soluzioni complementari, una basata sull'adozione di una soluzione completa per la gestione di una rete didattica (<<sec:prj-fuss>>) e l'altra che prevede l'installazione di macchine virtuali sul server (<<sec:prj-thinclient>>) che sembrano essere adottate da un numero cresente di scuole.
 
 :sectnums:
 include::analisi.adoc[]
