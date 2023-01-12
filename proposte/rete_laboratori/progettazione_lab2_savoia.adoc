@@ -1,7 +1,7 @@
 [[sec:secondo_lab_savoia]]
 === Realizzazione di un secondo laboratorio di informatica
 
-Un secondo laboratorio di informatica al Savoia appare necessario e negli anni passati, con un minor numero di classi delle Scienze Applicate, veniva impiegata l'aula TEAL, ora non più disponibile. L'eventuale attivazione di altri indirizzi, tra cui il _liceo matematico_, potrebbe comportare la necessità di usare un laboratorio informatico anche da parte di altre materie.
+Un secondo laboratorio di informatica al Savoia appare necessario e negli anni passati, con un minor numero di classi delle Scienze Applicate, veniva impiegata l'aula TEAL, ora non più disponibile. L'eventuale attivazione di altri indirizzi, tra cui il _Liceo matematico_ e il _Liceo STEAM_, potrebbe comportare la necessità di usare un laboratorio informatico anche da parte di altre materie.
 
 Allo stato attuale si utilizza una parte del Future Lab come aula per la didattica dell'informatica con gravi difficoltà nella didattica della disciplina, come indicato nel par. <<sec::analisi-flab>>.
 
