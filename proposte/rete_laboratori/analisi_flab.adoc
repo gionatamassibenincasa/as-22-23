@@ -3,6 +3,10 @@
 
 Il Future Lab viene impiegato come aula disciplinare d'Informatica e ivi si riscontrano le stesse problematiche sono le stesse dei laboratori con l'aggiunta delle seguenti.
 
+[[postazioni]]
+Postazioni che non si prestano all'attività didattica::
+gli spazi del Future Lab sono stati pensati per attività diverse da quelle realizzati nella didattica dell'informatica. Le postazioni sono molto lontane tra loro, disposte in spazi diversi e non controllabili, con banchi mobili aventi una superficie d'appoggio che non permette di ospitare un PC. Durante le ore di attività con classi numerose, gli studenti si dispongono sui gradoni, in posizione tutt'altro che ergonomica.
+
 [[spazioCondiviso]]
 Mancanza di separazione dall'atrio dell'Aula Magna::
 il Future Lab non è separato dall'ingresso dell'Aula Magna, luogo in cui frequentemente sono ospitati incontri.

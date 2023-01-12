@@ -6,6 +6,14 @@
 
 In considerazione delle problematiche descritte in <<sec:analisi-problematiche>>, l'insegnamento in ambienti di apprendimento digitale deve soddisfare le seguenti specifiche:
 
+. Gli studenti devono disporre di un banco o una scrivania
+.. Il banco o la scrivania devono essere sufficientemente ampio da consentire la presenza di un dispositivo e di un quaderno
+. Ogni postazione deve essere dotata di uno più dispositivi di calcolo
+. Ogni postazione deve essere dotata di un monitor
+.. Il monitor deve avere una diagonale di almeno circa 20''
+.. Il monitor deve essere compatibile con lo standard HDMI
+. Ogni postazione deve essere dotata di una tastiera
+. Ogni postazione dovrebbe essere orientata verso il docente
 . Il docente deve poter gestire in autonomia i PC del laboratorio
 .. Il docente deve poter monitorare a distanza i PC del laboratorio
 ... Il docente deve poter visualizzare la schermata dei PC del laboratorio dove sta insegnando

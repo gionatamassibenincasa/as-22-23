@@ -1,9 +1,9 @@
 [[sec:prj-thinclient]]
-=== Macchine virtualizzate
+=== Terminal server
 
-Una soluzione adottata da molti Istituti è quella di fornire un ambiente di calcolo, detto __classe virtuale__, che esegue il software su un server dell'Istituto che è accessibile dai PC del laboratorio come da casa.
-Di norma sono realizzate tramite tante macchine virtuali installate su un server quante sono le classi omogenee, e possono avere sistemi operativi Windows - con costi di licenza - o Unix-like - senza costi.
-Nella macchina virtuale sono installati e configurati dall'assistente tecnico o dal docente  i software per la didattica.
+Una soluzione adottata da molti Istituti è quella di fornire un ambiente di calcolo, detto __classe virtuale__, dove un _terminal server_ è eseguito su un server dell'Istituto ed accessibile dai PC del laboratorio oltre che da casa.
+Il terminal server potrebbe essere realizzato tramite tante macchine virtuali quante sono le classi, e possono avere sistemi operativi Windows - con costi di licenza e incompatibilità con la normativa vigente - o Unix-like.
+L'assistente tecnico o il docente installa nel disco della macchina virtuale e configura i software per la didattica.
 
 .Uso delle _classi virtuali_
 ====
@@ -11,11 +11,11 @@ Nella macchina virtuale sono installati e configurati dall'assistente tecnico o 
 * Lo studente accede alle macchine virtuali con le stesse credenziali di accesso ai PC (cognome.nome e password come da sistema LDAP).
 
 .Esempio di connessione da scuola:
-* MACCHINA VIRTUALE 1ATUR : ip= 10.2.2.13
+* MACCHINA VIRTUALE 1ATUR: ip= 10.2.2.13
 * MACCHINA VIRTUALE 5FSA: ip=10.2.2.51
 
 .Esempio di connessione da casa:
-..MACCHINA VIRTUALE 1ATUR : url= lab.iissavoiabenincasa.it porta TCP:2213
+..MACCHINA VIRTUALE 1ATUR: url= lab.iissavoiabenincasa.it porta TCP:2213
 ..MACCHINA VIRTUALE 5FSA: url=lab.iissavoiabenincasa.it porta TCP:2251
 ====
 
@@ -31,7 +31,7 @@ Nella macchina virtuale sono installati e configurati dall'assistente tecnico o 
 * possibilità di proiettare lo schermo del docente su ciascun terminale connesso alla macchina virtuale della classe;
 * possibilità di favorire l'uso delle macchine virtuali anche a casa, seguendo maggiormente l'andamento didattico di ciascuno studente, specialmente nello svolgimento dei compiti;
 ////
-* si fornisce la possibilità di usare le macchine virtuali anche per l'ausilio alla docenza di altre materie. Se, ad esempio, il docente di Disegno ha bisogno di un CAD, potrebbe creare una macchina virtuale dedicata da condividere con i suoi studenti.
+* si fornisce la possibilità di usare le macchine virtuali anche per l'ausilio alla didattica di altre materie. Se, ad esempio, il docente di Disegno ha bisogno di un CAD, potrebbe creare una macchina virtuale dedicata da condividere con i suoi studenti.
 
 ////
 Per qeusta soluzione, già implementata in altre scuole, possiamo sentire il tecnico che ha progettato la rete di questa scuola: Matteo Bruschi.

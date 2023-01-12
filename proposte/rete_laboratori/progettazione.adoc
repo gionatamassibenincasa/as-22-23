@@ -3,6 +3,8 @@
 
 Il Dipartimento reputa interessanti alcune ipotesi da sottoporre al Team dell'Innovazione, al progettista della rete dati, al Responsabile della Protezione dei Dati e ai responsabili del Test Center ICDL.
 
+include::progettazione_lab2_savoia.adoc[]
+
 include::progettazione_reti.adoc[]
 
 include::progettazione_fuss.adoc[]
