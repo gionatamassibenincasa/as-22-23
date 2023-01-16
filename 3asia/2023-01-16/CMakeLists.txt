@@ -1,2 +1,3 @@
 add_executable(genera_numeri_casuali genera_numeri_casuali.cpp)
 add_executable(template_compito template_compito.cpp)
+add_executable(soluzione_compito soluzione_compito.cpp)
