@@ -60,7 +60,8 @@ int increase(int n) {
 }
 
 /** Stampa in ordine lessicografico.
-  * Es: print_numbers(21, 0) produce 0, 1, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 2, 20, 21, 3, 4, 5, 6, 7, 8, 9
+ * Es: print_numbers(21, 0) produce 0, 1, 10, 11, 12, 13, 14, 15, 16, 17, 18,
+ * 19, 2, 20, 21, 3, 4, 5, 6, 7, 8, 9
  */
 void print_numbers(int n, int x) {
   if (x > n)
@@ -71,6 +72,42 @@ void print_numbers(int n, int x) {
       print_numbers(n, 10 * x + i);
 }
 
+/** Somma a |v[0]|le differenze tra i valori adiacenti dell'array
+ */
+int compute(int n, int v[]) {
+  int x = 0, ret = 0;
+  for (int i = 0; i < n; i++) {
+    while (x < v[i]) {
+      x++;
+      ret++;
+    }
+    // x = v[i] se era minore
+    while (x > v[i]) {
+      x--;
+      ret++;
+    }
+    // x = v[i]
+    // ret += delta x
+  }
+  return ret;
+}
+
+/**
+  * Se k = i / 2 e j = 4000 - k:
+  * while ((k^2 - 4000 + k < (2 * (4000^2 - 8000 k - k^2)) + 2k)
+  *{
+  *    k++;
+  *    j--;
+  * }
+  */
+int transform() {
+  int i = 0, j = 4000;
+  while ((4 * i * i) - j < (2 * j * j) + i) {
+    i += 2;
+    j--;
+  }
+  return i + 2 * j;
+}
 int main() {
   cout << "FIND" << endl << "====" << endl;
   int v[8]{2, 9, 0, 0, 9, 3, 8, 3};
@@ -97,12 +134,20 @@ int main() {
       mediano_corretto = false;
     }
 
-    if (mediano_corretto) {
-      cout << "MEDIANO: OK" << endl;
-    }
+  if (mediano_corretto) {
+    cout << "MEDIANO: OK" << endl << endl;
+  }
 
-    
-    print_numbers(121, 0);
+  cout << "COMPUTE" << endl << "=======" << endl;
+  int v1[]{0, 3, 3, 5, 10};
+  cout << "MIN: "<< compute(5, v1) << endl;
+  int v2[]{10, 0, 5, 3, 3};
+  cout << "MAX: "<< compute(5, v2) << endl << endl;
+
+  // print_numbers(121, 0);
+
+  cout << "TRANSFORM" << endl << "=========" << endl;
+  cout << transform() << endl;
 
   return 0;
 }
