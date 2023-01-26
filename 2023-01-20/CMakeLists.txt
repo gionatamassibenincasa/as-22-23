@@ -1,0 +1,2 @@
+add_executable(esercizi_p127_1_12 esercizi_p127_1_12.cpp)
+
