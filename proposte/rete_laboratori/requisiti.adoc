@@ -160,3 +160,61 @@ La didattica dell'informatica in laboratorio, in relazione alle programmazioni d
 ... https://cryptomator.org/[Cryptomator]
 ... https://gnupg.org/[GNU GPG]
 ... https://apps.kde.org/it/kleopatra[Kleopatra]
+
+==== Applicazioni per l'allenamento alle competizioni di CyberSicurezza
+
+Si elencano le applicazioni consigliate dal https://training.olicyber.it/training/environment[CyberSecurity National Laboratory], divise per le categorie di problemi nelle Olimpiadi della CyberSicurezza.
+
+===== Miscellaneous
+
+* Curl: `sudo apt install curl`
+* PHP: `sudo apt install php`
+* Python: `sudo apt install python3.10`
+* PIP: `sudo apt install python3-pip`
+* Git: `sudo apt install git`
+* JDK 17: https://adoptium.net/installation/linux/[download]
+* Visual Studio Code: https://code.visualstudio.com/docs/setup/setup-overview[download]
+* Ngrok: https://ngrok.com/download[download]
+* Docker Desktop: https://docs.docker.com/desktop/[download]
+
+===== Steganography
+
+* Binwalk: `sudo apt install binwalk`
+* Gimp: https://www.gimp.org/downloads/[download]
+* Stegsolve: https://wiki.bi0s.in/steganography/stegsolve/[download]
+* JohnTheRipper: https://github.com/openwall/john/blob/bleeding-jumbo/doc/INSTALL-UBUNTU#L97[download] (seguire le istruzioni da riga 97 a riga 107).
+
+===== Network Security
+
+* Wireshark: `sudo apt install wireshark`
+* Tshark: `sudo apt install tshark`
+* Pyshark: `pip install pyshark`
+
+===== Web Security
+
+* Burp Suite Community: selezionare la versione "Burp Suite Community Edition" dal dropdown menu e il sistema operativo
+              corretto al seguente https://portswigger.net/burp/releases/professional-community-2022-12-5[link], poi eseguire il file scaricato.
+* Postman: https://www.postman.com/downloads/[download]
+
+
+===== Software Security
+
+* Ht editor: `sudo apt install ht`
+* Ltrace: `sudo apt install ltrace`
+* GDB debugger: `sudo apt install gdb`
+* Pwndbg: https://github.com/pwndbg/pwndbg[download]
+* Pwntools: `pip install pwntools`
+* Ropper: `pip install ropper`
+* Patchelf: `sudo apt install patchelf`
+* Elfutils: `sudo apt install elfutils`
+* Ruby-dev, one_gadget e seccomp-tools:
+** `sudo apt install ruby-dev`
+** `sudo gem install one_gadget`
+** `sudo gem install seccomp-tools`
+* Ghidra: https://github.com/NationalSecurityAgency/ghidra/releases[download], (necessita JDK, vedi "Misc")
+
+===== Cryptography
+
+* Pycryptodome: `pip install pycryptodome`
+* Sagemath: `sudo apt install sagemath-jupyter`
+* Mtp: `pip install mtp`
