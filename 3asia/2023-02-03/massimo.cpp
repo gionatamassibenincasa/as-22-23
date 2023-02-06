@@ -4,7 +4,7 @@ using namespace std;
 /** Restituisce il valore massimo di A
   * @param A un array di interi
   * @param n il numero di elementi
-  * @return il massimo
+  * @return il valore massimo
   * PRE-REQUISITO: n > 0
   */
 int massimo(int A[], int n) {
