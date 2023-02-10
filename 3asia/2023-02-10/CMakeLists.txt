@@ -1,0 +1,1 @@
+add_executable(ricerca_lineare_iter ricerca_lineare_iterativa.cpp)
