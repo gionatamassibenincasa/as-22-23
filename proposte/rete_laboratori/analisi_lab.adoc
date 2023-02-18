@@ -40,6 +40,10 @@ l'installazione o l'aggiornamento di un software richiede l'intervento dell'assi
 Per risolvere il problema si può ricorrere alla soluzione descritta nel capoverso precedente.
 ////
 
+[[spazioInsufficiente]]
+Esaurimento dello spazio sul disco::
+spesso gli studenti lamentano estrema lentezza del sistema e impossibilità di scaricare o installare localmente programmi. Il motivo è dovuto all'esaurimento dello spazio sul disco rigido. Analizzando il disco si verifica che lo spazio è occupato da moltissime _cartelle_ utente, la maggior parte delle quali non hanno accessi da anni.
+
 [[volatilitaDatiUtente]]
 Gestione errata della persistenza dei dati degli utenti::
 in casi sporadici, con le versioni di Microsoft Windows (R) installate nei laboratori, succede che all'autenticazione segua la creazione di una sessione temporanea. In tale situazione alla disconnessione dell'utente tutti i dati salvati vengono cancellati senza possibilità di ripristino. La situazione non è controllabile e può causare frustrazione e perdita di dati rilevanti per studenti e insegnanti.

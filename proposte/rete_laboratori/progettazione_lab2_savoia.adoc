@@ -3,7 +3,7 @@
 
 Un secondo laboratorio di informatica al Savoia appare necessario e negli anni passati, con un minor numero di classi delle Scienze Applicate, veniva impiegata l'aula TEAL, ora non più disponibile. L'eventuale attivazione di altri indirizzi, tra cui il _Liceo matematico_ e il _Liceo STEAM_, potrebbe comportare la necessità di usare un laboratorio informatico anche da parte di altre materie.
 
-Allo stato attuale si utilizza una parte del Future Lab come aula per la didattica dell'informatica con gravi difficoltà nella didattica della disciplina, come indicato nel par. <<sec::analisi-flab>>.
+Allo stato attuale si utilizza una parte del Future Lab come aula per la didattica dell'informatica con gravi difficoltà nella didattica della disciplina, come indicato nel <<sec::analisi-flab>>.
 
 Si considera quindi una soluzione che si adegui agli spazi del Future Lab ma che sia facilmente _rilocabile_ in altre aule qualora queste divenissero disponibili.
 
@@ -25,9 +25,10 @@ Per il secondo laboratorio di informatica del FabLab si propone di acquistare:
 
 dotazioni digitali::
 - almeno 25 Raspberry pi 400 8GB (6 postazioni per scrivania),
-- almeno 25 monitor >= 20'' con altoparlanti,
+- almeno 25 monitor >= 20'' possibilmente con altoparlanti e webcam,
 - almeno 25 micro:bit,
-- almeno 25 kit 
+- almeno 25 Inventor's Kit per BBC microbit,
+- almeno 25 "ribbon cable" per il collegamento dei GPIO,
 - 4 switch 8 porte (uno per scrivania),
 - 25 cavi patch cat. 6A 2 m.
 

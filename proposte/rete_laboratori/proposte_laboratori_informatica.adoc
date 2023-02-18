@@ -59,6 +59,13 @@ endif::[]
 
 <<<
 
+[quote, Donald Knuth, Computer Science and Its Relation to Mathematics]
+____
+A dire il vero, una persona non comprende davvero un argomento se non quando riesce ad insegnarlo ad un computer.
+
+cite:[knuth1974computer]
+____
+
 [quote, Gregory Chaitin, Alla ricerca di Omega, Adelphi Edizioni]
 ____
 Il calcolatore era (ed è ancora) un nuovo e meraviglioso concetto filosofico
@@ -113,12 +120,16 @@ I requisiti per l'uso dei dispositivi sono brevemente formalizzati nel testo (<<
 
 Il documento fornisce delle ipotesi progettuali di massima (<<sec:prj-ipotesi>>) che sembrano soddisfare i requisiti individuati. Vengono definiti arredi e dotazioni digitali per un piccolo laboratorio collocabile nel Future Lab o in un altro spazio idoneo <<sec:secondo_lab_savoia>>. A livello della rete dati viene suggerita una possibile suddivisione della stessa in sotto-reti (<<sec:prj-sottoreti>>). Per quanto concerne la gestione del software sui calcolatori, sono presentate due soluzioni complementari, una basata sull'adozione di una soluzione completa per la gestione di una rete didattica (<<sec:prj-fuss>>) e l'altra che prevede l'installazione di un terminal server (<<sec:prj-thinclient>>), soluzione che è adottata da un numero crescente di scuole.
 
+Viene infine fornito un sintetico piano di lavoro (<<aggiornamento-labs>>) per l'aggiornamento dei laboratori.
+
 :sectnums:
 include::analisi.adoc[]
 
 include::requisiti.adoc[]
 
 include::progettazione.adoc[]
+
+include::piano_lavoro_laboratori.adoc[]
 
 include::bibliografia.adoc[]
 
