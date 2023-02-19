@@ -1,0 +1,35 @@
+[[sec:aggiornamento-labs]]
+== Piano di aggiornamento della dotazione software laboratori di informatica
+
+=== Obiettivo
+
+L'obiettivo del presente piano è quello di fornire una sequenza di operazioni atte a soddisfare i requisti (<<requisiti-labs>>) specificati dal Dipartimento di Informatica nel corrente anno scolastico 2022-23.
+I lavori saranno eseguiti dai tecnici di laboratorio e la parte software sarà curata dagli insegnanti senza aggravi di spesa per l'Amministrazione.
+
+=== Fasi
+
+Al fine di minimizzare i rischi nell'effettuazione delle operazioni si opererà prima nel Laboratorio del plesso Benincasa e poi si replicheranno le operazioni nel plesso Savoia.
+
+La divisione in fasi è la seguente:
+
+. Configurazione degli switch per separare la rete (cablata) del laboratorio dal resto della rete dell'Istituto
+. Installazione di una macchina virtuale per il controllo della rete del laboratorio
+. Configurazione sistema operativo Windows dei PC del laboratorio
+. Installazione di Veyon sui PC del laboratorio
+. Pulizia del disco dei PC del laboratorio
+. Installazione dual boot di FUSS 11 client sui PC del laboratorio
+. Installazione dei servizi sulla macchina virtuale
+.. Jupyter
+.. Pacchetti per la CyberSecurity
+.. Correttore per Olimpiadi di Informatica
+
+
+
+- preparare un documento sulle modifiche della rete dei laboratori: 
+** VLAN per isolare le reti dei laboratori dal resto dell'infrastruttura
+** Configurazione di una macchina virtuale con due interfacce virtuali che rappresenta un nodo di filtro, monitoraggio e controllo ulteriore rispetto al firewall
+** Installazione della distribuzione FUSS Server sulla macchina virtuale, configurazione delle interfacce di rete e dei servizi: Veyon, DHCP, DNS, Jupyter-lab
+** Modifica della configurazione di rete dei PC del laboratorio: DHCP, DNS, netmask
+** Installazione del servizio Veyon
+** Pulizia delle cartelle degli utenti non usate dopo il 01/09/2022
+** Eventuale installazione, in dual boot, di FUSS 11 Client
