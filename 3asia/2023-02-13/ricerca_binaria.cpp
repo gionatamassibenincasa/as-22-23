@@ -2,11 +2,19 @@
 using namespace std;
 
 /** Ricerca binaria su array di interi
-  * @param
+  * @param A array di interi
+  * @param sx estremo di sinistra del sottoinsieme dell'array
+  *           nel quale cercare il valore v
+  * @param dx estremo di destra del sottoinsieme dell'array
+  *           nel quale cercare il valore v
+  * @param v valore intero da cercare
+  * @return l'indice i tale che A[i] == v,
+            oppure -1 se non esiste v in A
   */
 int ricerca_binaria(int A[], int sx, int dx, int v) {
   if (sx >= dx)
     return -1;
+  //! centro dell'intervallo di indici sx e dx
   int cx = (sx + dx) / 2;
   if (A[cx] == v)
     return cx;
@@ -24,5 +32,5 @@ int main() {
   cout << "Il valore 1 e' in posizione " << pos << endl;
   pos = ricerca_binaria (numeriOrdinati, 0, 10, 3);
   cout << "Il valore 3 e' in posizione " << pos << endl;
-  return 0;
+  return 0; 
 }
