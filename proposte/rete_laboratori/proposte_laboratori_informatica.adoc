@@ -17,7 +17,6 @@ Dipartimento di informatica - Savoia Benincasa
 :bibtex-locale: it-IT
 :bibtex-throw: true
 :xrefstyle: short
-:lang: it
 :stem: latexmath
 //:source-highlighter: coderay
 //:source-highlighter: pygments
@@ -35,6 +34,8 @@ ifeval::["{lang}" == "it"]
 :appendix-caption: Appendice
 :caution-caption: Attenzione
 :chapter-label: Capitolo
+:chapter-signifier: Capitolo
+:chapter-refsig: cap.
 :example-caption: Esempio
 :figure-caption: Figura
 :important-caption: Importante
@@ -55,9 +56,10 @@ ifdef::backend-pdf[]
 :mathematical-format: svg
 :mathematical-inline: true
 endif::[]
+:title-page:
+:title-logo-image: image:img/logo.png[top=50%,align=center,pdfwidth=0.5in]
+:doctype: book
 :runner-node: v18
-
-<<<
 
 [quote, Donald Knuth, Computer Science and Its Relation to Mathematics]
 ____
@@ -120,7 +122,7 @@ I requisiti per l'uso dei dispositivi sono brevemente formalizzati nel testo (<<
 
 Il documento fornisce delle ipotesi progettuali di massima (<<sec:prj-ipotesi>>) che sembrano soddisfare i requisiti individuati. Vengono definiti arredi e dotazioni digitali per un piccolo laboratorio collocabile nel Future Lab o in un altro spazio idoneo <<sec:secondo_lab_savoia>>. A livello della rete dati viene suggerita una possibile suddivisione della stessa in sotto-reti (<<sec:prj-sottoreti>>). Per quanto concerne la gestione del software sui calcolatori, sono presentate due soluzioni complementari, una basata sull'adozione di una soluzione completa per la gestione di una rete didattica (<<sec:prj-fuss>>) e l'altra che prevede l'installazione di un terminal server (<<sec:prj-thinclient>>), soluzione che è adottata da un numero crescente di scuole.
 
-Viene infine fornito un sintetico piano di lavoro (<<aggiornamento-labs>>) per l'aggiornamento dei laboratori.
+Viene infine fornito un sintetico piano di lavoro (<<sec:aggiornamento-labs>>) per l'aggiornamento dei laboratori.
 
 :sectnums:
 include::analisi.adoc[]
