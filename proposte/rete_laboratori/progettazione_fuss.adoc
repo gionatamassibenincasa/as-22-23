@@ -1,5 +1,5 @@
 [[sec:prj-fuss]]
-=== FUSS Server con Veyon ma dual boot
+=== FUSS Server con Veyon
 
 Una proposta mirata alla minimizzazione del lavoro necessario alla transizione del software è quella, una volta partizionata la rete e installato un server FUSS - su macchina fisica o virtualizzata - di installare i client FUSS mantendo il dual boot con Windows. Il boot loader del client deve avviare in modo predefinito con FUSS e permettere la scelta di Windows (R).
 All'avvio di Windows deve avviarsi il servizio Veyon.

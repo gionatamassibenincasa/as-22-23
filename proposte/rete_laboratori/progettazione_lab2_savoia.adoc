@@ -24,26 +24,27 @@ Nella progettazione si considerano i vincoli individuati nel par. <<sec:requisit
 Per il secondo laboratorio di informatica del FabLab si propone di acquistare:
 
 dotazioni digitali::
-- almeno 25 Raspberry pi 400 8GB (6 postazioni per scrivania),
-- almeno 25 monitor >= 20'' possibilmente con altoparlanti e webcam,
-- almeno 25 micro:bit,
-- almeno 25 Inventor's Kit per BBC microbit,
-- almeno 25 "ribbon cable" per il collegamento dei GPIO,
-- 4 switch 8 porte (uno per scrivania),
-- 25 cavi patch cat. 6A 2 m.
+- dotazione tecnologica alternativa 1:
+
+** almeno 30 Raspberry pi 400 8GB (6 postazioni per scrivania),
+** almeno 30 monitor >= 20'' possibilmente con altoparlanti e webcam,
+
+- dotazione tecnologica alternativa 2:
+
+** almeno 30 Joy Pi Note (6 postazioni mobili per scrivania),
+
+- almeno 30 micro:bit,
+- almeno 30 Inventor's Kit per BBC microbit,
+- almeno 30 "ribbon cable" per il collegamento dei GPIO,
+- 5 switch 8 porte (uno per scrivania),
+- 30 cavi patch cat. 6A 2 m.
 
 arredi::
-- tre scrivanie fino a 200 x 110 analoghe a quella attualmente presente nel Future Lab.
+- 6 scrivanie.
 
 interventi vari::
-- 25 multiprese da scrivania (tre per scrivania) aventi ognuna almeno 1 presa Schuko e tre prese italiane 10+16 A,
-- materiale di supporto vario tra cui: cavi di rete ed elettrici per i collegamenti delle scrivanie, canaline calpestabili per uso domestico oppure canaline in sospensione. 
-
-Qualora fosse possibile, si prone altresì di:
-
-- installare una porta di separazione tra l'atrio dell'aula magna e la zona adibita a laboratori (eventualmente spostando il sistema di pannelli scorrevoli),
-- arretrare o eliminare i pannelli scorrevoli???
-- arretrare la Digital Board.
+- 30 multiprese da scrivania (tre per scrivania) aventi ognuna almeno 1 presa Schuko e tre prese italiane 10+16 A,
+- materiale di supporto vario tra cui: cavi di rete ed elettrici per i collegamenti delle scrivanie, canaline calpestabili per uso domestico oppure canaline in sospensione.
 
 Per un prospetto indicativo dei costi relativi alle componenti elettroniche si veda la tab. <<tab::costiFabLab>>.
 
@@ -125,3 +126,11 @@ Per un prospetto indicativo dei costi relativi alle componenti elettroniche si v
 |€ 16.693,73
 |
 |===
+
+=== Interventi nell'area antistante il Fab Lab
+
+Nell'ipotesi che lo spazio antistante il Fab Lab continui ad essere impiegato come laboratorio, si di:
+
+- installare una porta di separazione tra l'atrio dell'aula magna e la zona adibita a laboratori (eventualmente spostando il sistema di pannelli scorrevoli),
+- arretrare o eliminare i pannelli scorrevoli,
+- arretrare la Digital Board.
