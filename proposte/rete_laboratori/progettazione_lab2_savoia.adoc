@@ -19,6 +19,10 @@ La professione digitale potrebbe essere quella della consulenza nel settore dell
 * __Reti di Calcolatori__,
 * __Physical Computing__.
 
+// da https://cybersecnatlab.it/mission/
+Si propone un laboratorio dedicato all'attuazione delle strategie nazionali sulla cyber sicurezza, partecipando alla diffusione della consapevolezza e allo sviluppo competenze nel campo della sicurezza informatica. Il Laboratorio intende offrire un contributo per applicare le misure di sicurezza al cyberspace italiano introducendo le problematiche tipiche affrontate dall'esperto in sicurezza informatica.
+Egli ha il compito di prevenire, rilevare e scoprire gli attacchi informatici.
+
 Nella progettazione si considerano i vincoli individuati nel par. <<sec:requisiti-labs>>, quelli derivanti dalle caratteristiche dello spazio del Future Lab, e quello di poter facilmente rilocare gli arredi e la dotazione tecnologica in altri spazi, qualora si verificasse la loro disponibilità.
 
 Per il secondo laboratorio di informatica del FabLab si propone di acquistare:
@@ -46,85 +50,23 @@ interventi vari::
 - 30 multiprese da scrivania (tre per scrivania) aventi ognuna almeno 1 presa Schuko e tre prese italiane 10+16 A,
 - materiale di supporto vario tra cui: cavi di rete ed elettrici per i collegamenti delle scrivanie, canaline calpestabili per uso domestico oppure canaline in sospensione.
 
-Per un prospetto indicativo dei costi relativi alle componenti elettroniche si veda la tab. <<tab::costiFabLab>>.
+Per un prospetto indicativo dei costi relativi alle componenti elettroniche si vedano le tabb. <<tab::costiFabLabAlt1>> e <<tab::costiFabLabAlt2>>.
 
-[[tab::costiFabLab]]
-[options="header,footer"]
-.Costi indicativi secondo laboratorio di informatica plesso Savoia
+[[tab::costiFabLabAlt1]]
+[options="header,footer",format=csv]
+.Costi indicativi secondo laboratorio di informatica plesso Savoia (opzione 1)
 |===
-|Categoria |Descrizione |Quantità |Costo unitario (IVA incl) |Costo complessivo |Link
-|Dotazione tecnologica
-|Raspberry Pi 4 Desktop Kit 8GB (Tastiera Italiana)
-|25
-|€ 199,90
-|€ 4.997,50
-|https://www.robotstore.it/Raspberry-Pi-4-Desktop-Kit-8GB-Tastiera-Italiana
-|Dotazione tecnologica
-|micro:bit V2.2 GO Kit
-|25
-|€ 34,90
-|€ 872,50
-|https://www.robotstore.it/micro-bit-V2-2-GO-Kit
-|Dotazione tecnologica
-|Inventor's Kit per BBC micro:bit
-|25
-|€ 33,80
-|€ 845,00
-|https://www.robotstore.it/Inventor%27s-Kit-per-BBC-micro-bit
-|Dotazione tecnologica
-|Lenovo ThinkVision T22v-20 - Monitor
-|25
-|€ 222,04
-|€ 5.551,00
-|https://www.campustore.it/lenovo-thinkvision-t22v-20-monitor-a-led-22-21-5.html
-|Dotazione tecnologica
-|D-Link GO-SW-8G - Switch
-|4
-|€ 26,96
-|€ 107,84
-|https://www.campustore.it/d-link-go-sw-8g-switch-unmanaged-8-x-10-100-1000-desktop.html
-|Dotazione tecnologica
-|Cavo di rete Patch in Rame Cat. 6A Grigio UTP 2 mt
-|25
-|€ 5,51
-|€ 137,75
-|https://www.campustore.it/cavo-di-rete-patch-in-rame-cat-6a-grigio-utp-2-mt.html
-|Arredo
-|Scrivania Practika P3
-|4
-|€ 339,16
-|€ 1.356,64
-|https://www.campustore.it/scrivania-pratika-p3-dim-180x80x73-cm.html
-|Arredo
-|Multipresa da scrivania bticino S3711GB
-|25
-|€ 33,02
-|€ 825,50
-|https://catalogo.bticino.it/BTI-S3711GB-IT
-|Totale dotazione tecn.
-|
-|
-|
-|€ 12.511,59
-|
-|Totale arredo
-|
-|
-|
-|€ 2.182,14
-|
-|Stima piccole opere e altro materiale
-|
-|
-|
-|€ 2.000,00
-|
-|Totale
-|
-|
-|
-|€ 16.693,73
-|
+include::tab/distinta_lab_stem_opz_1.csv[]
+|===
+
+<<<
+
+[[tab::costiFabLabAlt2]]    
+[options="header,footer"]
+.Costi indicativi secondo laboratorio di informatica plesso Savoia (opzione 2)
+[%header,format=csv]
+|===
+include::tab/distinta_lab_stem_opz_2.csv[]
 |===
 
 === Interventi nell'area antistante il Fab Lab
