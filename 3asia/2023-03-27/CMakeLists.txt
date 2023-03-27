@@ -1,0 +1,3 @@
+add_executable(soluzione_compito soluzione_compito.cpp)
+add_executable(somma somma.cpp)
+add_executable(prodotto_scalare prodotto_scalare.cpp)
