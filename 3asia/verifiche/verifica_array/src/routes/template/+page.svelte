@@ -20,6 +20,7 @@ using namespace std;
     {{{restituzionePredefinita}}}
 {{/if}}
 }
+
 {{/each}}
 
 int main() {
@@ -43,7 +44,7 @@ int main() {
 		text={code}
 		let:copy
 		on:copy={() => {
-			console.log('Has Copied');
+			console.log('Codice copiato!');
 		}}
 	>
 		<button on:click={copy}>Copia</button>
