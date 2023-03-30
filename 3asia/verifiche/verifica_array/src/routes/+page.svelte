@@ -5,13 +5,14 @@
 	import List, { Item, Text, PrimaryText, SecondaryText, Separator } from '@smui/list';
 	import Select, { Option } from '@smui/select';
 	import Button from '@smui/button';
-	
+	import DataTable, { Head, Body, Row, Cell } from '@smui/data-table';
+
 	import Highlight from 'svelte-highlight';
 	import cpp from 'svelte-highlight/languages/cpp';
 	import github from 'svelte-highlight/styles/github';
-	
+
 	import Clipboard from 'svelte-clipboard';
-	
+
 	import Handlebars from 'handlebars';
 
 	import hljs from 'highlight.js/lib/core';
@@ -129,6 +130,7 @@ int main() {
 				> Compito, seleziona il tuo nome e clicca sul bottone
 				<tt>Genera compito</tt>
 			</li>
+			<li><strong>stampa il foglio (<kbd>Ctrl+P</kbd>)</strong></li>
 			<li>
 				Vai alla scheda <IconButton class="material-icons">code</IconButton> Codice, spostati in fondo
 				e clicca sul bottone
@@ -139,9 +141,33 @@ int main() {
 				presente negli appunti
 			</li>
 			<li>Scrivi le funzioni richieste dal compito</li>
-			<li>Al termine, scarica <tt>main.cpp</tt> e consegnalo come allegato su Classroom</li>
-			<li>Sempre su Classroom, aggiungi il link al tuo Repl</li>
+			<li>
+				Al termine:
+				<ol>
+					<li>scarica <tt>main.cpp</tt></li>
+					<li>consegna su Classroom il file scaricato come allegato</li>
+					<li>
+						su Classroom, aggiungi il link al tuo Repl, indirizzo url che termina con <tt
+							>.../main.cpp</tt
+						>
+					</li>
+					<li>
+						<strong
+							>stampa <tt>main.cpp</tt>, allega i/il fogli/o a quello stampato precedentemente,
+							numera i fogli, firmali e consegnali all'insegnante</strong
+						>
+					</li>
+				</ol>
+			</li>
 		</ol>
+
+		<p>
+			<strong>L'uso del cellulare è vietato.</strong><br />
+			<strong
+				>La copiatura e l'uso di sistemi elettronici non autorizzati comportano l'annullamento del
+				compito con valutazione 2/10 ponderata al 100 %.</strong
+			>
+		</p>
 
 		<p>Buon lavoro!</p>
 	{:else if active.k == 2}
@@ -185,6 +211,50 @@ int main() {
 				{/each}
 			</List>
 		</div>
+
+		<DataTable table$aria-label="Griglia di valutazione" style="max-width: 100%;">
+			<caption>Griglia di valutazione</caption>
+			<Head
+				><Row>
+					<Cell>Correttezza</Cell>
+					<Cell>Completezza</Cell>
+					<Cell>Pertinenza</Cell>
+					<Cell>Minimalità</Cell>
+					<Cell>Intelligibilità</Cell>
+					<Cell>Appropriatezza del lessico</Cell>
+				</Row>
+			</Head>
+			<Body>
+				<Row>
+					<Cell>Corretto &mdash; 6</Cell>
+					<Cell>Completo &mdash; 6</Cell>
+					<Cell>Pertinente &mdash; 2</Cell>
+					<Cell>Minimale &mdash; 2</Cell>
+					<Cell>Intelligibile &mdash; 2</Cell>
+					<Cell>Appropriato &mdash; 2</Cell>
+				</Row>
+				<Row>
+					<Cell>Parzialmente corretto &mdash; 4</Cell>
+					<Cell>Quasi completo &mdash; 4</Cell>
+					<Cell>Poco pertinente &mdash; 1</Cell>
+					<Cell>Poco ridondante &mdash; 1</Cell>
+					<Cell>Poco intelligibile &mdash; 1</Cell>
+					<Cell>Poco appropriato &mdash; 1</Cell>
+				</Row>
+				<Row>
+					<Cell>Scarsamente corretto &mdash; 2</Cell>
+					<Cell>Poco completo &mdash; 2</Cell>
+					<Cell>Non pertinente &mdash; 0</Cell>
+					<Cell>Ridondante &mdash; 0</Cell>
+					<Cell>Non intelligibile &mdash; 0</Cell>
+					<Cell>Non appropriato &mdash; 0</Cell>
+				</Row>
+				<Row>
+					<Cell>Non corretto &mdash; 0</Cell>
+					<Cell>Incompleto &mdash; 0</Cell>
+				</Row>
+			</Body>
+		</DataTable>
 	{:else}
 		<h2>Codice scheletro</h2>
 
