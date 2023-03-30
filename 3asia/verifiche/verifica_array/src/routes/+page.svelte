@@ -10,6 +10,7 @@
 	import Highlight from 'svelte-highlight';
 	import cpp from 'svelte-highlight/languages/cpp';
 	import github from 'svelte-highlight/styles/github';
+	import githubDark from 'svelte-highlight/styles/github-dark';
 
 	import Clipboard from 'svelte-clipboard';
 
@@ -21,7 +22,7 @@
 
 	import { type Studente, elencoStudenti } from '$lib/studente';
 	import { type Esercizio, elencoEsercizi, generaElencoDomande } from '$lib/esercizio';
-	import { studenteStore, quesitiStore, generatoStore } from '$lib/state';
+	import { studenteStore, quesitiStore, generatoStore, temaScuroStore } from '$lib/state';
 
 	type TabEntry = {
 		k: number;
@@ -98,7 +99,11 @@ int main() {
 </script>
 
 <svelte:head>
-	{@html github}
+	{#if $temaScuroStore}
+		{@html githubDark}
+	{:else}
+		{@html github}
+	{/if}
 </svelte:head>
 
 <div>
@@ -161,11 +166,13 @@ int main() {
 			</li>
 		</ol>
 
-		<p>
-			<strong>L'uso del cellulare è vietato.</strong><br />
+		<p class="bordatoRosso">
+			<strong>L'uso dello smartphone è vietato.</strong><br />
+			<strong>L'uso del libro, cartaceo o elettronico, è vietato.</strong><br />
+			<strong>L'uso degli appunti, cartacei o elettronici, è vietato.</strong><br />
 			<strong
-				>La copiatura e l'uso di sistemi elettronici non autorizzati comportano l'annullamento del
-				compito con valutazione 2/10 ponderata al 100 %.</strong
+				>La copiatura, da compagni o da altre risorse, e l'uso di sistemi elettronici non
+				autorizzati comportano l'annullamento del compito con valutazione 2/10 ponderata al 100 %.</strong
 			>
 		</p>
 
@@ -274,3 +281,9 @@ int main() {
 		{/if}
 	{/if}
 </div>
+
+<style>
+	.bordatoRosso {
+		border: 1px solid red;
+	}
+</style>

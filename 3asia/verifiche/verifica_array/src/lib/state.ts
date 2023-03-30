@@ -6,4 +6,6 @@ export const quesitiStore = writable([]);
 
 export const generatoStore = writable(false);
 
+export const temaScuroStore = writable(false);
+
 // export const sorted = derived(todos_, (todos_) => sortBy(todos_, 'checkboxed'))
