@@ -43,7 +43,7 @@
 	<Row>
 		<Section>
 			<!--IconButton class="material-icons">menu</IconButton-->
-			<Title>Informatica &mdash; 2023-03-31</Title>
+			<Title>Informatica &mdash; Compito scritto &mdash; 2023-04-17</Title>
 		</Section>
 		<Section align="end" toolbar>
 			<IconButton

@@ -10,7 +10,8 @@ export interface Esercizio {
 }
 export const elencoEsercizi: Array<Esercizio> = [
 	{
-		testo: `Scrivi la funzione <code>somma</code> che accetta come argomenti un array di interi e la dimensione dell'array e restituisce la somma di tutti i valori.`,
+		testo: `Scrivi la funzione <code>somma</code> che accetta come argomenti un array di interi<br />
+ e la dimensione dell'array e restituisce la somma di tutti i  valori.`,
 		esempio: `<code>int A[3] = {1, 2, 3}; cout << somma(A, 3) << end;</code> stampa 6.`,
 		prototipo: `int somma (int A[], int n)`,
 		soluzione: `/**
@@ -28,7 +29,8 @@ int somma(int A[], int n) {
 }`
 	},
 	{
-		testo: `Scrivi la funzione <code>inverti</code> he accetta come argomenti un array di interi e la dimensione dell'array e inverte sul posto l'array.`,
+		testo: `Scrivi la funzione <code>inverti</code> he accetta come argomenti un array di interi<br />
+ e la dimensione dell'array e inverte sul posto l'array.`,
 		esempio: `<code>int A[3] = {1, 2, 3}; inverti(A, 3); stampa(A, 3);</code> stampa {3, 2, 1}`,
 		prototipo: `void inverti (int A[], int n)`,
 		soluzione: `/**
@@ -44,7 +46,8 @@ void inverti(int A[], int n) {
 `
 	},
 	{
-		testo: `Scrivi la funzione <code>tuttiPari</code> he accetta come argomenti un array di interi e la dimensione dell'array e restituisce <code>true</code> se tutti gli elementi dell'array sono pari.`,
+		testo: `Scrivi la funzione <code>tuttiPari</code> he accetta come argomenti un array di interi<br />
+ e la dimensione dell'array e restituisce <code>true</code> se tutti gli elementi dell'array sono pari.`,
 		esempio: `<code>int A[3] = {0, 2, 8}; if (tuttiPari(A, 3)) cout << "Tutti pari";</code> stampa <em>Tutti pari</em>.`,
 		prototipo: `bool tuttiPari (int A[], int n)`,
 		soluzione: `/**
@@ -64,7 +67,8 @@ bool tuttiPari(int A[], int n) {
 `
 	},
 	{
-		testo: `Scrivi la funzione <code>media</code> che accetta come argomenti un array di numeri double e la dimensione dell'array e restituisce la media aritmetica dei valori.`,
+		testo: `Scrivi la funzione <code>media</code> che accetta come argomenti un array di numeri double<br />
+ e la dimensione dell'array e restituisce la media aritmetica dei valori.`,
 		esempio: `<code>int A[3] = {1., 2., 3.}; cout << media(A, 3);</code> stampa 2.`,
 		prototipo: `double media (double A[], int n)`,
 		soluzione: `/**
@@ -83,7 +87,8 @@ double media(double A[], int n) {
 `
 	},
 	{
-		testo: `Scrivi la funzione <code>sommaPari</code> che accetta come argomenti un array di interi e la dimensione dell'array e restituisce la somma dei numeri pari.`,
+		testo: `Scrivi la funzione <code>sommaPari</code> che accetta come argomenti un array di interi<br />
+ e la dimensione dell'array e restituisce la somma dei numeri pari.`,
 		prototipo: `int sommaPari (int A[], int n)`,
 		soluzione: `/**
  * @brief Restituisce la somma degli elementi pari di un array di interi.
@@ -103,7 +108,8 @@ int sommaPari(int A[], int n) {
 `
 	},
 	{
-		testo: `Scrivi la funzione <code>sommaDispari</code> che accetta come argomenti un array di interi e la dimensione dell'array e restituisce la somma dei numeri dispari.`,
+		testo: `Scrivi la funzione <code>sommaDispari</code> che accetta come argomenti un array di interi<br />
+ e la dimensione dell'array e restituisce la somma dei numeri dispari.`,
 		prototipo: `int sommaDispari (int A[], int n)`,
 		soluzione: `/**
  * @brief Restituisce la somma degli elementi dispari di un array di interi.
@@ -123,7 +129,8 @@ int sommaDispari(int A[], int n) {
 `
 	},
 	{
-		testo: `Scrivi la funzione <code>numeroElementiMulipliDiTre</code> che accetta come argomenti un array di interi e la dimensione dell'array e restituisce il numero di elementi multipli di tre nell'array.`,
+		testo: `Scrivi la funzione <code>numeroElementiMulipliDiTre</code> che accetta come argomenti un array di interi<br />
+ e la dimensione dell'array e restituisce il numero di elementi multipli di tre nell'array.`,
 		prototipo: `int numeroElementiMulipliDiTre(int A[], int n)`,
 		soluzione: `/**
 * @brief Restituisce il numero di elementi multipli di tre nell'array.
@@ -144,7 +151,8 @@ int numeroElementiMulipliDiTre(int A[], int n) {
 `
 	},
 	{
-		testo: `Scrivi la funzione <code>trovaMax</code> che accetta come argomenti un array di interi e la dimensione dell'array e restituisce il valore massimo.`,
+		testo: `Scrivi la funzione <code>trovaMax</code> che accetta come argomenti un array di interi e la dimensione<br />
+ dell'array e restituisce il valore massimo.`,
 		prototipo: `int trovaMax(int A[], int n)`,
 		soluzione: `/**
 * @brief Restituisce il valore massimo dell'array.
@@ -165,7 +173,8 @@ int trovaMax(int A[], int n) {
 `
 	},
 	{
-		testo: `Scrivi la funzione <code>trovaMin</code> che accetta come argomenti un array di interi e la dimensione dell'array e restituisce il valore minimo.`,
+		testo: `Scrivi la funzione <code>trovaMin</code> che accetta come argomenti un array di interi e la dimensione<br />
+ dell'array e restituisce il valore minimo.`,
 		prototipo: `int trovaMin(int A[], int n)`,
 		soluzione: `/**
 * @brief Restituisce il valore minimo dell'array.
@@ -186,7 +195,8 @@ int trovaMin(int A[], int n) {
 `
 	},
 	{
-		testo: `Scrivi la funzione <code>ordinaCrescente</code> che accetta come argomenti un array di double e la dimensione dell'array e ordina l'array sul posto in ordine crescente.`,
+		testo: `Scrivi la funzione <code>ordinaCrescente</code> che accetta come argomenti un array di double e la dimensione<br />
+ dell'array e ordina l'array sul posto in ordine crescente.`,
 		prototipo: `void ordinaCrescente(double A[], int n)`,
 		soluzione: `/**
 * @brief Ordina l'array sul posto in ordine crescente. Bubble sort
@@ -208,7 +218,8 @@ void ordinaCrescente(double A[], int n) {
 `
 	},
 	{
-		testo: `Scrivi la funzione <code>ordinaDecrescente</code> che accetta come argomenti un array di float e la dimensione dell'array e ordina l'array sul posto in ordine decrescente.`,
+		testo: `Scrivi la funzione <code>ordinaDecrescente</code> che accetta come argomenti un array di float e la dimensione<br />
+ dell'array e ordina l'array sul posto in ordine decrescente.`,
 		prototipo: `void ordinaDecrescente(float A[], int n)`,
 		soluzione: `/**
  * @brief Ordina l'array in ordine decrescente
@@ -232,7 +243,8 @@ void ordinaDecrescente(float A[], int n) {
 `
 	},
 	{
-		testo: `Scrivi la funzione <code>sommaValoriIndicePari</code> che accetta come argomenti un array di interi e la dimensione dell'array e restituisce la somma dei valori presenti in posizione di indice pari.`,
+		testo: `Scrivi la funzione <code>sommaValoriIndicePari</code> che accetta come argomenti un array di interi e la dimensione<br />
+ dell'array e restituisce la somma dei valori presenti in posizione di indice pari.`,
 		prototipo: `int sommaValoriIndicePari(int A[], int n)`,
 		soluzione: `/**
  * @brief Calcola la somma dei valori presenti in posizione di indice pari
@@ -252,7 +264,8 @@ int sommaValoriIndicePari(int A[], int n) {
 `
 	},
 	{
-		testo: `Scrivi la funzione <code>sommaValoriIndiceDispari</code> che accetta come argomenti un array di numeri double e restituisce la somma dei valori presenti in posizione di indice dispari.`,
+		testo: `Scrivi la funzione <code>sommaValoriIndiceDispari</code> che accetta come argomenti un array di numeri double e<br />
+ restituisce la somma dei valori presenti in posizione di indice dispari.`,
 		prototipo: `double sommaValoriIndiceDispari(double A[], int n)`,
 		soluzione: `/**
  * @brief Calcola la somma dei valori presenti in posizione di indice dispari
@@ -272,7 +285,8 @@ double sommaValoriIndiceDispari(double A[], int n) {
 `
 	},
 	{
-		testo: `Scrivi la funzione <code>contaOccorrenze</code> che accetta come argomenti un array di interi, la dimensione dell'array e un valore di ricerca, e restituisce il numero di volte che il valore di ricerca compare nell'array.`,
+		testo: `Scrivi la funzione <code>contaOccorrenze</code> che accetta come argomenti un array di interi, la dimensione dell'array<br />
+ e un valore di ricerca, e restituisce il numero di volte che il valore di ricerca compare nell'array.`,
 		prototipo: `int contaOccorrenze(int A, int n, int v)`,
 		soluzione: `/**
  * @brief Conta il numero di volte che il valore di ricerca compare nell'array
@@ -295,7 +309,8 @@ int contaOccorrenze(int A[], int n, int v) {
 `
 	},
 	{
-		testo: `Scrivi la funzione <code>sommaInPosizioni</code> che accetta come argomenti un array di numeri, il numero di elementi, un secondo array con elementi tra 0 e la lunghezza del primo array, la lunghezza del secondo array e restituisce la somma dei valori del primo array nelle posizioni specificate dal secondo array.`,
+		testo: `Scrivi la funzione <code>sommaInPosizioni</code> che accetta come argomenti un array di numeri, il numero di elementi,<br />
+ un secondo array con elementi tra 0 e la lunghezza del primo array, la lunghezza del secondo array e restituisce la somma dei valori del primo array nelle posizioni specificate dal secondo array.`,
 		prototipo: `int sommaInPosizioni(int A[], int nA, int P, int nP)`,
 		soluzione: `/**
  * @brief Calcola la somma dei valori dell'array A nelle posizioni specificate dall'array P.
@@ -316,7 +331,8 @@ int sommaInPosizioni(int A[], int nA, int P[], int nP) {
 `
 	},
 	{
-		testo: `Scrivi la funzione <code>trovaValore</code> che accetta come argomenti un array di numeri, la dimensione dell'array e un valore, e restituisce la posizione in cui trova la prima occorrenza del valore oppure -1.`,
+		testo: `Scrivi la funzione <code>trovaValore</code> che accetta come argomenti un array di numeri, la dimensione dell'array<br />
+ e un valore, e restituisce la posizione in cui trova la prima occorrenza del valore oppure -1.`,
 		prototipo: `int trovaValore(int A[], int n, int v)`,
 		soluzione: `/**
  * @brief Restituisce la posizione della prima occorrenza del valore v nell'array A.
@@ -337,7 +353,8 @@ int trovaValore(int A[], int n, int v) {
 `
 	},
 	{
-		testo: `Scrivi la funzione <code>mappaQuadrato</code> che accetta come argomenti un array di numeri interi e la dimensione, e aggiorna i valori dell'array sostituendoli con i loro quadrati`,
+		testo: `Scrivi la funzione <code>mappaQuadrato</code> che accetta come argomenti un array di numeri interi e la dimensione,<br />
+ e aggiorna i valori dell'array sostituendoli con i loro quadrati`,
 		prototipo: `void mappaQuadrato(int A[], int n)`,
 		soluzione: `/**
  * @brief Aggiorna gli elementi dell'array A con i loro quadrati.
@@ -353,7 +370,8 @@ void mappaQuadrato(int A[], int n) {
 `
 	},
 	{
-		testo: `Scrivi la funzione <code>mappaCubo</code> che accetta come argomenti un array di numeri interi e la dimensione, e aggiorna i valori dell'array sostituendoli con i loro cubi`,
+		testo: `Scrivi la funzione <code>mappaCubo</code> che accetta come argomenti un array di numeri interi e la dimensione, e aggiorna<br />
+ i valori dell'array sostituendoli con i loro cubi`,
 		prototipo: `void mappaCubo(int A[], int n)`,
 		soluzione: `/**
  * @brief Aggiorna gli elementi dell'array A con i loro cubi.
@@ -369,7 +387,8 @@ void mappaCubo(int A[], int n) {
 `
 	},
 	{
-		testo: `Scrivi la funzione <stampa</code> che accetta come argomenti un array di numeri double e la dimensione, e stampa i valori dell'array`,
+		testo: `Scrivi la funzione <stampa</code> che accetta come argomenti un array di numeri double e la dimensione,<br />
+ e stampa i valori dell'array`,
 		prototipo: `void stampa(double A[], int n)`,
 		soluzione: `/**
  * @brief Stampa gli elementi dell'array A.
@@ -388,7 +407,8 @@ void stampa(double A[], int n) {
 }`
 	},
 	{
-		testo: `Scrivi la funzione <code>prodotto</code> che accetta come argomenti un array di numeri interi e la dimensione, e calcola il prodotto`,
+		testo: `Scrivi la funzione <code>prodotto</code> che accetta come argomenti un array di numeri interi e la dimensione,<br />
+ e calcola il prodotto`,
 		prototipo: `int prodotto(int A[], int n)`,
 		soluzione: `/**
  * @brief Calcola il prodotto degli elementi dell'array A.
@@ -407,8 +427,9 @@ int prodotto(int A[], int n) {
 `
 	},
 	{
-		testo: `Scrivi la funzione <code>contaMinoriDi</code> che accetta come argomenti un array di numeri interi, la dimensione e un valore, e restituisce il numero di elementi aventi valore minore del terzo parametro`,
-		prototipo: `void contaMinoriDi(int A[], int n, int v)`,
+		testo: `Scrivi la funzione <code>contaMinoriDi</code> che accetta come argomenti un array di numeri interi, la dimensione<br />
+ e un valore, e restituisce il numero di elementi aventi valore minore del terzo parametro`,
+		prototipo: `int contaMinoriDi(int A[], int n, int v)`,
 		soluzione: `/**
  * Conta gli elementi di un array di numeri interi minori di un dato valore.
  *
@@ -417,7 +438,7 @@ int prodotto(int A[], int n) {
  * @param v valore di riferimento
  * @return il numero di elementi di A aventi valore minore di v
  */
-void contaMinoriDi(int A[], int n, int v) {
+int contaMinoriDi(int A[], int n, int v) {
     int count = 0; // inizializza il contatore a zero
     for (int i = 0; i < n; i++) { // scorri l'array
         if (A[i] < v) { // se l'elemento corrente è minore di v
@@ -429,7 +450,8 @@ void contaMinoriDi(int A[], int n, int v) {
 `
 	},
 	{
-		testo: `Scrivi la funzione <code>moltiplica</code> che accetta come argomenti un array di numeri interi, la dimensione e un valore, e aggiorna gli elementi dell'array con il valore dell'elemento moltiplicato per il terzo parametro`,
+		testo: `Scrivi la funzione <code>moltiplica</code> che accetta come argomenti un array di numeri interi, la dimensione e un valore,<br />
+ e aggiorna gli elementi dell'array con il valore dell'elemento moltiplicato per il terzo parametro`,
 		prototipo: `void moltiplica(int A[], int n, int v)`,
 		soluzione: `/**
  * Moltiplica gli elementi di un array di numeri interi per un dato valore.
@@ -446,7 +468,8 @@ void moltiplica(int A[], int n, int v) {
 `
 	},
 	{
-		testo: `Scrivi la funzione <code>prodotto_scalare</code> che accetta come argomenti due array e il numero di elementi e restituisce il prodotto scalare, ossia la somma dei prodotti degli elementi in posizione corrispondente`,
+		testo: `Scrivi la funzione <code>prodotto_scalare</code> che accetta come argomenti due array e il numero di elementi e<br />
+ restituisce< il prodotto scalare, ossia la somma dei prodotti degli elementi in posizione corrispondente`,
 		prototipo: `int prodotto_scalare(const int v1[], const int v2[], const int n)`,
 		soluzione: `/**
  * @brief Calcola il prodotto scalare tra due vettori di numeri interi
