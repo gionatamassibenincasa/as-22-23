@@ -18,7 +18,10 @@ int somma(int A[], int n) {
  */
 void inverti(int A[], int n) {
     for (int i = 0; i < n / 2; i++) {
-        std::swap(A[i], A[n - i - 1]);
+        int t = A[i];
+        A[i] = A[n - i - 1];
+        A[n - i - 1] = t;
+        // oppure std::swap(A[i], A[n - i - 1]);
     }
 }
 
@@ -356,6 +359,3 @@ int prodotto_scalare(const int v1[], const int v2[], const int n) {
     }
     return prodotto;
 }
-
-
-
