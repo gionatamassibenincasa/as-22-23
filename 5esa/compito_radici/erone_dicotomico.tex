@@ -1,0 +1,232 @@
+%%%
+%%% 1. Definire \dataesame
+\def\dataesame{Ancona, 22 novembre 2022}
+%%% 1. Definire \classe
+\def\classe{5E SA}
+
+\documentclass[10pt,a4paper,addpoints%
+%,answers
+]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[italian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[left=2cm,top=1.5cm,right=2.5cm,bottom=1.5cm,nohead,nofoot]{geometry}
+\usepackage[svgnames]{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{backgrounds,calc,arrows,patterns}
+\usepackage{mathtools}
+\usepackage{pdfpages}
+\usepackage{multirow}
+\usepackage[keeptemps]{pythontex}
+\usepackage{hyperref}
+\ifx\hypersetup\undefined
+  \AtBeginDocument{%
+    \hypersetup{unicode=true,
+ bookmarks=false,bookmarksnumbered=false,bookmarksopen=false,
+ breaklinks=false,pdfborder={0 0 0},backref=false,colorlinks=false,
+ pdfstartview=FitH,pdftitle={Compito d'Informatica -- \dataesame},
+ pdfauthor={Gionata Massi <gionata.massi@savoiabenincasa.it>},
+ pdfsubject={Compito d'Informatica},
+ pdfkeywords={Informatica, Metodo numerici}}
+  }
+\else
+  \hypersetup{unicode=true,
+ bookmarks=false,bookmarksnumbered=false,bookmarksopen=false,
+ breaklinks=false,pdfborder={0 0 0},backref=false,colorlinks=false,pdftitle={Informatica - \dataesame},
+ pdfauthor={Gionata Massi <gionata.massi@savoiabenincasa.it>},
+ pdfsubject={Compito d'Informatica},
+ pdfkeywords={Compito d'Informatica}}
+\fi
+\usepackage{calc}
+
+\shadedsolutions
+\definecolor{SolutionColor}{rgb}{0.8,0.9,1}
+
+\pagestyle{headandfoot}
+\firstpageheader{Compito d'Informatica -- \classe}{IIS ``Savoia-Benincasa''}{\dataesame}
+\runningheader%
+{\makebox[0.49\textwidth]{\textbf{Nome}:~\dotfill}}%
+{}%
+{\makebox[0.49\textwidth]{\textbf{Cognome}:~\dotfill}}
+\firstpagefooter{}{Pagina \thepage\ di \numpages}{}
+\runningfooter{Informatica}{Pagina \thepage\ di \numpages}{\dataesame}
+\runningfootrule
+
+\addpoints
+\qformat{{\bfseries Quesito \thequestion}~(\totalpoints~\points)~\hfill~Punteggio ottenuto: \dots/\totalpoints}
+\pointpoints{punto}{punti}
+\hqword{Quesito:}
+\vqword{Quesito} 
+\hpgword{Pg:}
+\vpgword{Pagina}
+\gradetablestretch{1.5}
+\hpword{Max:}
+\vpword{Max} 
+\hsword{Punti:}
+\vsword{Punti}
+\htword{Tot.}
+\vtword{Voto}
+\renewcommand{\solutiontitle}{\noindent\textbf{Svolgimento:}\par\noindent} 
+
+\totalformat{Totale: \totalpoints ~ \points}
+
+\newlength\pageleft
+\newlength{\altezzagriglia}
+
+\newcommand{\solutiongridbrk}{
+\ifprintanswers {%{\sffamily\bfseries Svolgimento}
+}\else{%
+  \par %
+  \pagebreak[1] %
+  \setlength\pageleft{\pagegoal} %
+  \addtolength\pageleft{-\pagetotal} %
+  \par %
+  \tikzset{background grid/.style={very thin,draw=black!25,step=.5cm},background rectangle/.style={draw=black!50!red}} %
+  \begin{tikzpicture}[framed,gridded] %
+	\color{black!50!red};
+    \draw (0,0) (\textwidth-\marginparwidth,\pageleft-4\baselineskip); %
+  \end{tikzpicture} %
+  \newpage} 
+ %\else {}
+\fi
+}
+
+\newcommand{\solutiongrid}[1]{
+\ifprintanswers {%{\sffamily\bfseries Svolgimento}
+}\else{%
+  \par %
+%  \pagebreak[0] %
+  \setlength\pageleft{\pagegoal} %   spazio per il testo
+  \addtolength\pageleft{-\pagetotal} % - la distanza dall'alto
+  \par %
+  \tikzset{background grid/.style={very thin,draw=black!25,step=.5cm},background rectangle/.style={draw=black!50}} %
+  \setlength{\altezzagriglia}{\minof{#1}{\pageleft-4\baselineskip}}
+  \begin{tikzpicture}[framed,gridded] %
+    \draw (0,0) (\textwidth-\marginparwidth,\altezzagriglia); %
+  \end{tikzpicture} %
+  } \fi
+}
+
+
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{%
+            \node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
+
+\begin{document}
+
+\mbox{\vspace{0.5cm}}
+
+\begin{center}
+%\fbox{\parbox{0.95\textwidth}{\vspace{0.3in}%
+	\makebox[0.49\textwidth]{\textbf{Nome}:~\dotfill} %
+	\makebox[0.49\textwidth]{~\textbf{Cognome}:~\dotfill}%
+%\vspace{0.2in}}}
+\end{center}
+
+\vspace{0.25cm}
+
+\fbox{\parbox{\textwidth}{%
+\textbf{Non si pu\`o usare il computer n\'e si possono consultare libri o appunti.}
+
+\textbf{Tempo di consegna: 1 ora.}
+}}
+
+
+\vspace{0.25cm}
+
+\begin{pycode}
+from random import randrange
+from math import ceil, floor
+
+def gen_erone():
+  radicando = randrange(2, 20, 1) * randrange(3, 20, 1) + 1
+  #radice = radicando ** 0.5
+  #lowerbound = floor(radice) - 1
+  #upperbound = ceil(radice) + 1
+  return r'$$x = \sqrt{' + str(radicando) + r'}$$' + "\n" + \
+        r'\begin{center}' + "\n" + \
+        r'\begin{tabular}{|c|p{3.5cm}|p{3.5cm}|}\hline' + "\n" + \
+        r'\multicolumn{3}{|c|}{\bf Iterazioni del metodo di Erone}\\\hline' + "\n" + \
+        r'\multicolumn{1}{|c|}{$k$}&' + "\n" + \
+        r'\multicolumn{1}{|c|}{$\displaystyle \frac{x_k + \frac{' + \
+        str(radicando) + \
+        r'}{x_k}}{2}$}&' + "\n" + \
+        r'\multicolumn{1}{|c|}{$|x_{k} - x_{k-1}|$}\\\hline' + "\n" + \
+        r'\multicolumn{1}{|c|}{0}&\multicolumn{1}{|c|}{1}&\multicolumn{1}{|c|}{---}\\\hline' + "\n" + \
+        r'1&&\\\hline' + "\n" + \
+        r'2&&\\\hline' + "\n" + \
+        r'3&&\\\hline' + "\n" + \
+        r'4&&\\\hline' + "\n" + \
+        r'\end{tabular}' + "\n" + \
+        r'\end{center}'
+
+def gen_dicotomico_radice():
+  radicando = randrange(2, 20, 1) * randrange(3, 20, 1) + 1
+  radice = radicando ** 0.5
+  while radice == floor(radice):
+    radicando = randrange(2, 20, 1) * randrange(3, 20, 1) + 1
+    radice = radicando ** 0.5
+  
+  lowerbound = floor(radice) - 1
+  upperbound = ceil(radice) + 1
+  return r'$$f(x) = x^2 - ' + str(radicando) + r',\quad x \in [' + str(lowerbound) + r', ' + str(upperbound) + r']$$' + "\n" + \
+         r'\begin{center}' + "\n" + \
+         r'\begin{tabular}{|c|*{5}{p{2cm}|}}' + "\n" + \
+         r'\hline' + "\n" + \
+         r'\multicolumn{6}{|c|}{\bf Iterazioni del metodo dicotomico}\\\hline' + "\n" + \
+         r'\multicolumn{1}{|c|}{$k$}&' + "\n" + \
+         r'\multicolumn{1}{|c|}{$a_k$}&' + "\n" + \
+         r'\multicolumn{1}{|c|}{$b_k$}&' + "\n" + \
+         r'\multicolumn{1}{|c|}{$x_k$}&' + "\n" + \
+         r'\multicolumn{1}{|c|}{$\mathrm{sgn}(x_k^2 -' + str(radicando) + r')$}&' + "\n" + \
+         r'\multicolumn{1}{|c|}{$b_{k} - a_{k}$}\\\hline' + "\n" + \
+         r'\multicolumn{1}{|c|}{0}&\multicolumn{1}{|c|}{' + \
+         str(lowerbound) + r'}&\multicolumn{1}{|c|}{' + \
+         str(upperbound) + r'}&&&\multicolumn{1}{|c|}{---}\\\hline' + "\n" + \
+         r'1&&&&&\\\hline' + "\n" + \
+         r'2&&&&&\\\hline' + "\n" + \
+         r'3&&&&&\\\hline' + "\n" + \
+         r'4&&&&&\\\hline' + "\n" + \
+         r'\end{tabular}' + "\n" + \
+         r'\end{center}' + "\n"
+
+\end{pycode}
+\begin{questions}
+ \begin{question}
+  Si determini un'approssimazione della radice quadrata del radicando eseguendo 5 iterazioni
+  del metodo di Erone.
+  Si usi la stima iniziale $x_0 = 1$ e si registrino i valori calcolati ad ogni iterazione del metodo
+   nelle tabelle seguenti trascrivenddo il valore approssimato alle prime 5 cifre significative.
+  \begin{parts}
+    \part[2]\py{gen_erone()}
+    \part[2]\py{gen_erone()}
+  \end{parts}
+ \end{question}
+
+ \begin{question}
+  Si determini un'approssimazione di $\alpha | f(\alpha) = 0$, dove $f(x) = x^2 - r$, eseguendo 5 iterazioni del metodo dicotomico.
+  Si registrino i valori calcolati ad ogni iterazione del metodo nella tabella seguente approssimando con
+  5 cifre significative mantenedo gli invarianti ${\mathrm sgn} (a_k^2 - r) \leq 0$ e
+  ${\mathrm sgn} (b_k^2 - r) \geq 0$.
+  \begin{parts}
+    \part[3]\py{gen_dicotomico_radice()}
+    \part[3]\py{gen_dicotomico_radice()}
+  \end{parts}
+ \end{question}
+
+\end{questions}
+\flushright{(Totale compito: \numpoints ~punti)}
+
+%\vfill
+
+%\begin{center}
+%\gradetable[v][questions]
+%\end{center}
+
+%\vfill
+
+\end{document}
+
+r'\multicolumn{1}{|c|}{$\mathrm{sgn}(a_k^2 -' + radicando + r')$}&' + "\n" + \
+r'\multicolumn{1}{|c|}{$\mathrm{sgn}(b_k^2 -' + radicando + r')$}&' + "\n" + \
