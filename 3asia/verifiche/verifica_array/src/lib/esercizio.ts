@@ -485,6 +485,22 @@ int prodotto_scalare(const int v1[], const int v2[], const int n) {
     }
     return prodotto;
 }`
+	},
+	// FUNZIONI
+	{
+		prototipo: `double prezzo_scontato(double prezzo, int percentale_sconto)`,
+		testo: `Scrivi a funzione <code>prezzo_scontato</code> che accetta come argomenti il prezzo e la percentuale<br /> di sconto e restituisce il prezzo scontato`,
+		soluzione: ``
+	},
+	{
+		prototipo: `double prezzo_ivato(double prezzo, int aliquota)`,
+		testo: `Scrivi a funzione <code>prezzo_ivato</code> che accetta come argomenti il prezzo e l'aliquota IVA'<br /> e restituisce il prezzo maggiorato dell'IVA`,
+		soluzione: ``
+	},
+	{
+		prototipo: `double prezzo_scontato(double prezzo, int percentale_sconto)`,
+		testo: `Scrivi a funzione <code>prezzo_scontato</code> che accetta come argomenti il prezzo e la percentuale<br /> di sconto e restituisce il prezzo scontato`,
+		soluzione: ``
 	}
 ];
 
