@@ -6,14 +6,14 @@
 
 Il prof. Loquenzo Orali, chiarissimo e rigorosissimo prof. di informatica, usa un suo particolare metodo didattico.
 
-All'inizio della lezione del giorno $d$ nella classe $c$ egli fa l'appello e, ad ogni studente presente che ha la possibilità di giustificarsi per non essere interrogato in quel giorno, chiede se si avvale della giustificazione; in caso positivo lo annota in $G_{cd}$.
+All'inizio della lezione del giorno $d$ nella classe $c$ il professore fa l'appello e, ad ogni studente presente che ha la possibilità di giustificarsi per non essere interrogato in quel giorno, chiede se si avvale della giustificazione; in caso positivo lo annota in $G_{cd}$.
 
 Le giustificazioni sono di due tipi:
 
 - quelle che non devono essere motivate, che sono $g_{cq}$ per quadrimestre, e
 - quelle dovute alle eventuali attività previste dal Piano Formativo Personalizzato, dal Piano Didattico Personalizzato e da impegni istituzionali (es: attività di orientamento, competizioni scolastiche...).
 
-Il prof. sceglie un argomento $a_c$ oggetto di interrogazione, per il quale ha già preparato un insieme $D_{ca}$ di $|D_{ca}|$ domande e individua gli studenti $I_{ca}$ già interrogati almeno una volta sull'argomento $a_c$.
+Il prof. sceglie un sottoinsieme di argomenti $a_ci \subset \A_c$ oggetto di interrogazione, e per ogni argomento ha già preparato un insieme $D_{ca}$ di $|D_{ca}|$ domande e individua gli studenti $I_{ca}$ già interrogati almeno una volta sugli argomenti $a_ci$.
 
 Considerati gli studenti candidati all'interrogazione $C_{cd} = S_c \setminus A_{cd} \setminus G_{cd} \setminus I_{ca}$, dove $S_c$ sono gli studenti della classe, $A_{cd}$ sono gli assenti nel giorno $d$ e $G_{cd}$ quelli giustificati, decide di interrogare $n$ studenti, dove $n \leq \min(|C_{ca}|, 4)$.
 
@@ -21,7 +21,7 @@ Per ognuno degli $n$ interrogandi estrae un numero casuale $r$, controlla che lo
 
 Il prof. interroga gli studenti ponendo un quesito al primo studente estratto, poi un altro quesito secondo e così via. Giunto all'ultimo interrogando, ricomincia dal primo.
 
-Per determinare il quesito dell'interrogazione, estrae un numero casuale $1 \leq |D_{a}|$. Se il quesito è già stato già estratto nel giorno $E_{cg}$, allora cerca la prima domanda successiva che non sia stata già posta.
+Per determinare il quesito dell'interrogazione, estrae un numero casuale per la scelta dell'argomento $a$, un secondo numero $1 \leq |D_{a}|$. Se il quesito è già stato già estratto nel giorno $E_{cg}$, allora cerca la prima domanda successiva che non sia stata già posta.
 
 La prova orale termina dopo che ogni interrogato è stato ascoltato su quattro domande.
 
@@ -75,5 +75,126 @@ Al termine dell'interrogazione, il prof. registra un voto, che è l'arrotondamen
 2. Fornire un glossario di progetto.
 3. Analizzare le entità e le relazioni presenti nel domino del problema; fornire un diagramma delle classi di analisi.
 4. Progettare una base di dati per risolvere il problema; fornire lo schema dei dati e il codice SQL per la creazione della base di dati.
-5. Progettare l'interfaccia dell'applicazione web.
+5. Progettare l'interfaccia dell'applicazione web sulla base di dati indicata in calce.
 6. Fornire le query da utilizzare nell'applicazione web.
+
+```sql
+DROP TABLE IF EXISTS "AnnoScolastico";
+CREATE TABLE IF NOT EXISTS "AnnoScolastico" (
+	"annoScolasticoId"	INTEGER,
+	"testo"	TEXT NOT NULL CHECK(length("testo") = 7) UNIQUE,
+	"inizio"	TEXT NOT NULL UNIQUE,
+	"fine"	TEXT NOT NULL UNIQUE,
+	PRIMARY KEY("annoScolasticoId")
+);
+DROP TABLE IF EXISTS "Classe";
+CREATE TABLE IF NOT EXISTS "Classe" (
+	"classeId"	INTEGER,
+	"annoScolasticoId"	INTEGER,
+	"anno"	INTEGER CHECK("anno" BETWEEN 1 AND 5),
+	"sezione"	TEXT CHECK(length("sezione") = 1),
+	"indirizzo"	TEXT DEFAULT NULL,
+	"articolazione"	TEXT DEFAULT NULL,
+	"maxGiustificazioni"	INTEGER DEFAULT 2,
+	PRIMARY KEY("classeId"),
+	FOREIGN KEY("annoScolasticoId") REFERENCES "AnnoScolastico"("annoScolasticoId")
+);
+DROP TABLE IF EXISTS "Studente";
+CREATE TABLE IF NOT EXISTS "Studente" (
+	"studenteId"	INTEGER,
+	"nome"	TEXT NOT NULL,
+	"cognome"	TEXT NOT NULL,
+	PRIMARY KEY("studenteId")
+);
+DROP TABLE IF EXISTS "Registro";
+CREATE TABLE IF NOT EXISTS "Registro" (
+	"studenteId"	INTEGER,
+	"classeId"	INTEGER,
+	PRIMARY KEY("studenteId","classeId"),
+	FOREIGN KEY("studenteId") REFERENCES "Studente"("studenteId"),
+	FOREIGN KEY("classeId") REFERENCES "Classe"("classeId")
+);
+DROP TABLE IF EXISTS "Argomento";
+CREATE TABLE IF NOT EXISTS "Argomento" (
+	"argomentoId"	INTEGER,
+	"argomento"	TEXT NOT NULL,
+	PRIMARY KEY("argomentoId")
+);
+DROP TABLE IF EXISTS "Programmazione";
+CREATE TABLE IF NOT EXISTS "Programmazione" (
+	"classeId"	INTEGER,
+	"argomentoId"	INTEGER,
+	FOREIGN KEY("classeId") REFERENCES "Classe"("classeId"),
+	FOREIGN KEY("argomentoId") REFERENCES "Argomento"("argomentoId"),
+	PRIMARY KEY("classeId","argomentoId")
+);
+DROP TABLE IF EXISTS "Quesito";
+CREATE TABLE IF NOT EXISTS "Quesito" (
+	"quesitoId"	INTEGER,
+	"argomentoId"	INTEGER,
+	"quesito"	TEXT,
+	PRIMARY KEY("quesitoId"),
+	FOREIGN KEY("argomentoId") REFERENCES "Argomento"("argomentoId")
+);
+DROP TABLE IF EXISTS "Assenza";
+CREATE TABLE IF NOT EXISTS "Assenza" (
+	"studenteId"	INTEGER,
+	"data"	TEXT NOT NULL,
+	PRIMARY KEY("studenteId","data"),
+	FOREIGN KEY("studenteId") REFERENCES "Studente"("studenteId")
+);
+DROP TABLE IF EXISTS "Giustificazione";
+CREATE TABLE IF NOT EXISTS "Giustificazione" (
+	"studenteId"	INTEGER NOT NULL,
+	"data"	TEXT NOT NULL,
+	"immotivata"	INTEGER,
+	PRIMARY KEY("studenteId","data"),
+	FOREIGN KEY("studenteId") REFERENCES "Studente"("studenteId")
+);
+DROP TABLE IF EXISTS "Interrogazione";
+CREATE TABLE IF NOT EXISTS "Interrogazione" (
+	"interrogazioneId"	INTEGER,
+	"studenteId"	INTEGER NOT NULL,
+	"argomentoId"	INTEGER NOT NULL,
+	"data"	TEXT NOT NULL,
+	"voto"	REAL NOT NULL,
+	"descrizione"	TEXT,
+	PRIMARY KEY("interrogazioneId"),
+	FOREIGN KEY("argomentoId") REFERENCES "Argomento"("argomentoId"),
+	FOREIGN KEY("studenteId") REFERENCES "Studente"("studenteId")
+);
+DROP TABLE IF EXISTS "Indicatore";
+CREATE TABLE IF NOT EXISTS "Indicatore" (
+	"indicatoreId"	INTEGER,
+	"indicatore"	TEXT,
+	"descrizione"	TEXT,
+	"peso"	REAL,
+	PRIMARY KEY("indicatoreId")
+);
+DROP TABLE IF EXISTS "Descrittore";
+CREATE TABLE IF NOT EXISTS "Descrittore" (
+	"descrittoreId"	INTEGER,
+	"indicatoreId"	INTEGER NOT NULL,
+	"descrittore"	TEXT NOT NULL,
+	"descrizione"	TEXT,
+	"livello"	INTEGER CHECK("livello" BETWEEN 0 AND 10),
+	FOREIGN KEY("indicatoreId") REFERENCES "Indicatore"("indicatoreId"),
+	PRIMARY KEY("descrittoreId")
+);
+DROP TABLE IF EXISTS "Verbale";
+CREATE TABLE IF NOT EXISTS "Verbale" (
+	"interrogazioneId"	INTEGER NOT NULL,
+	"quesitoId"	INTEGER NOT NULL,
+	PRIMARY KEY("interrogazioneId","quesitoId"),
+	FOREIGN KEY("interrogazioneId") REFERENCES "Interrogazione"("interrogazioneId"),
+	FOREIGN KEY("quesitoId") REFERENCES "Quesito"("quesitoId")
+);
+DROP TABLE IF EXISTS "Valutazione";
+CREATE TABLE IF NOT EXISTS "Valutazione" (
+	"interrogazioneId"	INTEGER NOT NULL,
+	"descrittoreId"	INTEGER NOT NULL,
+	FOREIGN KEY("interrogazioneId") REFERENCES "Interrogazione"("interrrogazioneId"),
+	FOREIGN KEY("descrittoreId") REFERENCES "Descrittore"("descrittoreId"),
+	PRIMARY KEY("interrogazioneId","descrittoreId")
+);
+```
